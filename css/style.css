@@ -40,10 +40,10 @@
     justify-content: center;
 }
 
-.intro_preloader .intro_content_wrapper .services_elements h2 {
+.intro_preloader .intro_content_wrapper .services_elements span {
     font-size: 60px;
     position: absolute;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     text-transform: capitalize;
     color: transparent;
@@ -63,8 +63,7 @@
     justify-content: center;
 }
 
-.our_brand h2 {
-    color: transparent;
+.our_brand span {
     font-size: 70px;
     color: rgba(255, 255, 255, 0.377);
     position: relative;
@@ -72,9 +71,11 @@
     animation-delay: 2s;
     padding: 20px;
     margin-bottom: 0;
+    display: block;
+    font-weight: 600;
 }
 
-.our_brand h2:before {
+.our_brand span:before {
     content: attr(data-text);
     position: absolute;
     left: 0;
