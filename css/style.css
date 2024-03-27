@@ -28,6 +28,7 @@
     top: 40px;
     color: cyan;
     cursor: pointer;
+    z-index: 99;
 }
 
 .intro_preloader .intro_content_wrapper {
