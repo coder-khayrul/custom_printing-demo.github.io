@@ -52,6 +52,7 @@
 
 .intro_element {
     display: none;
+    margin-bottom: 0;
 }
 
 .our_brand {
@@ -70,6 +71,7 @@
     animation: text_anim2 2s cubic-bezier(0, 0, 0.39, 1.07) forwards alternate;
     animation-delay: 2s;
     padding: 20px;
+    margin-bottom: 0;
 }
 
 .our_brand h2:before {
