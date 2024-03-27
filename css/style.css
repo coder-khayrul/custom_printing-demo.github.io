@@ -4,9 +4,10 @@
     position: fixed;
     background: black;
     color: white;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transition: .6s;
+    z-index: 99999;
 }
 
 .intro_preloader.hide {
