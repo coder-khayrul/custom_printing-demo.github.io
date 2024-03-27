@@ -1,0 +1,107 @@
+.intro_preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+    transition: .6s;
+}
+
+.intro_preloader.hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: .6s;
+}
+
+.intro_preloader.show {
+    opacity: 1;
+    visibility: visible;
+    transition: .6s;
+}
+
+.intro_preloader .intro_close {
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color: cyan;
+    cursor: pointer;
+}
+
+.intro_preloader .intro_content_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_preloader .intro_content_wrapper .services_elements h2 {
+    font-size: 60px;
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.intro_element {
+    display: none;
+}
+
+.our_brand {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_brand h2 {
+    color: transparent;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.377);
+    position: relative;
+    animation: text_anim2 2s cubic-bezier(0, 0, 0.39, 1.07) forwards alternate;
+    animation-delay: 2s;
+    padding: 20px;
+}
+
+.our_brand h2:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    color: cyan;
+    overflow: hidden;
+    animation: text_anim 2s cubic-bezier(0, 0, 0.39, 1.07) forwards alternate;
+    padding: 20px;
+}
+
+@keyframes text_anim {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes text_anim2 {
+    to{
+        scale: 1.5;
+        text-shadow: 3px 3px 20px rgb(0 255 255 / 30%), -2px 1px 30px rgb(0 255 255 / 30%);
+    }
+}
+.services_elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_brand.intro_element {
+    position: absolute;
+}
