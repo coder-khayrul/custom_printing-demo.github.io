@@ -123,7 +123,7 @@ a {
 @keyframes text_anim2 {
     to {
         scale: 1.5;
-        text-shadow: 3px 3px 20px rgb(0 255 255 / 30%), -2px 1px 30px rgb(0 255 255 / 30%);
+        text-shadow: 3px 3px 20px #177bfe5d, -2px 1px 30px #177bfe5d;
     }
 }
 
