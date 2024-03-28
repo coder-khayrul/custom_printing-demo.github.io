@@ -29,14 +29,1290 @@
                 <span class="intro_element">Flyers Designing</span>
             </div>
             <div class="our_brand intro_element">
-                <span data-text="ElMart"  data-text2="ElMart">ElMart</span>
+                <span data-text="ElMart" data-text2="ElMart">ElMart</span>
             </div>
         </div>
     </div>
 
 
+    <!--side cart-->
+    <div class="side_cart">
+        <div class="side_cart_bg"></div>
+        <div class="side_cart_wrapper">
+            <div class="discount_mini_popup">
+                <div class="mini_popup_bg4"></div>
+                <div class="discount_wrapper">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span><i class="fa-solid fa-receipt"></i></span>
+                        <p class="mb-0">Estimate shipping rates:</p>
+                    </div>
+                    <p>Coupon code will work on checkout page.</p>
+                    <form id="cupon_form">
+                        <input type="text" id="cupon_id" placeholder="Coupon code" required>
+                        <button type="submit" class="mt-2">Save</button>
+                        <button class="cupon_delete">Cancle</button>
+                    </form>
+                </div>
+            </div>
+            <div class="rate_mini_popup">
+                <div class="mini_popup_bg3"></div>
+                <div class="rate_wrapper">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span><i class="fa-solid fa-box-tissue"></i></span>
+                        <p>Estimate shipping rates:</p>
+                    </div>
+                    <form class="shiping_form d-flex flex-column gap-3">
+                        <div class="single_input d-flex justify-content-center flex-column">
+                            <label for="country_select">Country</label>
+                            <select id="country_select">
+                                <option value="0" disabled selected>Select Country</option>
+                                <option value="0">United Kindom</option>
+                                <option value="0">United State</option>
+                                <option value="0">China</option>
+                                <option value="0">Bangladesh</option>
+                                <option value="0">Japan</option>
+                                <option value="0">Butan</option>
+                                <option value="0">Saudi Arabia</option>
+                            </select>
+                        </div>
+                        <div class="single_input d-flex justify-content-center flex-column">
+                            <label for="State">State</label>
+                            <select id="State">
+                                <option value="0" disabled selected>Select State</option>
+                                <option value="0">United Kindom</option>
+                                <option value="0">United State</option>
+                                <option value="0">China</option>
+                                <option value="0">Bangladesh</option>
+                                <option value="0">Japan</option>
+                                <option value="0">Butan</option>
+                                <option value="0">Saudi Arabia</option>
+                            </select>
+                        </div>
+                        <div class="single_input d-flex justify-content-center flex-column">
+                            <label for="postal_code">Zip/Postal Code</label>
+                            <input type="text" id="postal_code" placeholder="Zip/Postal Code">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 flex-column">
+                            <button type="submit">Calculate Shipping Rates</button>
+                            <button class="rate_cancle">Cancle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="gift_mini_popup">
+                <div class="mini_popup_bg2"></div>
+                <div class="gift_wrap">
+                    <span><i class="fa-solid fa-gift"></i></span>
+                    <p>Do you want a gift wrap? Only $80</p>
+                    <button class="gift_btn">Add A Gift Wra</button>
+                    <button class=" delete_gift">Cancle</button>
+                </div>
+            </div>
+            <div class="mini_popup">
+                <div class="mini_popup_bg1"></div>
+                <div class="popup_div">
+                    <div class="d-flex align-items-center gap-2 ">
+                        <span>
+                            <i class="fa-solid fa-file-lines"></i>
+                        </span>
+                        <span>Add Order Note</span>
+                    </div>
+                    <div class="note_form">
+                        <textarea id="note_input" required></textarea>
+                        <div class="form_btns">
+                            <button type="submit">Save</button>
+                            <button class="delete_card">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_up">
+                <div class="cart_header d-flex align-items-center justify-content-between">
+                    <h3>Shopping Cart</h3>
+                    <span class="cart_close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div class="product_list">
+                    <div class="single_cart_product">
+                        <div class="cart_img">
+                            <img class="img-fluid" src="img/cap.png" alt="cart image">
+                        </div>
+                        <div class="product_info">
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <h3><a href="#">Grand comfort chair</a></h3>
+                                <span class="remove_btn">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                            </div>
+                            <span>$180</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="quantity d-flex align-items-center">
+                                    <button class="decrease">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <input type="number" id="cart_value" class="cart_value" min="1" value="01">
+                                    <button class="increase">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                                <span class="edit">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_bottom">
+                <div class="progress_area d-flex flex-column gap-2">
+                    <div class="progress_bar">
+                        <div class="fill_area"></div>
+                        <span class="free_shiping_icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    </div>
+                    <p class="mb-0">Congratulations! You've got <span>Free Shipping!</span></p>
+                </div>
+                <div class="cart_option d-flex align-items-center justify-content-between">
+                    <button class="note_btn">
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </button>
+                    <button class="gift_btn">
+                        <i class="fa-solid fa-gift"></i>
+                    </button>
+                    <button class="estimate_btn">
+                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                    </button>
+                    <button class="coupon_btn">
+                        <i class="fa-solid fa-ticket"></i>
+                    </button>
+                </div>
+                <div class="cart_count d-flex justify-content-between 
+        align-items-center">
+                    <b>Subtotal</b>
+                    <span>$486</span>
+                </div>
+                <div class="cart_btns d-flex gap-2 flex-column">
+                    <button>View Cart</button>
+                    <button>Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--header start-->
+    <!--small device search bar-->
+    <div class="mobile_search_bar">
+        <div class="sarch_bar_bg"></div>
+        <div class="search_bar_wrapper">
+            <div class="sm_search_close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="search_bar">
+                <select>
+                    <option value="0" disabled selected>All Category</option>
+                    <option value="0">Accessories</option>
+                    <option value="0">Clock</option>
+                    <option value="0">TableTop</option>
+                    <option value="0">Lighting</option>
+                    <option value="0">Cooking</option>
+                    <option value="0">Toys</option>
+                </select>
+                <form class="search_bar_filed">
+                    <input type="search" id="category_search" placeholder="Search for product" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="search_bar_container">
+                <div class="down_div">
+                    <h4>Searching For</h4>
+                    <div class="recent_searh d-flex align-items-center flex-wrap gap-2">
+                        <span class="d-flex align-items-center gap-2">
+                            <a href="#">Lighting</a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <span class="d-flex align-items-center gap-2">
+                            <a href="#">Accessories</a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <span class="d-flex align-items-center gap-2">
+                            <a href="#">Furniture</a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="down_div">
+                    <h4>Top Product</h4>
+                    <div class="search_top_product">
+                        <div class="top_single_product d-flex align-items-center justify-content-between">
+                            <div class="tp_info d-flex align-items-center gap-2">
+                                <div class="tp_img">
+                                    <img class="img-fluid" src="img/t-shirt.jpg" alt="search product image">
+                                </div>
+                                <a href="#">Reflect Chest of Drawers</a>
+                            </div>
+                            <div class="tp_seal">585 Sales</div>
+                        </div>
+                        <div class="top_single_product d-flex align-items-center justify-content-between">
+                            <div class="tp_info d-flex align-items-center gap-2">
+                                <div class="tp_img">
+                                    <img class="img-fluid" src="img/mug-1.jpg" alt="search product image">
+                                </div>
+                                <a href="#">Eames Plastic Side Chair</a>
+                            </div>
+                            <div class="tp_seal">585 Sales</div>
+                        </div>
+                        <div class="top_single_product d-flex align-items-center justify-content-between">
+                            <div class="tp_info d-flex align-items-center gap-2">
+                                <div class="tp_img">
+                                    <img class="img-fluid" src="img/t-shirt.jpg" alt="search product image">
+                                </div>
+                                <a href="#">Nerd wooden chair</a>
+                            </div>
+                            <div class="tp_seal">585 Sales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down_div">
+                    <h4>Popular Tags</h4>
+                    <div class="tags_container d-flex align-items-center flex-wrap gap-2">
+                        <a href="#">Clock</a>
+                        <a href="#">Chair</a>
+                        <a href="#">Lighting</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Furniture</a>
+                    </div>
+                </div>
+                <div class="down_menu d-flex align-items-center gap-2">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--user popup-->
+    <div class="user_popup">
+        <div class="user_popup_bg"></div>
+        <div class="user_popup_wrapper d-flex align-items-center">
+            <div class="user_popu_close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="left_side d-flex align-items-center flex-column justify-content-center">
+                <div class="login_wrapper">
+                    <h3 class="text-center">Login an Account</h3>
+                    <div class="by_ref d-flex align-items-center gap-3 justify-content-center ">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="text-center">or use your email for Login</span>
+                    <div class="form_wrapper">
+                        <form class="login_form">
+                            <div class="single_input">
+                                <span>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <input type="email" id="login_email" placeholder="Email" required>
+                            </div>
+                            <div class="single_input">
+                                <span>
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" id="login_password" placeholder="Set Password" required>
+                            </div>
+                            <div class="login_btn d-flex align-items-center justify-content-center">
+                                <button type="submit">Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="register_wrapper">
+                    <h3 class="text-center">Register an Account</h3>
+                    <div class="by_ref d-flex align-items-center gap-3 justify-content-center">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="text-center">or use your email for registation</span>
+                    <div class="form_wrapper">
+                        <form class="register_form">
+                            <div class="single_input">
+                                <span><i class="fa-regular fa-user"></i></span>
+                                <input type="text" id="user_name" placeholder="Name" required>
+                            </div>
+                            <div class="single_input">
+                                <span>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <input type="email" id="user_email" placeholder="Email" required>
+                            </div>
+                            <div class="single_input">
+                                <span>
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" id="user_password" placeholder="Set Password" required>
+                            </div>
+                            <div class="single_input">
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <input type="text" id="user_address" placeholder="Shipping Address" required>
+                            </div>
+                            <div class="register_btn d-flex align-items-center justify-content-center">
+                                <button type="submit">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <h3 class="user_welcome">Welcome Back!</h3>
+                <p class="user_gide">Login here by filling you're username and password.</p>
+                <div class="right_side_btns d-flex align-items-center justify-content-center ">
+                    <button class="login_tab">Log In</button>
+                    <button class="signup_tab">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--toggle_icon_menu-->
+    <div class="toggle_menu ui-widget-content">
+        <div class="toggle_menu_wrapper">
+            <div class="single_icon toggle_icon">
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <button class="single_icon">
+                <i class="fa-regular fa-circle-question"></i>
+            </button>
+            <button class="single_icon">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="single_icon">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="single_icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="single_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="single_icon mode_btn">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+        </div>
+    </div>
+    <header>
+        <!--offer banner-->
+        <div class="offer_banner">
+            <div class="container-fluid container-xl">
+                <div class="offer_banner_wrapper d-flex justify-content-center align-items-center">
+                    <div class="offer_banner_content d-flex align-items-center gap-3">
+                        <span>Special</span>
+                        <p class="mb-0">Get 10% <b>DISCOUNT</b> for first order</p>
+                        <a href="#">Register Now</a>
+                        <div class="copy_coupon d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-copy"></i>
+                            <span class="coupon_code">KH632</span>
+                        </div>
+                    </div>
+                    <button class="banner_close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="scrolling_news header_news">
+            <div class="container-fluid container-xl">
+                <div class="scrolling_news_wrapper d-flex align-items-center gap-5">
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-bolt"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                    <div class="single_news d-flex align-items-center gap-2">
+                        <span><i class="fa-solid fa-fan"></i></span>
+                        <a href="#">Special offer: enjoy up to 40% off on all product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--top header-->
+        <div class="top_header">
+            <div class="container-fluid container-xl">
+                <div class="top_header_wrapper d-flex align-items-center justify-content-between">
+                    <div class="left d-flex align-items-center gap-4">
+                        <div class="social_icon d-flex align-items-center gap-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <a href="tel:1234567890" class="call d-flex align-items-center gap-1">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <p class="mb-0">+1234567890</p>
+                        </a>
+                    </div>
+                    <div class="right d-flex align-items-center gap-3">
+                        <div class="language item_wrapper">
+                            <div class="selected_div d-flex align-items-center justify-content-between">
+                                <span class="selected_item">English</span>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <ul class="item_dropdown">
+                                <li class="list-unstyled">English</li>
+                                <li class="list-unstyled">Spanish</li>
+                                <li class="list-unstyled">Chinese</li>
+                            </ul>
+                        </div>
+                        <div class="currency item_wrapper">
+                            <div class="selected_div d-flex align-items-center justify-content-between">
+                                <span class="selected_item">US Doller</span>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <ul class="item_dropdown two">
+                                <li class="list-unstyled">US Doller</li>
+                                <li class="list-unstyled">Pound</li>
+                                <li class="list-unstyled">Euro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="container-fluid container-xl">
+                <div class="main-header_wrapper d-flex align-items-center justify-content-between">
+                    <div class="d-flex d-xl-none ">
+                        <button class="mobile_menu_btn d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Menu</span>
+                        </button>
+                        
+                    </div>
+                    <div class="desktop_searchbar d-none d-xl-flex align-items-center ">
+                        <div class="select_category">
+                            <div class="category_name d-flex align-items-center justify-content-between ">
+                                <span class="selected_category">All Category</span>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <ul class="category_dropdown">
+                                <li class="list-unstyled">All Category</li>
+                                <li class="list-unstyled">Accessories</li>
+                                <li class="list-unstyled">Clock</li>
+                                <li class="list-unstyled">TableTop</li>
+                                <li class="list-unstyled">Lighting</li>
+                                <li class="list-unstyled">Cooking</li>
+                                <li class="list-unstyled">Toys</li>
+                            </ul>
+                        </div>
+                        <form class="search_form">
+                            <input type="search" id="desktop_search" placeholder="Search for product" required>
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <div class="search_suggestion">
+                            <b>Tranding Search</b>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Accessories</a></li>
+                                <li class="list-unstyled"><a href="#">Furniture</a></li>
+                                <li class="list-unstyled"><a href="#">Chair</a></li>
+                                <li class="list-unstyled"><a href="#">Cooking</a></li>
+                                <li class="list-unstyled"><a href="#">Lighting</a></li>
+                                <li class="list-unstyled"><a href="#">Sofas</a></li>
+                            </ul>
+
+                            <div class="interested_product_container">
+                                <div
+                                    class="interested_product_header d-flex align-items-center justify-content-between ">
+                                    <b>you may be interested in</b>
+                                    <div class="slider_navs d-flex align-items-center gap-3">
+                                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                                        <div class="swiper-button-next swiper-button-next2"></div>
+                                    </div>
+                                </div>
+                                <div class="interested_product_slider">
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="interested_product">
+                                                    <div class="i_product_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg"
+                                                            alt="interested product image">
+                                                    </div>
+                                                    <div class="i_product_info">
+                                                        <a href="#">Comfortable Chair</a>
+                                                        <button>Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class="mb-0">El<span>Mart</span></a>
+                    </div>
+                    <div class="header_side_icons d-flex align-items-center">
+                        <ul class="ps-0 mb-0 d-flex align-items-center gap-3">
+                            <li class="list-unstyled">
+                                <a href="#" class="d-grid d-xl-none mobile_search_btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="user_btn"><i class="fa-regular fa-user"></i></a>
+                                <div class="user_dropdown">
+                                    <b>Welcome! Khayrul</b>
+                                    <ul>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                <span>Balance: <b>$200</b></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-regular fa-circle-question"></i>
+                                                </span>
+                                                <span>Help Center</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </span>
+                                                <span>Log out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="cart_icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header d-none d-xl-block">
+            <div class="container-fluid container-xl">
+                <div class="bottom_wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom_left d-flex align-items-center">
+                        <div class="category_container ">
+                            <div class="category_btn">
+                                <div class="close_category">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span>Shop By Category</span>
+                            </div>
+                            <ul class="category_list">
+                                <li class="list-unstyled"><a href="#">Business Card</a></li>
+                                <li class="list-unstyled"><a href="#">Poster</a></li>
+                                <li class="list-unstyled"><a href="#">Product</a></li>
+                                <li class="list-unstyled"><a href="#">T-shirt</a></li>
+                                <li class="list-unstyled"><a href="#">Cap</a></li>
+                                <li class="list-unstyled"><a href="#">Books</a></li>
+                                <li class="list-unstyled"><a href="#">Pen</a></li>
+                                <li class="list-unstyled"><a href="#">Documents</a></li>
+                                <li class="list-unstyled"><a href="#">Mugs</a></li>
+                                <li class="list-unstyled"><a href="#">Football</a></li>
+                            </ul>
+                        </div>
+                        <ul class="main_menu align-items-center gap-4 mb-0 ps-0">
+                            <li class="list-unstyled">
+                                <a href="index.html">Home
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="mega_menu">
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-1.png" alt="project image">
+                                            </div>
+                                            <b>Organic Ecommerce</b>
+                                        </a>
+                                    </div>
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-2.png" alt="project image">
+                                            </div>
+                                            <b>Pet Care</b>
+                                        </a>
+                                    </div>
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-3.png" alt="project image">
+                                            </div>
+                                            <b>Restaurant</b>
+                                        </a>
+                                    </div>
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-4.png" alt="project image">
+                                            </div>
+                                            <b>Furniture</b>
+                                        </a>
+                                    </div>
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-1.png" alt="project image">
+                                            </div>
+                                            <b>Organic Ecommerce</b>
+                                        </a>
+                                    </div>
+                                    <div class="single_mega_menu_item">
+                                        <a href="#" class="d-flex align-items-center flex-column">
+                                            <div class="m_item_img">
+                                                <img class="img-fluid" src="img/demo-1.png" alt="project image">
+                                            </div>
+                                            <b>Organic Ecommerce</b>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="shop.html">Shop
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="mega_menu other_mega_menu">
+                                    <div class="mega_menu_wrapper">
+                                        <div class="single_mega_menu">
+                                            <b>Shop Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Product Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Custom Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <div class="mega_menu_product">
+                                                <img class="img-fluid" src="img/t-shirt.jpg" alt="mega_menu image">
+                                                <div
+                                                    class="cmm_content d-flex align-items-center justify-content-center">
+                                                    <a href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">Printspace
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="mega_menu printspace">
+                                    <a href="#" class="single_mm">
+                                        <img class="img-fluid" src="img/tshirt-2.png" alt="product image">
+                                        <div class="mm_info">
+                                            <span>Packaging Design</span>
+                                            <h2>Thousands Of<br> Gorgeous Design</h2>
+                                            <button class="d-flex align-items-center ">
+                                                <span>Shop Now</span>
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="single_mm">
+                                        <img class="img-fluid" src="img/cap.png" alt="product image">
+                                        <div class="mm_info">
+                                            <span>Packaging Design</span>
+                                            <h2>Thousands Of<br> Gorgeous Design</h2>
+                                            <button class="d-flex align-items-center ">
+                                                <span>Shop Now</span>
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="single_mm">
+                                        <img class="img-fluid" src="img/t-shirt.jpg" alt="product image">
+                                        <div class="mm_info">
+                                            <button class="d-flex align-items-center ">
+                                                <span>Shop Now</span>
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="single_mm">
+                                        <img class="img-fluid" src="img/pen.png" alt="product image">
+                                        <div class="mm_info">
+                                            <span>Packaging Design</span>
+                                            <h2>Thousands Of<br> Gorgeous Design</h2>
+                                            <button class="d-flex align-items-center ">
+                                                <span>Shop Now</span>
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="single_mm">
+                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                        <div class="mm_info">
+                                        
+                                            <button class="d-flex align-items-center ">
+                                                <span>Shop Now</span>
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">Product
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="mega_menu other_mega_menu">
+                                    <div class="mega_menu_wrapper">
+                                        <div class="single_mega_menu">
+                                            <b>Shop Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Product Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <div class="mega_menu_product">
+                                                <img class="img-fluid" src="img/t-shirt.jpg" alt="mega_menu image">
+                                                <div
+                                                    class="cmm_content d-flex align-items-center justify-content-center">
+                                                    <a href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <div class="mega_menu_product">
+                                                <img class="img-fluid" src="img/mug-1.jpg" alt="mega_menu image">
+                                                <div
+                                                    class="cmm_content d-flex align-items-center justify-content-center">
+                                                    <a href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Default Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Product Layout</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Custom Style</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_mega_menu">
+                                            <b>Product Type</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Grid 4 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 2 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">Grid 3 Columns</a></li>
+                                                <li class="list-unstyled"><a href="#">List View</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Offcanvas Reft Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Default Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Left Sidebar</a></li>
+                                                <li class="list-unstyled"><a href="#">Filter Right Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">Pages
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown_menu">
+                                    <li class="list-unstyled">
+                                        <a href="shop.html">Shop Page</a>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <a href="product.html">Product Page</a>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <a href="#">About Page</a>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <a href="#">FAQs Page</a>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <a href="#">Page 404</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-unstyled"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom_right d-flex align-items-center gap-3">
+                        <div class="single_option_link  align-items-center gap-2">
+                            <span>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </span>
+                            <a href="#">Order Tracking</a>
+                        </div>
+                        <div class="single_option_link  align-items-center gap-2">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <a href="#">Recently Viewed</a>
+                            <div class="viewd_product d-none">
+                                <div class="viewed_header align-items-center justify-content-between">
+                                    <a href="#">View All</a>
+                                    <div class="slider_navs d-flex align-items-center gap-3">
+                                        <div class="swiper-button-prev swiper-button-prev1"></div>
+                                        <div class="swiper-button-next swiper-button-next1"></div>
+                                    </div>
+                                </div>
+                                <div class="viewed_product_wrapper">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart7" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/t-shirt.jpg"
+                                                            alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart8" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart3" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart2" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart1" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart4" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart5" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="viewed_single_product">
+                                                    <div class="vs_procut_img">
+                                                        <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
+                                                    </div>
+                                                    <div class="vs_product_info">
+                                                        <a href="#">Furniture</a>
+                                                        <b class="mb-0"><a href="#">Wooden naïve chair</a></b>
+                                                        <span>$330</span>
+                                                        <div class="add_cart d-flex align-items-center ">
+                                                            <input type="number" id="vs_cart6" value="1" min="1">
+                                                            <button>
+                                                                <span>Add To Cart</span>
+                                                                <span>
+                                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_option_link align-items-center gap-2">
+                            <span>
+                                <i class="fa-solid fa-gift"></i>
+                            </span>
+                            <a href="#">Gift Cards</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+
+
+
     <!--script-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
