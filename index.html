@@ -29,12 +29,597 @@
                 <span class="intro_element">Flyers Designing</span>
             </div>
             <div class="our_brand intro_element">
-                <span data-text="ElMart" data-text2="ElMart">ElMart</span>
+                <span data-text="ElPrint" data-text2="ElPrint">ElPrint</span>
             </div>
         </div>
     </div>
-
-
+    <!-- mobile side menu-->
+    <div class="mobile_side_menu">
+        <div class="moble_menu_bg"></div>
+        <div class="moblie_menu_wrapper">
+            <div class="mobile_menu_head">
+                <span class="mobile_menu_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <form class="side_menu_search">
+                    <input type="search" id="side_menu_input" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="mobile_menu_body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="menu-tab" data-bs-toggle="tab"
+                            data-bs-target="#menu-tab-pane" type="button" role="tab" aria-controls="menu-tab-pane"
+                            aria-selected="true">
+                            <i class="fa-solid fa-bars me-2"></i>
+                            Menu</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="category-tab" data-bs-toggle="tab"
+                            data-bs-target="#category-tab-pane" type="button" role="tab"
+                            aria-controls="category-tab-pane" aria-selected="false">
+                            <i class="fa-solid fa-table-cells-large me-2"></i>
+                            Category</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="menu-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="accordion-container">
+                            <span class="accordion-title menu_item">
+                                <span>Home</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a href="https://organic-store-demo2.netlify.app/">Home -01</a>
+                                <a href="https://elmart-01.netlify.app/">Home -02</a>
+                                <a href="https://petcare-demo.netlify.app/">Home -03</a>
+                                <a href="https://furniture-demo-elmart.netlify.app/">Home -03</a>
+                            </div>
+                            <span class="accordion-title menu_item">Shop</span>
+                            <div class="accordion-content dropdown   ">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Shop Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Product Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Default Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span>Print Space</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a href="#">View Offers</a>
+                            </div>
+                            <a href="#" class="accordion-title menu_item">Product</a>
+                            <div class="accordion-content dropdown   ">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Product Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Product Type </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Product Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Product Layout </span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grid 4 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 3 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid 2 Columns</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Offcanvas Right Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Default View</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="accordion-title menu_item">Pages</a>
+                            <div class="accordion-content">
+                                <a href="shop.html">Shop Page</a>
+                                <a href="product.html">Product Page</a>
+                                <a href="#">About Page</a>
+                                <a href="#">FAQs Page</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Page 404</a>
+                            </div>
+                            <a href="#" class="menu_item">Blogs</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="category-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="accordion-container">
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-regular fa-address-card  me-3"></i> Business Card</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-signs-post me-3"></i>Products</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-shirt me-3"></i>T-shirt</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-signs-post me-3"></i>Posters</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-book me-3"></i>Books</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-file me-3"></i>Documents</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                            <span class="accordion-title menu_item">
+                                <span><i class="fa-solid fa-beer-mug-empty me-3"></i>Mugs</span>
+                            </span>
+                            <div class="accordion-content">
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Mockup Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                    <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Custom Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                </ul>
+                                <a class="d-flex align-items-center justify-content-between" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button" href="#">
+                                    <span>Print Design</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="list-unstyled"><a href="#">
+                                            Offset printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Reactive printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                    <li class="list-unstyled"><a href="#">
+                                            Pigment printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                    <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_menu_bottom d-flex flex-column ">
+                <a href="#"><i class="fa-solid fa-bag-shopping me-3"></i>Order Tracking</a>
+                <a href="#"><i class="fa-regular fa-eye me-3"></i>Recently viewed</a>
+                <a href="#"><i class="fa-solid fa-gift me-3"></i>Gift Card</a>
+            </div>
+        </div>
+    </div>
     <!--side cart-->
     <div class="side_cart">
         <div class="side_cart_bg"></div>
@@ -196,8 +781,6 @@
             </div>
         </div>
     </div>
-
-
     <!--header start-->
     <!--small device search bar-->
     <div class="mobile_search_bar">
@@ -501,254 +1084,12 @@
                             <i class="fa-solid fa-bars"></i>
                             <span>Menu</span>
                         </button>
-                        
                     </div>
-                    <div class="desktop_searchbar d-none d-xl-flex align-items-center ">
-                        <div class="select_category">
-                            <div class="category_name d-flex align-items-center justify-content-between ">
-                                <span class="selected_category">All Category</span>
-                                <span><i class="fa-solid fa-chevron-down"></i></span>
-                            </div>
-                            <ul class="category_dropdown">
-                                <li class="list-unstyled">All Category</li>
-                                <li class="list-unstyled">Accessories</li>
-                                <li class="list-unstyled">Clock</li>
-                                <li class="list-unstyled">TableTop</li>
-                                <li class="list-unstyled">Lighting</li>
-                                <li class="list-unstyled">Cooking</li>
-                                <li class="list-unstyled">Toys</li>
-                            </ul>
-                        </div>
-                        <form class="search_form">
-                            <input type="search" id="desktop_search" placeholder="Search for product" required>
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </form>
-                        <div class="search_suggestion">
-                            <b>Tranding Search</b>
-                            <ul>
-                                <li class="list-unstyled"><a href="#">Accessories</a></li>
-                                <li class="list-unstyled"><a href="#">Furniture</a></li>
-                                <li class="list-unstyled"><a href="#">Chair</a></li>
-                                <li class="list-unstyled"><a href="#">Cooking</a></li>
-                                <li class="list-unstyled"><a href="#">Lighting</a></li>
-                                <li class="list-unstyled"><a href="#">Sofas</a></li>
-                            </ul>
-
-                            <div class="interested_product_container">
-                                <div
-                                    class="interested_product_header d-flex align-items-center justify-content-between ">
-                                    <b>you may be interested in</b>
-                                    <div class="slider_navs d-flex align-items-center gap-3">
-                                        <div class="swiper-button-prev swiper-button-prev2"></div>
-                                        <div class="swiper-button-next swiper-button-next2"></div>
-                                    </div>
-                                </div>
-                                <div class="interested_product_slider">
-                                    <div class="swiper mySwiper2">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/t-shirt.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/mug-1.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/t-shirt.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/mug-1.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/t-shirt.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/mug-1.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/t-shirt.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="interested_product">
-                                                    <div class="i_product_img">
-                                                        <img class="img-fluid" src="img/mug-1.jpg"
-                                                            alt="interested product image">
-                                                    </div>
-                                                    <div class="i_product_info">
-                                                        <a href="#">Comfortable Chair</a>
-                                                        <button>Shop Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="logo">
-                        <a href="index.html" class="mb-0">El<span>Mart</span></a>
-                    </div>
-                    <div class="header_side_icons d-flex align-items-center">
-                        <ul class="ps-0 mb-0 d-flex align-items-center gap-3">
-                            <li class="list-unstyled">
-                                <a href="#" class="d-grid d-xl-none mobile_search_btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </li>
-                            <li class="list-unstyled">
-                                <a href="#">
-                                    <i class="fa-solid fa-rotate"></i>
-                                </a>
-                            </li>
-                            <li class="list-unstyled">
-                                <a href="#">
-                                    <i class="fa-regular fa-heart"></i>
-                                </a>
-                            </li>
-                            <li class="list-unstyled">
-                                <a href="#">
-                                    <i class="fa-solid fa-shuffle"></i>
-                                </a>
-                            </li>
-                            <li class="list-unstyled">
-                                <a href="#" class="user_btn"><i class="fa-regular fa-user"></i></a>
-                                <div class="user_dropdown">
-                                    <b>Welcome! Khayrul</b>
-                                    <ul>
-                                        <li class="list-unstyled">
-                                            <a href="#" class="d-flex align-items-center gap-3">
-                                                <span><i class="fa-solid fa-dollar-sign"></i></span>
-                                                <span>Balance: <b>$200</b></span>
-                                            </a>
-                                        </li>
-                                        <li class="list-unstyled">
-                                            <a href="#" class="d-flex align-items-center gap-3">
-                                                <span>
-                                                    <i class="fa-regular fa-circle-question"></i>
-                                                </span>
-                                                <span>Help Center</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-unstyled">
-                                            <a href="#" class="d-flex align-items-center gap-3">
-                                                <span>
-                                                    <i class="fa-solid fa-gear"></i>
-                                                </span>
-                                                <span>Settings</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-unstyled">
-                                            <a href="#" class="d-flex align-items-center gap-3">
-                                                <span>
-                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                                </span>
-                                                <span>Log out</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="list-unstyled">
-                                <a href="#" class="cart_icon">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom_header d-none d-xl-block">
-            <div class="container-fluid container-xl">
-                <div class="bottom_wrapper d-flex align-items-center justify-content-between">
-                    <div class="bottom_left d-flex align-items-center">
-                        <div class="category_container ">
-                            <div class="category_btn">
-                                <div class="close_category">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <span>Shop By Category</span>
-                            </div>
-                            <ul class="category_list">
-                                <li class="list-unstyled"><a href="#">Business Card</a></li>
-                                <li class="list-unstyled"><a href="#">Poster</a></li>
-                                <li class="list-unstyled"><a href="#">Product</a></li>
-                                <li class="list-unstyled"><a href="#">T-shirt</a></li>
-                                <li class="list-unstyled"><a href="#">Cap</a></li>
-                                <li class="list-unstyled"><a href="#">Books</a></li>
-                                <li class="list-unstyled"><a href="#">Pen</a></li>
-                                <li class="list-unstyled"><a href="#">Documents</a></li>
-                                <li class="list-unstyled"><a href="#">Mugs</a></li>
-                                <li class="list-unstyled"><a href="#">Football</a></li>
-                            </ul>
-                        </div>
+                    <!--start of main menu-->
+                    <div class="d-none d-xl-flex align-items-center gap-3">
+                        <button class="bottom_header_btn">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
                         <ul class="main_menu align-items-center gap-4 mb-0 ps-0">
                             <li class="list-unstyled">
                                 <a href="index.html">Home
@@ -923,7 +1264,7 @@
                                     <a href="#" class="single_mm">
                                         <img class="img-fluid" src="img/mug-1.jpg" alt="product image">
                                         <div class="mm_info">
-                                        
+
                                             <button class="d-flex align-items-center ">
                                                 <span>Shop Now</span>
                                                 <span>
@@ -1073,6 +1414,579 @@
                             </li>
                             <li class="list-unstyled"><a href="#">Blog</a></li>
                         </ul>
+                        <!--edn of main menu-->
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class="mb-0">El<span>Print</span></a>
+                    </div>
+                    <div class="header_side_icons d-flex align-items-center">
+                        <ul class="ps-0 mb-0 d-flex align-items-center gap-3">
+                            <li class="list-unstyled">
+                                <a href="#" class="d-grid d-xl-none mobile_search_btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="user_btn"><i class="fa-regular fa-user"></i></a>
+                                <div class="user_dropdown">
+                                    <b>Welcome! Khayrul</b>
+                                    <ul>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                <span>Balance: <b>$200</b></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-regular fa-circle-question"></i>
+                                                </span>
+                                                <span>Help Center</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <a href="#" class="d-flex align-items-center gap-3">
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </span>
+                                                <span>Log out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#" class="cart_icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="container-fluid container-xl">
+                <div class="bottom_wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom_left d-flex align-items-center">
+                        <div class="category_container ">
+                            <div class="category_btn">
+                                <div class="close_category">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span>Shop By Category</span>
+                            </div>
+                            <ul class="category_list">
+                                <li class="list-unstyled">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        <span>
+                                            <i class="fa-regular fa-address-card me-2"></i>
+                                            Business Cards</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <div class="category_side_dropdown">
+                                        <div class="single_cs_dropdown">
+                                            <b>Mockup Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Custom Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Print Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown scs_img">
+                                            <img src="img/tshirt-2aa.png" alt="product image">
+                                            <div class="cs_info">
+                                                <span>save up to <span>50% off</span></span>
+                                                <h2>T-Shirt Mockup Design</h2>
+                                                <a href="#">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        <span><i class="fa-solid fa-signs-post me-2"></i> Posters</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <div class="category_side_dropdown">
+                                        <div class="single_cs_dropdown">
+                                            <b>Mockup Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Custom Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Print Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown scs_img">
+                                            <img src="img/mug-1.png" alt="product image">
+                                            <div class="cs_info">
+                                                <span>save up to <span>50% off</span></span>
+                                                <h2>Mug Cover Design</h2>
+                                                <a href="#">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-sheet-plastic me-2"></i>
+                                            Product</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <div class="category_side_dropdown">
+                                        <div class="single_cs_dropdown">
+                                            <b>Mockup Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Custom Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Print Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown scs_img">
+                                            <img src="img/tshirt-4.png" alt="product image">
+                                            <div class="cs_info">
+                                                <span>save up to <span>50% off</span></span>
+                                                <h2>Best Product Design</h2>
+                                                <a href="#">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-shirt me-2"></i>
+                                            T-Shirt</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <div class="category_side_dropdown">
+                                        <div class="single_cs_dropdown">
+                                            <b>Mockup Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Custom Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Print Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown scs_img">
+                                            <img src="img/tshirt-5.png" alt="product image">
+                                            <div class="cs_info">
+                                                <span>save up to <span>50% off</span></span>
+                                                <h2>Quality Brand Design</h2>
+                                                <a href="#">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        <span>
+                                            <i class="fa-solid fa-graduation-cap me-2"></i>
+                                            Cap</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <div class="category_side_dropdown">
+                                        <div class="single_cs_dropdown">
+                                            <b>Mockup Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Design Layer -01</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -02</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -03</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -04</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -05</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -06</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -07</a></li>
+                                                <li class="list-unstyled"><a href="#">Design Layer -08</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Custom Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown">
+                                            <b>Print Design</b>
+                                            <ul>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Offset printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Reactive printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Transfer printing</a></li>
+                                                <li class="list-unstyled"><a href="#">
+                                                        Pigment printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Screen printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Digital printing</a></li>
+                                                <li class="list-unstyled"><a href="#">Dye sublimation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single_cs_dropdown scs_img">
+                                            <img src="img/cap.png" alt="product image">
+                                            <div class="cs_info">
+                                                <span>save up to <span>50% off</span></span>
+                                                <h2>Cap Mockup Design</h2>
+                                                <a href="#">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">
+                                        <span> <i class="fa-solid fa-book me-2"></i>
+                                            Books</span>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">
+                                        <span> <i class="fa-solid fa-pen-clip me-2"></i>
+                                            Pen</span>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">
+                                        <span> <i class="fa-solid fa-file-lines me-2"></i>
+                                            Documents</span>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">
+                                        <span> <i class="fa-solid fa-beer-mug-empty me-2"></i>
+                                            Mugs</span>
+                                    </a>
+                                </li>
+                                <li class="list-unstyled">
+                                    <a href="#">
+                                        <span> <i class="fa-regular fa-futbol me-2"></i>
+                                            Football</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--start of desktop search bar-->
+
+                        <div class="desktop_searchbar d-none d-xl-flex align-items-center ">
+                            <div class="select_category">
+                                <div class="category_name d-flex align-items-center justify-content-between ">
+                                    <span class="selected_category">All Category</span>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                                <ul class="category_dropdown">
+                                    <li class="list-unstyled">All Category</li>
+                                    <li class="list-unstyled">Accessories</li>
+                                    <li class="list-unstyled">Clock</li>
+                                    <li class="list-unstyled">TableTop</li>
+                                    <li class="list-unstyled">Lighting</li>
+                                    <li class="list-unstyled">Cooking</li>
+                                    <li class="list-unstyled">Toys</li>
+                                </ul>
+                            </div>
+                            <form class="search_form">
+                                <input type="search" id="desktop_search" placeholder="Search for product" required>
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <div class="search_suggestion">
+                                <b>Tranding Search</b>
+                                <ul>
+                                    <li class="list-unstyled"><a href="#">Accessories</a></li>
+                                    <li class="list-unstyled"><a href="#">Furniture</a></li>
+                                    <li class="list-unstyled"><a href="#">Chair</a></li>
+                                    <li class="list-unstyled"><a href="#">Cooking</a></li>
+                                    <li class="list-unstyled"><a href="#">Lighting</a></li>
+                                    <li class="list-unstyled"><a href="#">Sofas</a></li>
+                                </ul>
+                                <div class="interested_product_container">
+                                    <div
+                                        class="interested_product_header d-flex align-items-center justify-content-between ">
+                                        <b>you may be interested in</b>
+                                        <div class="slider_navs d-flex align-items-center gap-3">
+                                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                                            <div class="swiper-button-next swiper-button-next2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="interested_product_slider">
+                                        <div class="swiper mySwiper2">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/t-shirt.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/mug-1.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/t-shirt.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/mug-1.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/t-shirt.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/mug-1.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/t-shirt.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="interested_product">
+                                                        <div class="i_product_img">
+                                                            <img class="img-fluid" src="img/mug-1.jpg"
+                                                                alt="interested product image">
+                                                        </div>
+                                                        <div class="i_product_info">
+                                                            <a href="#">Comfortable Chair</a>
+                                                            <button>Shop Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop search bar-->
                     </div>
                     <div class="bottom_right d-flex align-items-center gap-3">
                         <div class="single_option_link  align-items-center gap-2">

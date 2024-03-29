@@ -46,6 +46,40 @@ const intro_preloader_handler = () => {
 window.addEventListener("load", intro_preloader_handler)
 
 
+//bottom header toggle
+$(".bottom_header_btn").on("click", () => {
+    $(".bottom_header").slideToggle();
+    $(".bottom_header_btn").toggleClass("hidden_area");
+})
+
+// accordian script
+$(".accordion-content").css("display", "none");
+
+$(".accordion-title").click(function () {
+    $(".accordion-title").not(this).removeClass("open");
+    $(".accordion-title").not(this).next().slideUp(300);
+    $(this).toggleClass("open");
+    $(this).next().slideToggle(300);
+});
+
+
+//side menu script
+$(".mobile_menu_close").on("click", () => {
+    $(".mobile_side_menu").addClass("hide_menu")
+    $(".mobile_side_menu").removeClass("show_menu")
+    $(".moblie_menu_wrapper").addClass("hide_wrapper")
+    $(".moblie_menu_wrapper").removeClass("show_wrapper")
+ 
+})
+$(".mobile_menu_btn").on("click", () => {
+    $(".mobile_side_menu").addClass("show_menu")
+    $(".mobile_side_menu").removeClass("hide_menu")
+    $(".moblie_menu_wrapper").addClass("show_wrapper")
+    $(".moblie_menu_wrapper").removeClass("hide_wrapper")
+})
+
+
+
 //user popup function
 
 const user_popup_close = document.querySelector(".user_popu_close");
