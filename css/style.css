@@ -2428,18 +2428,29 @@ button.mobile_menu_btn svg {
 
 button.bottom_header_btn {
 
-    height: 35px;
-    width: 35px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background: var(--primary-light);
-    color: black;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    top: 70px;
-    overflow: hidden;
-    z-index: 1;
+height: 35px;
+
+width: 35px;
+
+border: 1px solid transparent;
+
+border-radius: 50%;
+
+background: var(--accent-color);
+
+color: var(--text-color);
+
+position: absolute;
+
+left: 50%;
+
+transform: translate(-50%, 0px);
+
+top: 70px;
+
+overflow: hidden;
+
+z-index: 1;
 }
 
 .category_container .category_list li {
