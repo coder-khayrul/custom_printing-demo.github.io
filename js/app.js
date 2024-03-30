@@ -371,6 +371,19 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+var swiper = new Swiper(".mySwiper3", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+    }
+});
 
 var swiper4 = new Swiper(".mySwiper2", {
     loop: true,
