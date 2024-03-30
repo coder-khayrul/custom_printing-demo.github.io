@@ -49,7 +49,7 @@ window.addEventListener("load", intro_preloader_handler)
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
     $(".bottom_header").slideToggle();
-    $(".bottom_header_btn").toggleClass("hidden_area");
+    $(".bottom_header_btn svg").toggleClass("hidden_area");
 })
 
 // accordian script
