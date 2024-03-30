@@ -806,7 +806,7 @@ ul.category_dropdown li:hover {
 .side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar {
     position: relative;
     height: 5px;
-    background: var(--primary-color);
+    background: var(--primary-light);
     border-radius: 50px;
     position: relative;
 }
@@ -910,7 +910,7 @@ ul.category_dropdown li:hover {
     transition: .6s;
 }
 
-.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar::after {
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .fill_area::after {
     content: " ";
     background-image: linear-gradient(135deg, #fff3 0 25%, #fff0 25% 50%, #fff3 50% 75%, #fff0 75% 100%);
     position: absolute;
@@ -3103,6 +3103,61 @@ button.bottom_header_btn {
               
     }
   }
+  .side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .fill_area {
+    width: 80%;
+    background: var(--primary-color);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar::after {
+    content: " ";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    background: white;
+    left: 33%;
+}
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_1{
+    position: absolute;
+    left: 31%;
+    top: -25px;
+    color: #F9B900;
+}
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_2{
+    position: absolute;
+    left: 64%;
+    top: -25px;
+    color: #F9B900;
+}
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar::before {
+    content: " ";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    background: white;
+    left: 66%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*header style end*/
 
 
