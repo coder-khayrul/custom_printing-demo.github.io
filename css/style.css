@@ -3292,7 +3292,7 @@ section.hero_section {
     position: absolute;
     right: -90px;
     width: 770px;
-    top: 50%;
+    top: 45%;
     transform: translate(0, -50%);
     z-index: -1;
 }
@@ -3476,7 +3476,11 @@ section.hero_section {
     padding: 10px;
     border-radius: 5px;
 }
-
+.bottom_mini_popup .bottom_mini_wrapper .bp_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .bottom_mini_popup .bottom_mini_wrapper .bp_info .info_left a {
     display: block;
     font-size: 18px;
