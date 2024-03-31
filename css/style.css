@@ -3162,12 +3162,14 @@ button.bottom_header_btn {
 
 .mySwiper3 .swiper-wrapper {
     padding: 30px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .hero_wrapper {
     display: flex;
     align-items: center;
-    padding: 40px 0px;
+    padding: 45px 0px;
 }
 
 
@@ -3222,7 +3224,7 @@ button.bottom_header_btn {
 }
 
 .single_hero_slide {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     position: relative;
@@ -3256,6 +3258,9 @@ button.bottom_header_btn {
 
 section.hero_section {
     background: var(--primary-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .swiper-button-next3,
@@ -3829,14 +3834,17 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-    .single_hero_slide {
-        min-height: 100vh;
-    }
+
     .single_hero_slide .bg_svg1 {
-        width: 473px;
+        width: 540px;
         transform: translate(-50%, -50%);
-        left: 35%;
-        top: 32%;
+        left: 50%;
+        top: 15%;
+    }
+    .single_hero_slide .hero_img, .hero_imgs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 }
