@@ -15,18 +15,18 @@ preloader_close.addEventListener("click", () => {
 function showElementsWithDelay() {
     let index = 0;
     const interval = setInterval(() => {
-   
+
         single_elements[index].style.display = "flex";
-   
+
         if (index > 0) {
             single_elements[index - 1].style.display = "none";
         }
         index++;
-      
+
         if (index >= single_elements.length) {
             clearInterval(interval);
         }
-    }, 1000); 
+    }, 1000);
 
 
     setTimeout(() => {
@@ -41,9 +41,22 @@ const intro_preloader_handler = () => {
     intro_preloader.classList.add("show");
     setTimeout(() => {
         intro_preloader.classList.remove("show");
+
     }, 15000);
 }
 window.addEventListener("load", intro_preloader_handler)
+
+//bottom product mini popup hanlder
+const bp_close_btn = document.querySelector(".bp_close");
+const bp_popup = document.querySelector(".bottom_mini_popup");
+
+setTimeout(() => {
+    bp_popup.classList.add("show")
+}, 20000);
+
+bp_close_btn.addEventListener("click", () => {
+    bp_popup.classList.remove("show");
+})
 
 
 //bottom header toggle
@@ -69,7 +82,7 @@ $(".mobile_menu_close").on("click", () => {
     $(".mobile_side_menu").removeClass("show_menu")
     $(".moblie_menu_wrapper").addClass("hide_wrapper")
     $(".moblie_menu_wrapper").removeClass("show_wrapper")
- 
+
 })
 $(".mobile_menu_btn").on("click", () => {
     $(".mobile_side_menu").addClass("show_menu")
@@ -81,6 +94,22 @@ $(".mobile_menu_btn").on("click", () => {
 
 
 //user popup function
+
+const video_popup_close = document.querySelector(".video_popup_close");
+const video_popup_open = document.querySelector(".video_play_btn");
+const video_popup_area = document.querySelector(".hero_video_popup ");
+const video_popup_main = document.querySelector(".hero_video_wrapper ");
+
+video_popup_open.addEventListener("click", () => {
+    video_popup_main.style.animation = "slide_right 1s ease-in forwards"
+    video_popup_area.style.animation = "slide_right2 1s ease-in forwards"
+})
+
+video_popup_close.addEventListener("click", () => {
+    video_popup_main.style.animation = "slide_right3 1s ease-in  forwards"
+    video_popup_area.style.animation = "slide_out 1s ease-in  forwards"
+
+})
 
 const user_popup_close = document.querySelector(".user_popu_close");
 const user_popup_open = document.querySelector(".user_btn");
@@ -374,7 +403,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper3", {
     effect: 'fade',
     fadeEffect: {
-      crossFade: true
+        crossFade: true
     },
     spaceBetween: 20,
     slidesPerView: 1,
