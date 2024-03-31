@@ -3591,6 +3591,10 @@ section.hero_section {
     width: calc(100% - 20px);
 }
 
+footer {
+    margin-top: 100px;
+}
+
 
 
 
@@ -3821,6 +3825,12 @@ section.hero_section {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 40px;
         justify-items: self-start;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .single_hero_slide {
+        min-height: 100vh;
     }
 }
 
