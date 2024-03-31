@@ -3595,12 +3595,6 @@ section.hero_section {
 footer {
     margin-top: 100px;
 }
-.single_hero_slide .bg_svg1 {
-    width: 473px;
-    transform: translate(-50%, -50%);
-    left: 35%;
-    top: 32%;
-}
 
 
 
@@ -3838,6 +3832,13 @@ footer {
     .single_hero_slide {
         min-height: 100vh;
     }
+    .single_hero_slide .bg_svg1 {
+        width: 473px;
+        transform: translate(-50%, -50%);
+        left: 35%;
+        top: 32%;
+    }
+    
 }
 
 @media only screen and (max-width: 667px) {
