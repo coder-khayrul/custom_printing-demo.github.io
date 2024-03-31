@@ -3527,6 +3527,7 @@ section.hero_section {
     border-radius: 5px;
     font-size: 14px;
     padding: 0px 10px;
+    outline: none;
 }
 
 .bottom_mini_popup .bottom_mini_wrapper .info_middle .info_input > label {
