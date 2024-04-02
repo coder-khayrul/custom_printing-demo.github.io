@@ -49,15 +49,31 @@ window.addEventListener("load", intro_preloader_handler)
 //bottom product mini popup hanlder
 const bp_close_btn = document.querySelector(".bp_close");
 const bp_popup = document.querySelector(".bottom_mini_popup");
+const notification_msg = document.querySelector(".notification");
+const notification_msg_close = document.querySelector(".notification_close")
 
 setTimeout(() => {
     bp_popup.classList.add("show")
+
 }, 20000);
 
 bp_close_btn.addEventListener("click", () => {
     bp_popup.classList.remove("show");
+  
+})
+setTimeout(() => {
+    notification_msg.classList.add("show")
+}, 25000);
+
+notification_msg_close.addEventListener("click", () => {
+    notification_msg.classList.remove("show");
 })
 
+// offer circle text handler 
+const cirlce_text = document.querySelector(".offer_text");
+    cirlce_text.innerHTML = cirlce_text.textContent.split("").map((char, i) => 
+        `<span style="rotate: ${i *15}deg">${char}</span>`
+    ).join("")
 
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
@@ -91,9 +107,44 @@ $(".mobile_menu_btn").on("click", () => {
     $(".moblie_menu_wrapper").removeClass("hide_wrapper")
 })
 
+//newsleter script
+const newsletter_popup = document.querySelector(".newsletter_popup");
+const newsletter_close_btn = document.querySelector(".newsletter_popup_close");
+const newsletter_wrapper = document.querySelector(".newsletter_wrapper");
+
+setTimeout(() => {
+    newsletter_wrapper.style.animation = "slide_right 1s ease-in forwards"
+    newsletter_popup.style.animation = "slide_right2 1s ease-in forwards"
+
+}, 30000);
+
+newsletter_close_btn.addEventListener("click", () => {
+    newsletter_wrapper.style.animation = "slide_right3 1s ease-in  forwards"
+    newsletter_popup.style.animation = "slide_out 1s ease-in  forwards"
+  
+})
+
+const product_popup = document.querySelector(".top_pick_popup");
+const product_popup_wrapper = document.querySelector(".top_pick_wrapper");
+const product_popup_close = document.querySelector(".popup_close");
 
 
-//user popup function
+
+setTimeout(() => {
+    product_popup_wrapper.style.animation = "slide_right 1s ease-in forwards"
+    product_popup.style.animation = "slide_right2 1s ease-in forwards"
+
+}, 35000);
+
+product_popup_close.addEventListener("click", () => {
+    newsletter_wrapper.style.animation = "slide_right3 1s ease-in  forwards"
+    product_popup.style.animation = "slide_out 1s ease-in  forwards"
+  
+})
+
+
+
+//video popup hanlder
 
 const video_popup_close = document.querySelector(".video_popup_close");
 const video_popup_open = document.querySelector(".video_play_btn");
@@ -110,7 +161,7 @@ video_popup_close.addEventListener("click", () => {
     video_popup_area.style.animation = "slide_out 1s ease-in  forwards"
 
 })
-
+//user popup function
 const user_popup_close = document.querySelector(".user_popu_close");
 const user_popup_open = document.querySelector(".user_btn");
 const user_popup_area = document.querySelector(".user_popup ");
@@ -388,7 +439,18 @@ $(".delete_card").on("click", () => {
     $(".mini_popup").fadeToggle();
 });
 
+// Parallax footer area
+const parallax_footer = document.querySelector(".parallax_footer_area");
+const upper_area = document.querySelector(".extra_service");
 
+function updateMargin() {
+    let footer_height = parallax_footer.offsetHeight;
+    upper_area.style.marginBottom = `${footer_height}px`; 
+}
+
+// Call updateMargin initially and on window resize
+updateMargin();
+window.addEventListener("resize", updateMargin);
 //swiper code
 
 var swiper = new Swiper(".mySwiper", {
@@ -411,6 +473,29 @@ var swiper = new Swiper(".mySwiper3", {
     navigation: {
         nextEl: ".swiper-button-next3",
         prevEl: ".swiper-button-prev3",
+    }
+});
+var swiper4 = new Swiper(".mySwiper4", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
     }
 });
 
