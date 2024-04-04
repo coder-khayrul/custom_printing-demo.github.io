@@ -498,8 +498,34 @@ var swiper4 = new Swiper(".mySwiper4", {
         }
     }
 });
-
-var swiper4 = new Swiper(".mySwiper2", {
+var swiper5 = new Swiper(".mySwiper5", {
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next5",
+        prevEl: ".swiper-button-prev5",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1400: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        }
+    }
+});
+var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
@@ -519,3 +545,34 @@ var swiper4 = new Swiper(".mySwiper2", {
     }
 });
 
+var swiper6 = new Swiper(".mySwiper6", {
+    loop: true,
+    spaceBetween: 5,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: ".swiper-button-next6",
+        prevEl: ".swiper-button-prev6",
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+        },
+        600: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 7,
+            spaceBetween: 20,
+        }
+    }
+});
