@@ -736,3 +736,32 @@ var swiper10 = new Swiper(".mySwiper10", {
         },
     }
 });
+
+var swiper11 = new Swiper(".mySwiper11", {
+    autoplay: true,
+    loop: true,
+    spaceBetween: 5,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: ".swiper-button-next11",
+        prevEl: ".swiper-button-prev11",
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+        },
+        600: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        }
+    }
+});
