@@ -576,3 +576,72 @@ var swiper6 = new Swiper(".mySwiper6", {
         }
     }
 });
+var swiper7 = new Swiper(".mySwiper7", {
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next7",
+        prevEl: ".swiper-button-prev7",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    }
+});
+var swiper8 = new Swiper(".mySwiper8", {
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next8",
+        prevEl: ".swiper-button-prev8",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    }
+});
+var swiper9 = new Swiper(".mySwiper9", {
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next9",
+        prevEl: ".swiper-button-prev9",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    }
+});

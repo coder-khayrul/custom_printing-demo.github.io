@@ -4329,7 +4329,13 @@ section.f_product_section {
 
 
 .swiper-button-next5,
-.swiper-button-prev5 {
+.swiper-button-prev5,
+.swiper-button-next7,
+.swiper-button-prev7,
+.swiper-button-next8,
+.swiper-button-prev8,
+.swiper-button-next9,
+.swiper-button-prev9 {
     width: 35px;
     height: 50px;
     background: var(--primary-color);
@@ -4342,23 +4348,32 @@ section.f_product_section {
     transform: translate(0, -50%) !important;
 }
 
-.swiper-button-next5 {
+.swiper-button-next5,.swiper-button-next7,.swiper-button-next8,.swiper-button-next9  {
     right: 0;
     transform: translate(40px, -50%) !important;
 }
 
-.swiper-button-prev5 {
+.swiper-button-prev5,.swiper-button-prev7 ,.swiper-button-prev8,.swiper-button-prev9{
     left: 0;
     transform: translate(-40px, -50%) !important;
 }
 
 .swiper-button-prev5::after,
-.swiper-button-next5::after {
+.swiper-button-next5::after ,
+.swiper-button-prev7::after,
+.swiper-button-next7::after,
+.swiper-button-prev8::after,
+.swiper-button-next8::after,
+.swiper-button-prev9::after,
+.swiper-button-next9::after{
     font-size: 25px;
     color: var(--text-color);
 }
 
-.mySwiper5:hover :where(.swiper-button-next5, .swiper-button-prev5) {
+.mySwiper5:hover :where(.swiper-button-next5, .swiper-button-prev5),
+.mySwiper7:hover :where(.swiper-button-next7, .swiper-button-prev7),
+.mySwiper8:hover :where(.swiper-button-next8, .swiper-button-prev8),
+.mySwiper9:hover :where(.swiper-button-next9, .swiper-button-prev9)  {
     transform: translate(0px, -50%) !important;
     transition: .6s;
 }
