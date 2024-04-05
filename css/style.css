@@ -4352,7 +4352,7 @@ section.f_product_section {
     transform: translate(0, -50%) !important;
 }
 
-.swiper-button-next5,.swiper-button-next7,.swiper-button-next8,.swiper-button-next9,.swiper-button-next10 .swiper-button-next11{
+.swiper-button-next5,.swiper-button-next7,.swiper-button-next8,.swiper-button-next9,.swiper-button-next10, .swiper-button-next11{
     right: 0;
     transform: translate(40px, -50%) !important;
 }
@@ -4810,6 +4810,7 @@ section.instagram_feed .feed_slider .single_insta_feed > img{
 section.instagram_feed .feed_slider .single_insta_feed > a {
     display: grid;
     place-items: center;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     background: #00000070;

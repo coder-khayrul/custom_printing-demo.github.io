@@ -738,8 +738,8 @@ var swiper10 = new Swiper(".mySwiper10", {
 });
 
 var swiper11 = new Swiper(".mySwiper11", {
-    autoplay: true,
-    loop: true,
+    // autoplay: true,
+    // loop: true,
     spaceBetween: 5,
     slidesPerView: 2,
     navigation: {
