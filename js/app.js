@@ -383,6 +383,69 @@ toggle_button.addEventListener("click", () => {
 })
 
 
+
+
+//timer handling script
+//cout down for offer
+let dayValue = document.querySelectorAll(".day");
+let hrsValue = document.querySelectorAll(".hrs");
+let minValue = document.querySelectorAll(".min");
+let secValue = document.querySelectorAll(".sec");
+
+// Set the date you're counting down to (replace with your desired date)
+const countdownDate = new Date("May 10, 2024 04:04:40").getTime();
+
+// Update the countdown every 1 second
+const countdownInterval = setInterval(function () {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the remaining time
+    const timeRemaining = countdownDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    // Update the HTML elements with the calculated values
+    dayValue.forEach(box => {
+        box.textContent = formatTime(days);
+    })
+    hrsValue.forEach(box => {
+        box.textContent = formatTime(hours);
+    })
+    minValue.forEach(box => {
+        box.textContent = formatTime(minutes)
+    })
+    secValue.forEach(box => {
+        box.textContent = formatTime(seconds);
+    })
+
+
+    // If the countdown is over, display a message or perform any action
+    if (timeRemaining < 0) {
+        clearInterval(countdownInterval);
+        // You can add a message or perform an action when the countdown is over
+        console
+    }
+}, 1000);
+
+// Function to format time values with leading zeros
+function formatTime(value) {
+    return value < 10 ? "0" + value : value;
+}
+
+
+
+
+
+
+
+
+
+
 //side cart hanlder
 $(".cart_icon").on("click", () => {
     $(".side_cart_wrapper").slideDown();

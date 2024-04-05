@@ -4091,7 +4091,7 @@ section.f_product_section {
 
  .single_f_product .fp_img {
     position: relative;
-    height: 200px;
+    height: 230px;
     background: var(--secondary-color);
     overflow: hidden;
 }
@@ -4530,6 +4530,56 @@ section.best_offers_section .best_offer_tabs > ul > li> a.active {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: .6s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.timer .single_timer_box {
+    width: 40px;
+    padding: 2px;
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-light);
+}
+
+.timer .single_timer_box > span {
+    font-size: 14px;
+}
+
+.timer .single_timer_box > b {
+    font-size: 12px;
+}
+
+.single_f_product:hover .timer {
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
