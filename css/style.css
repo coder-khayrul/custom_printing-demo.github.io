@@ -5236,6 +5236,9 @@ section.parallax_footer_area {
 }
 
 @media only screen and (max-width: 767px) {
+    .highlight_product{
+        margin: 0 30px;
+    }
     .single_bop_slider {
         grid-template-columns: 1fr 1fr ;
     }
