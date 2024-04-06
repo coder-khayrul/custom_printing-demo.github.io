@@ -514,6 +514,20 @@ function updateMargin() {
 // Call updateMargin initially and on window resize
 updateMargin();
 window.addEventListener("resize", updateMargin);
+
+//before after effect
+const container = document.querySelector(".effect_area");
+const slider_input = document.querySelector("#slider_range");
+
+slider_input.addEventListener("input", (e) => {
+    container.style.setProperty(`--position`, `${e.target.value}%`)
+})
+
+
+
+
+
+
 //swiper code
 
 var swiper = new Swiper(".mySwiper", {

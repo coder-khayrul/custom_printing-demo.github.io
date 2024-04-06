@@ -4834,10 +4834,119 @@ section.instagram_feed .feed_slider .single_insta_feed:hover > a {
     transition: .6s;
 }
 
+.before_after_section {
+    background: var(--secondary-color);
+    padding: 40px 0px;
+}
+
+.before_after_section .highlight_product {
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.before_after_section .highlight_product .hp_info {
+    padding: 15px;
+}
+
+.before_after_section .highlight_product .hp_info  a:not(.hp_deatils) {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--sub-text-color);
+    transition: .6s;
+}
+
+.before_after_section .highlight_product .hp_info a:not(.hp_deatils):hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.before_after_section .highlight_product .hp_info .hp_deatils {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 500;
+    transition: .6s;
+}
+
+.before_after_section .highlight_product .hp_info .hp_deatils:hover {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    transition: .6s;
+    color: var(--primary-color);
+}
 
 
+.effect_area {
+    position: relative;
+    --position: 50%;
+}
 
+.before_after_section .effect_area .img_container {
+    position: relative;
+}
 
+.before_after_section .effect_area .img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.before_after_section .effect_area .img_container img:first-child {
+    position: absolute;
+    width: var(--position);
+    inset: 0;
+
+}
+
+.before_after_section .effect_area input#slider_range {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.before_after_section .effect_area .slider_line {
+    height: 100%;
+    position: absolute;
+    width: 3px;
+    background: var(--primary-color);
+    inset: 0;
+    left: var(--position);
+    transform: translate(-50%, 0px);
+}
+.before_after_section .effect_area .slider_line:focus-visible ~ .slider_icon {
+    outline: 2px solid var(--sub-text-color);
+    outline-offset: 3px;
+}
+.before_after_section .effect_area .slider_icon {
+    background: var(--primary-light);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: var(--position);
+    top: 50%;
+    border-radius: 50%;
+    color: var(--sub-text-color);
+}
+.hp_img {
+    height: 300px;
+}
+
+.hp_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
