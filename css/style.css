@@ -5158,6 +5158,7 @@ section.instagram_feed .feed_slider .single_insta_feed:hover > a {
 .support_section {
     padding: 20px 0;
     background: var(--primary-light);
+    margin-top: 30px;
 }
 
 .support_section .support_section_wrapper {
