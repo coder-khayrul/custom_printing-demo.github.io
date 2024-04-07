@@ -4971,7 +4971,10 @@ section.instagram_feed .feed_slider .single_insta_feed:hover > a {
     padding: 40px 0;
     border-bottom: 1px solid var(--border-color);
 }
-
+footer {
+    padding-top: 30px;
+    background: var(--secondary-color);
+}
 .copy_right_wrapper p {
     font-size: 14px;
     font-weight: 500;
@@ -5158,7 +5161,6 @@ section.instagram_feed .feed_slider .single_insta_feed:hover > a {
 .support_section {
     padding: 20px 0;
     background: var(--primary-light);
-    margin-top: 30px;
 }
 
 .support_section .support_section_wrapper {
