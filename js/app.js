@@ -46,6 +46,27 @@ const intro_preloader_handler = () => {
 }
 window.addEventListener("load", intro_preloader_handler)
 
+//quick view popup
+const quick_view_area = document.querySelector(".quick_view_popup")
+const quick_view_btn = document.querySelector(".close_quick_view")
+
+const quick_view_wrapper = document.querySelector(".quick_view_wrapper")
+const quick_view_open = document.querySelectorAll(".quick_view");
+quick_view_open.forEach(btn => {
+    btn.addEventListener("click", () => {
+        quick_view_wrapper.style.animation = "slide_right 1s ease-in forwards"
+        quick_view_area.style.animation = "slide_right2 1s ease-in forwards"
+    })
+})
+quick_view_btn.addEventListener("click", () => {
+    quick_view_wrapper.style.animation = "slide_right3 1s ease-in forwards"
+    quick_view_area.style.animation = "slide_out 1s ease-in forwards"
+
+})
+
+
+
+
 //bottom product mini popup hanlder
 const bp_close_btn = document.querySelector(".bp_close");
 const bp_popup = document.querySelector(".bottom_mini_popup");
@@ -779,3 +800,39 @@ var swiper11 = new Swiper(".mySwiper11", {
         }
     }
 });
+
+var swiper12 = new Swiper(".mySwiper12", {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        }
+    }
+});
+var swiper13 = new Swiper(".mySwiper13", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next13",
+        prevEl: ".swiper-button-prev13",
+    },
+    thumbs: {
+        swiper: swiper12,
+    },
+});
+
