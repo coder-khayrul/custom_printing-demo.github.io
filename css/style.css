@@ -4999,14 +4999,18 @@ section.blog_section .section_title {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: var(--primary-light);
-  color: var(--sub-text-color);
+  background-color: var(--accent-color);
+  color: var(--text-color);
   position: absolute;
   right: 5px;
   top: 5px;
   cursor: pointer;
+  transition: .6s;
 }
-
+.quick_view_popup .close_quick_view:hover svg {
+    rotate: 180deg;
+    transition: .6s;
+}
 .quick_view_popup .quick_view_wrapper {
   width: 845px;
   height: 570px;
@@ -5264,6 +5268,8 @@ section.blog_section .section_title {
   place-items: center;
   color: var(--text-color);
   border-radius: 5px;
+  transition: .6s;
+  border: 3px solid transparent;
 }
 
 .quick_view_wrapper .right_side .add_btn>a {
@@ -5341,7 +5347,12 @@ section.blog_section .section_title {
   color: var(--text-color);
   transition: .6s;
 }
-
+.product_option_area>a:hover {
+    background: var(--secondary-color);
+    transition: .6s;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
 
 
 
