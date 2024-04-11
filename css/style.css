@@ -34,8 +34,8 @@ a {
     position: fixed;
     background: black;
     color: white;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition: .6s;
     z-index: 99999;
 }
@@ -79,7 +79,9 @@ a {
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
-
+.intro_element:first-child{
+    display: flex;
+}
 .intro_element {
     display: none;
     margin-bottom: 0;

@@ -39,8 +39,10 @@ setTimeout(showElementsWithDelay, 0);
 const intro_preloader_handler = () => {
 
     intro_preloader.classList.add("show");
+    showElementsWithDelay();
     setTimeout(() => {
         intro_preloader.classList.remove("show");
+        intro_preloader.classList.add("hide")
 
     }, 15000);
 }
