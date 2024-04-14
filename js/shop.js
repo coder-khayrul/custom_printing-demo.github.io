@@ -25,7 +25,7 @@ category_items.forEach(item => {
 });
 
    // Get all anchor tags within the ul
-   var anchorTags = document.querySelectorAll('.hidden_dropdown li a');
+   var anchorTags = document.querySelectorAll('.hidden_dropdown a');
 
    // Loop through each anchor tag
    anchorTags.forEach(function(anchor) {
@@ -38,6 +38,56 @@ category_items.forEach(item => {
        });
    });
 
+
+
+   const size_items = document.querySelectorAll(".size_option a");
+
+   size_items.forEach(item => {
+    item.addEventListener("click", () => {
+        size_items.forEach(otherItem => {
+            otherItem.classList.remove("active");
+        })
+        item.classList.add("active");
+    })
+   })
+
+   //sticky header handler
+const header = document.querySelector("header");
+const toggleClass = "sticky_animation";
+const top_header = document.querySelector(".top_header")
+const offer_banner = document.querySelector(".offer_banner")
+const news_section = document.querySelector(".header_news")
+
+
+$(document).ready(() => {
+    $(window).on("scroll", () => {
+        if ($(window).scrollTop()) {
+            header.classList.add(toggleClass);
+            top_header.style.display = "none"
+            offer_banner.style.display = "none"
+            news_section.style.display = "none"
+        } else {
+            header.classList.remove(toggleClass);
+            top_header.style.display = "block"
+            offer_banner.style.display = "block"
+            news_section.style.display = "block"
+        }
+    })
+})
+
+
+//banner close
+document.addEventListener("DOMContentLoaded", () => {
+const aside_banner_close = document.querySelector("span.banner_close");
+const aside_banner_area = document.querySelector(".dismissible_banner");
+
+aside_banner_close.addEventListener("click", () => {
+    aside_banner_area.style.display = "none"
+    console.log("hello")
+    console.log(aside_banner_area)
+console.log(aside_banner_close)
+})
+})
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
     $(".bottom_header").slideToggle();
@@ -352,27 +402,27 @@ $(".delete_card").on("click", () => {
 });
 
 
-// //for side bar handling
-// const sideBar_close = document.querySelector(".aside_close");
-// const side_bar = document.querySelector("aside");
-// const product_container = document.querySelector(".shop_container");
-// const sideBar_show = document.querySelector(".sidebar_show");
+//for side bar handling
+const sideBar_close = document.querySelector(".aside_close");
+const side_bar = document.querySelector("aside");
+const product_container = document.querySelector(".shop_container");
+const sideBar_show = document.querySelector(".sidebar_show");
 
-// sideBar_close.addEventListener("click", () => {
-//     side_bar.style.display = "none";
-//     product_container.style.width = "100%";
-//     sideBar_show.style.display = "flex";
+sideBar_close.addEventListener("click", () => {
+    side_bar.style.display = "none";
+    product_container.style.width = "100%";
+    sideBar_show.style.display = "flex";
 
-// })
+})
 
-// window.addEventListener("resize", () => {
-//     if (window.matchMedia("(max-width: 991px)").matches) {
-//         side_bar.style.display = "none";
-//         product_container.style.width = "100%";
-//         sideBar_show.style.display = "flex";
-//     }
-// }
-// )
+window.addEventListener("resize", () => {
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        side_bar.style.display = "none";
+        product_container.style.width = "100%";
+        sideBar_show.style.display = "flex";
+    }
+}
+)
 
 
 
