@@ -5,7 +5,7 @@ const selected_item = document.querySelectorAll(".selected_option");
 selected_item.forEach(btn => {
     btn.addEventListener("click", () => {
         let dropdown_box = btn.nextElementSibling;
-    dropdown_box.classList.toggle("show")
+        dropdown_box.classList.toggle("show")
     })
 })
 
@@ -24,34 +24,34 @@ category_items.forEach(item => {
     });
 });
 
-   // Get all anchor tags within the ul
-   var anchorTags = document.querySelectorAll('.hidden_dropdown a');
+// Get all anchor tags within the ul
+var anchorTags = document.querySelectorAll('.hidden_dropdown a');
 
-   // Loop through each anchor tag
-   anchorTags.forEach(function(anchor) {
-       // Add a click event listener
-       anchor.addEventListener('click', function(event) {
-           // Prevent the default behavior of the anchor tag
-           event.preventDefault();
-           // Optionally, you can add your own custom behavior here
-           // For example, you can toggle a class or show additional content
-       });
-   });
+// Loop through each anchor tag
+anchorTags.forEach(function (anchor) {
+    // Add a click event listener
+    anchor.addEventListener('click', function (event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+        // Optionally, you can add your own custom behavior here
+        // For example, you can toggle a class or show additional content
+    });
+});
 
 
 
-   const size_items = document.querySelectorAll(".size_option a");
+const size_items = document.querySelectorAll(".size_option a");
 
-   size_items.forEach(item => {
+size_items.forEach(item => {
     item.addEventListener("click", () => {
         size_items.forEach(otherItem => {
             otherItem.classList.remove("active");
         })
         item.classList.add("active");
     })
-   })
+})
 
-   //sticky header handler
+//sticky header handler
 const header = document.querySelector("header");
 const toggleClass = "sticky_animation";
 const top_header = document.querySelector(".top_header")
@@ -131,15 +131,17 @@ function formatTime(value) {
 
 //banner close
 document.addEventListener("DOMContentLoaded", () => {
-const aside_banner_close = document.querySelector("span.banner_close");
-const aside_banner_area = document.querySelector(".dismissible_banner");
+    if (document.querySelector(".dismissible_banner")) {
+        const aside_banner_close = document.querySelector("span.banner_close");
+        const aside_banner_area = document.querySelector(".dismissible_banner");
 
-aside_banner_close.addEventListener("click", () => {
-    aside_banner_area.style.display = "none"
-    console.log("hello")
-    console.log(aside_banner_area)
-console.log(aside_banner_close)
-})
+        aside_banner_close.addEventListener("click", () => {
+            aside_banner_area.style.display = "none"
+            console.log("hello")
+            console.log(aside_banner_area)
+            console.log(aside_banner_close)
+        })
+    }
 })
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
@@ -164,7 +166,7 @@ $(".mobile_menu_close").on("click", () => {
     $(".mobile_side_menu").removeClass("show_menu")
     $(".moblie_menu_wrapper").addClass("hide_wrapper")
     $(".moblie_menu_wrapper").removeClass("show_wrapper")
- 
+
 })
 $(".mobile_menu_btn").on("click", () => {
     $(".mobile_side_menu").addClass("show_menu")
@@ -456,37 +458,38 @@ $(".delete_card").on("click", () => {
 
 
 //for side bar handling
-const sideBar_close = document.querySelector(".aside_close");
-const side_bar = document.querySelector("aside");
-const product_container = document.querySelector(".product_section");
-const sideBar_show = document.querySelector(".sidebar_show");
+if (document.querySelector(".aside_close") && document.querySelector("aside") && document.querySelector(".sidebar_show")) {
 
-sideBar_close.addEventListener("click", () => {
-    side_bar.style.display = "none";
-    product_container.style.width = "100%";
-    sideBar_show.style.display = "flex";
+    const sideBar_close = document.querySelector(".aside_close");
+    const side_bar = document.querySelector("aside");
+    const product_container = document.querySelector(".product_section");
+    const sideBar_show = document.querySelector(".sidebar_show");
 
-})
-
-window.addEventListener("resize", () => {
-    if (window.matchMedia("(max-width: 991px)").matches) {
+    sideBar_close.addEventListener("click", () => {
         side_bar.style.display = "none";
         product_container.style.width = "100%";
         sideBar_show.style.display = "flex";
+
+    })
+
+    window.addEventListener("resize", () => {
+        if (window.matchMedia("(max-width: 991px)").matches) {
+            side_bar.style.display = "none";
+            product_container.style.width = "100%";
+            sideBar_show.style.display = "flex";
+        }
     }
+    )
+
+    sideBar_show.addEventListener("click", () => {
+        side_bar.style.display = "block";
+        product_container.style.width = "calc(100% - 300px)";
+        sideBar_show.style.display = "none"
+    })
+
+
+
 }
-)
-
-
-
-
-sideBar_show.addEventListener("click", () => {
-    side_bar.style.display = "block";
-    product_container.style.width = "calc(100% - 300px)";
-    sideBar_show.style.display = "none"
-})
-
-
 
 //product view handler
 const grid_per3 = document.querySelector(".grid3_view")
@@ -525,7 +528,7 @@ grid_per4.addEventListener('click', () => {
     })
     product_infos.forEach(info => {
         info.style.width = "100%";
-        info.style.border="none"
+        info.style.border = "none"
         info.style.borderTop = "1px solid var(--sub-color)";
     })
 })
@@ -557,7 +560,7 @@ grid_per3.addEventListener('click', () => {
     })
     product_infos.forEach(info => {
         info.style.width = "100%";
-        info.style.border="none"
+        info.style.border = "none"
         info.style.borderTop = "1px solid var(--sub-color)";
     })
 })
@@ -590,7 +593,7 @@ grid_per2.addEventListener('click', () => {
     })
     product_infos.forEach(info => {
         info.style.width = "100%";
-        info.style.border="none"
+        info.style.border = "none"
         info.style.borderTop = "1px solid var(--sub-color)";
     })
 })
@@ -622,7 +625,7 @@ list_view.addEventListener('click', () => {
     })
     product_infos.forEach(info => {
         info.style.width = "60%"
-        info.style.border="none"
+        info.style.border = "none"
         info.style.borderLeft = "1px solid var(--sub-color)";
     })
 })
@@ -790,7 +793,7 @@ const upper_area = document.querySelector(".extra_service");
 
 function updateMargin() {
     let footer_height = parallax_footer.offsetHeight;
-    upper_area.style.marginBottom = `${footer_height}px`; 
+    upper_area.style.marginBottom = `${footer_height}px`;
 }
 
 // Call updateMargin initially and on window resize
@@ -859,7 +862,7 @@ var swiper6 = new Swiper(".mySwiperTC", {
             slidesPerView: 6,
             spaceBetween: 20,
         },
-        
+
     }
 });
 
@@ -884,7 +887,7 @@ var swiper7 = new Swiper(".mySwiper7", {
     pagination: {
         el: ".swiper-pagination7",
         clickable: true,
-      },
+    },
     breakpoints: {
         480: {
             slidesPerView: 2,
