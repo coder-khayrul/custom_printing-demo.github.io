@@ -2205,11 +2205,9 @@ ul.main_menu>li:hover>a+.mega_menu {
 ul.newList>li.added a {
     position: relative;
 }
-
 ul.mobile_newList>li.added a::after {
     transform: translate(90%, 0px);
 }
-
 ul.newList>li.added a::after {
     content: "ADDED";
     width: 48px;
