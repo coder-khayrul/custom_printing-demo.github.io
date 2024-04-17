@@ -346,6 +346,11 @@ function updateMargin() {
     upper_area.style.marginBottom = `${footer_height}px`; 
 }
 
+// Call updateMargin initially and on window resize
+updateMargin();
+window.addEventListener("resize", updateMargin);
+
+
 
 
 $(document).ready(function () {
@@ -447,35 +452,6 @@ $(".my-rating").starRating({
     disableAfterRate: false,
 });
 
-// fill uploader
-$('input[type="file"]').each(function () {
-
-    var $file = $(this),
-        $label = $file.next('label'),
-        $labelText = $label.find('span'),
-        labelDefault = $labelText.text();
-
-    $file.on('change', function (event) {
-        var fileName = $file.val().split('\\').pop(),
-            tmppath = URL.createObjectURL(event.target.files[0]);
-        if (fileName) {
-            $label
-                .addClass('file-ok')
-                .css('background-image', 'url(' + tmppath + ')');
-            $labelText.text(fileName);
-        } else {
-            $label.removeClass('file-ok');
-            $labelText.text(labelDefault);
-        }
-    });
-
-});
-
-
-
-
-
-
 
 
 //swiper code
@@ -549,3 +525,27 @@ var swiperBig = new Swiper(".mySwiperBig", {
     }
 }
 );
+
+var swiper4 = new Swiper(".mySwiperRp", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-nextRp",
+        prevEl: ".swiper-button-prevRp",
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1140: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+    }
+});
