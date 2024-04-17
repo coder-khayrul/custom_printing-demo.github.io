@@ -4119,11 +4119,25 @@ section.f_product_section {
 }
 
 .section_title>h2 {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 500;
     color: var(--sub-text-color);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    letter-spacing: 1px;
 }
-
+.section_title>h2::after {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 7px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+    border-radius: 50%;
+}
  .section_title>a {
     font-size: 15px;
     color: var(--primary-color);
