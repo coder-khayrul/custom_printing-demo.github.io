@@ -12,7 +12,7 @@
     --accent-color: #F54A5B;
 }
 
-body,html {
+body {
     overflow-x: hidden;
     overflow-y: auto;
 }

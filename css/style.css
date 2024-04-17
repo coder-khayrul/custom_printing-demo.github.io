@@ -13,7 +13,7 @@
     --border-color: #33333340;
 }
 
-body,html {
+body {
     overflow-x: hidden;
     overflow-y: auto;
 }
