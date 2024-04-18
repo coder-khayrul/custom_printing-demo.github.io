@@ -1,3 +1,23 @@
+//about section script
+const video_popup = document.querySelector(".video_popup");
+const video_popup_wrapper = document.querySelector(".video_wrapper");
+const video_close_btn = document.querySelector(".video_popup_close")
+const video_open_btn = document.querySelector(".video_popup_btn")
+
+
+video_open_btn.addEventListener("click", () => {
+    video_popup.style.visibility = "visible"
+    video_popup.style.opacity = "1"
+    video_popup_wrapper.style.animation = "slide_right2 1s ease-in forwards"
+})
+
+video_close_btn.addEventListener("click", () => {
+    video_popup.style.visibility = "hidden"
+    video_popup.style.opacity = "0"
+    video_popup_wrapper.style.animation = "slide_out 1s ease-in  forwards"
+})
+
+
 
 
 //bottom header toggle
@@ -326,7 +346,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-var swiper4 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
@@ -341,6 +361,30 @@ var swiper4 = new Swiper(".mySwiper2", {
         },
         767: {
             slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    }
+});
+
+var swiperTeam = new Swiper(".mySwiperTeam", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-nextTeam",
+        prevEl: ".swiper-button-prevTeam",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1140: {
+            slidesPerView: 4,
             spaceBetween: 20,
         }
     }
