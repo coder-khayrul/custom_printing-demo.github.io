@@ -389,3 +389,26 @@ var swiper4 = new Swiper(".mySwiper2", {
     }
 });
 
+var swiper4 = new Swiper(".mySwiperRp", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-nextRp",
+        prevEl: ".swiper-button-prevRp",
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1140: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+    }
+});
