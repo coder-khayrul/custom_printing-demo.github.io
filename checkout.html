@@ -13,7 +13,7 @@
 </head>
 
 <body>
- 
+
     <!-- mobile side menu-->
     <div class="mobile_side_menu">
         <div class="moblie_menu_bg"></div>
@@ -1420,7 +1420,7 @@
                                         <a href="#">Pages
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
-                                          <ul class="dropdown_menu">
+                                        <ul class="dropdown_menu">
                                             <li class="list-unstyled">
                                                 <a href="shop.html">Shop Page</a>
                                             </li>
@@ -2220,49 +2220,452 @@
         END OF HEADER
         =========================-->
     <main>
-     
-    </main> 
+        <!--==========================
+         START OF CHECKOUT SECTION
+        ===========================-->
+        <section class="checkbox_section">
+            <div class="container-fluid container-xl">
+                <div class="checkout_wrapper">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="checkout_right_side">
+                                <div class="express_checkout d-flex align-items-center gap-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-apple-pay"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-google-pay"></i>
+                                    </a>
+                                </div>
+                                <div class="divider">
+                                    <span>OR</span>
+                                </div>
+                                <form>
+                                    <div class="single_field">
+                                        <h4>Contact</h4>
+                                        <input type="email" id="co_email"
+                                            placeholder="Enter your email or mobile number">
+                                        <div class="checkbox_input d-flex align-items-center gap-3">
+                                            <input type="checkbox" id="co_checkbox">
+                                            <label for="co_checkbox">Email me with news and offers</label>
+                                        </div>
+                                    </div>
+                                    <div class="outer_field">
+                                        <h4>Delivery</h4>
+                                        <ul class="nav-tabs ps-0" id="myTab" role="tablist">
+                                            <li class="list-unstyled d-flex align-items-center justify-content-between active"
+                                                id="ship-tab" data-bs-toggle="tab" data-bs-target="#ship-tab-pane"
+                                                type="button" role="tab" aria-controls="home-tab-pane"
+                                                aria-selected="true">
+                                                <div class="check_box_option">
+                                                    <span class="custom_checkbox"></span>
+                                                    Ship
+                                                </div>
+                                                <span class="checkbox_icon">
+                                                    <i class="fa-solid fa-truck-arrow-right"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-unstyled d-flex align-items-center justify-content-between "
+                                                id="pickup-tab" data-bs-toggle="tab" data-bs-target="#pickup-tab-pane"
+                                                type="button" role="tab" aria-controls="pickup-tab-pane"
+                                                aria-selected="true">
+                                                <div class="check_box_option">
+                                                    <span class="custom_checkbox"></span>
+                                                    Pick Up
+                                                </div>
+                                                <span class="checkbox_icon">
+                                                    <i class="fa-solid fa-house-circle-check"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="ship-tab-pane" role="tabpanel"
+                                                tabindex="0">
+                                                <div class="single_field">
+                                                    <select id="country_list">
+                                                        <option value="1" selected disabled>Select Country</option>
+                                                        <option value="2">America</option>
+                                                        <option value="2">New zealand</option>
+                                                        <option value="2">Span</option>
+                                                        <option value="2">Russuia</option>
+                                                        <option value="2">Nepal</option>
+                                                        <option value="2">Bhutan</option>
+                                                        <option value="2">Malaysia</option>
+                                                        <option value="2">Bangladesh</option>
+                                                        <option value="2">Japan</option>
+                                                        <option value="2">China</option>
+                                                        <option value="2">India</option>
+                                                        <option value="2">UAE</option>
+                                                        <option value="2">Saudi Arabia</option>
+                                                        <option value="2">Oman</option>
+                                                        <option value="2">Canada</option>
+                                                        <option value="2">Australia</option>
+                                                        <option value="2">Srilanka</option>
+                                                        <option value="2">South Africa</option>
+                                                        <option value="2">Portugal</option>
+                                                        <option value="2">Qatar</option>
+                                                    </select>
+                                                </div>
+                                                <div class="double_field">
+                                                    <input type="text" id="first_name" placeholder="First name">
+                                                    <input type="text" id="last_name" placeholder="Last name">
+                                                </div>
+                                                <div class="single_field">
+                                                    <input type="text" name="address" id="co_address"
+                                                        placeholder="Address">
+                                                </div>
+                                                <div class="double_field">
+                                                    <input type="number" id="post_code" placeholder="Post code">
+                                                    <input type="text" id="city_name" placeholder="City">
+                                                </div>
+                                                <div class="single_field">
+                                                    <b>Shipping method</b>
+                                                    <div
+                                                        class="shipping_method d-flex align-items-center justify-content-between ">
+                                                        <span>International Shipping </span>
+                                                        <b>$15.00</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel"
+                                                tabindex="0">
+                                                <div class="pickup_msg d-flex align-items-center gap-3">
+                                                    <span>
+                                                        <i class="fa-solid fa-circle-info"></i>
+                                                    </span>
+                                                    <p class="mb-0">Pickup isn't available for this order. Choose
+                                                        another delivery method.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="outer_field">
+                                        <h4>Payments</h4>
+                                        <p>All transactions are secure and encrypted.</p>
+                                        <div class="payment_div">
+                                            <div
+                                                class="payment_header d-flex align-items-center justify-content-between ">
+                                                <span>Credit card</span>
+                                                <div class="cards_img">
+                                                    <img src="img/payments.png" alt="payment iamge">
+                                                </div>
+                                            </div>
+                                            <div class="payment_div_body">
+                                                <div class="single_field">
+                                                    <input type="number" name="card_number" id="card_number"
+                                                        placeholder="Card Number">
+                                                </div>
+                                                <div class="double_field">
+                                                    <input type="date" name="card_number" id="card_number"
+                                                        placeholder="Card Number">
+                                                    <input type="number" name="security code" id="security_code"
+                                                        placeholder="Security Code">
+                                                </div>
+                                                <div class="single_field">
+                                                    <input type="text" name="card_name" id="card_name"
+                                                        placeholder="Name on card">
+                                                </div>
+                                                <div class="single_field d-flex align-items-center gap-3 ">
+                                                    <input type="checkbox" id="agree_alert">
+                                                    <label for="agree_alert">Use shipping address as billing
+                                                        address</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="outer_field">
+                                        <b>Remember me</b>
+                                        <div class="single_field d-flex align-content-center gap-3">
+                                            <input type="checkbox" id="remember_checkbox">
+                                            <label for="remember_checkbox">Save my information for a faster
+                                                checkout</label>
+                                        </div>
+                                        <div class="hidden_area">
+                                            <div class="single_field">
+                                                <input type="number" id="mobile_num" placeholder="Mobile Phone Number">
+                                                <p>Next time you check out here or on other stores powered by Shopify,
+                                                    you’ll receive a code by text message to securely purchase with Shop
+                                                    Pay.</p>
+                                                <p>By continuing, you agree to <a href="#">Privacy Policy</a> and <a
+                                                        href="#">Trems & Conditions</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_action">
+                                        <button type="submit">Pay Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="checkout_left_side">
+                                <div class="cop_area d-flex align-items-center justify-content-between">
+                                    <div class="left_side d-flex align-items-center ">
+                                        <div class="cop_img">
+                                            <img class="img-fluid" src="img/tshirt-5.png" alt="checkout product image">
+                                        </div>
+                                        <div class="cop_info">
+                                            <a href="#">Creative Tshirt Mockup Design</a>
+                                            <span>Black/ XL</span>
+                                        </div>
+                                    </div>
+                                    <div class="right_side">
+                                        <span>$80</span>
+                                    </div>
+                                </div>
+                                <form class="discount_code d-flex align-items-center ">
+                                    <input type="text" name="discount_code" id="discount_code"
+                                        placeholder="Discount Code" required>
+                                    <button type="submit">Apply</button>
+                                </form>
+                                <table>
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>$80.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping</td>
+                                        <td>$15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>$95.00</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-   <!--==========================
+        <!--==========================
+         END OF CHECKOUT SECTION
+        ===========================-->
+    </main>
+
+    <!--==========================
             START OF FOOTER SECTION
         ============================-->
-        <footer>
-            <div class="support_section">
-                <div class="container-fluid container-md">
-                    <div class="support_section_wrapper">
+    <footer>
+        <div class="support_section">
+            <div class="container-fluid container-md">
+                <div class="support_section_wrapper">
+                    <div class="row justify-content-center ">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div
+                                class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
+                                <div class="support_icon">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div
+                                class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
+                                <div class="support_icon">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="single_support_box d-flex align-items-center justify-content-center  gap-3">
+                                <div class="support_icon">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="extra_service">
+            <div class="container-fluid container-xxl">
+                <div class="extra_service_wrapper">
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Free Shipping</b>
+                            <span>Carrier Information</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Online Payment</b>
+                            <span>Payment Methods</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Free Returns</b>
+                            <span>Track Or Cancle Order</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>100% Safe</b>
+                            <span>View Our Benefits</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>24/7 Support</b>
+                            <span>Unlimited Help Desk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="parallax_footer_area">
+            <div class="main_footer">
+                <div class="container-fluid container-xl">
+                    <div class="main_footer_wrapper">
+                        <div class="single_footer_area">
+                            <div class="logo">
+                                <a href="index.html" class="mb-0">El<span>Mart</span></a>
+                            </div>
+                            <div class="our_info d-flex flex-column ">
+                                <a href="tel:123456789" class="single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-solid fa-tty"></i>
+                                    </span>
+                                    <span>+1234 567890</span>
+                                </a>
+                                <a href="malito:abc1234@gmail.com"
+                                    class="single_info single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </span>
+                                    <span>abc1234@gmail.com</span>
+                                </a>
+                                <a href="tel:123456789" class="single_info single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </span>
+                                    <span> Maxime, Cupti-La, Debitis-3100, Excepturi</span>
+                                </a>
+                            </div>
+                            <b>Available on:</b>
+                            <div class="online_getway d-flex align-items-center gap-3">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/google-play.svg" alt="online">
+                                </a>
+                                <a href="#">
+                                    <img class="img-fluid" src="img/app-store.svg" alt="online">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Popular Categories</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Accessories</a></li>
+                                <li class="list-unstyled"><a href="#">Furniture</a></li>
+                                <li class="list-unstyled"><a href="#">Lighting</a></li>
+                                <li class="list-unstyled"><a href="#">Clock</a></li>
+                                <li class="list-unstyled"><a href="#">Chair</a></li>
+                                <li class="list-unstyled"><a href="#">Sofas</a></li>
+                                <li class="list-unstyled"><a href="#">Wardrobe</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Our Outlet</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Landon</a></li>
+                                <li class="list-unstyled"><a href="#">Dhaka</a></li>
+                                <li class="list-unstyled"><a href="#">Islamabad</a></li>
+                                <li class="list-unstyled"><a href="#">Kolkata</a></li>
+                                <li class="list-unstyled"><a href="#">Sylhet</a></li>
+                                <li class="list-unstyled"><a href="#">Chittagaon</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
+                                <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
+                                <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
+                                <li class="list-unstyled"><a href="#">Promotions</a></li>
+                                <li class="list-unstyled"><a href="#">Contact Us</a></li>
+                                <li class="list-unstyled"><a href="#">Latest News</a></li>
+                                <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Help Center</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
+                                <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
+                                <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
+                                <li class="list-unstyled"><a href="#">Promotions</a></li>
+                                <li class="list-unstyled"><a href="#">Contact Us</a></li>
+                                <li class="list-unstyled"><a href="#">Latest News</a></li>
+                                <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_footer">
+                <div class="container-fluid container-xxl">
+                    <div class="bottom_footer_wrapper">
                         <div class="row justify-content-center ">
                             <div class="col-12 col-sm-6 col-md-4">
                                 <div
-                                    class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
-                                    <div class="support_icon">
-                                        <i class="fa-solid fa-location-crosshairs"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                    class="left d-flex flex-column align-items-start align-items-md-center  justify-content-center mb-4 mb-md-0">
+                                    <div>
+                                        <b class="d-block">Free Shipping</b>
+
+                                        <img class="img-fluid" src="img/shipping.png.webp" alt="footer image">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-4">
                                 <div
-                                    class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
-                                    <div class="support_icon">
-                                        <i class="fa-regular fa-circle-question"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                    class="middle d-flex flex-column  align-items-start align-items-md-center justify-content-center mb-4 mb-md-0">
+                                    <div>
+                                        <b class="d-block">Payments Methods</b>
+                                        <img class="img-fluid" src="img/payments.png" alt="footer image">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-4">
-                                <div class="single_support_box d-flex align-items-center justify-content-center  gap-3">
-                                    <div class="support_icon">
-                                        <i class="fa-regular fa-comment-dots"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                <div class="right d-flex flex-column align-items-start align-items-md-center">
+                                    <div>
+                                        <div class="w-100">
+                                            <b>Our Social Links</b>
+                                        </div>
+                                        <div class="footer_social_icons d-flex align-items-center gap-3 w-100 ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2270,203 +2673,21 @@
                     </div>
                 </div>
             </div>
-            <div class="extra_service">
-                <div class="container-fluid container-xxl">
-                    <div class="extra_service_wrapper">
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-truck-fast"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Free Shipping</b>
-                                <span>Carrier Information</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-credit-card"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Online Payment</b>
-                                <span>Payment Methods</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-boxes-packing"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Free Returns</b>
-                                <span>Track Or Cancle Order</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-user-shield"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>100% Safe</b>
-                                <span>View Our Benefits</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-headset"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>24/7 Support</b>
-                                <span>Unlimited Help Desk</span>
-                            </div>
-                        </div>
+            <div class="copy_right_section">
+                <div class="container-fluid container-xl">
+                    <div class="copy_right_wrapper d-flex align-items-center justify-content-center  py-3">
+                        <p class="mb-0">
+                            Copyright © 2024 All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>
-            <section class="parallax_footer_area">
-                <div class="main_footer">
-                    <div class="container-fluid container-xl">
-                        <div class="main_footer_wrapper">
-                            <div class="single_footer_area">
-                                <div class="logo">
-                                    <a href="index.html" class="mb-0">El<span>Mart</span></a>
-                                </div>
-                                <div class="our_info d-flex flex-column ">
-                                    <a href="tel:123456789" class="single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-solid fa-tty"></i>
-                                        </span>
-                                        <span>+1234 567890</span>
-                                    </a>
-                                    <a href="malito:abc1234@gmail.com"
-                                        class="single_info single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-regular fa-envelope"></i>
-                                        </span>
-                                        <span>abc1234@gmail.com</span>
-                                    </a>
-                                    <a href="tel:123456789" class="single_info single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                        </span>
-                                        <span> Maxime, Cupti-La, Debitis-3100, Excepturi</span>
-                                    </a>
-                                </div>
-                                <b>Available on:</b>
-                                <div class="online_getway d-flex align-items-center gap-3">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/google-play.svg" alt="online">
-                                    </a>
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/app-store.svg" alt="online">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Popular Categories</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Accessories</a></li>
-                                    <li class="list-unstyled"><a href="#">Furniture</a></li>
-                                    <li class="list-unstyled"><a href="#">Lighting</a></li>
-                                    <li class="list-unstyled"><a href="#">Clock</a></li>
-                                    <li class="list-unstyled"><a href="#">Chair</a></li>
-                                    <li class="list-unstyled"><a href="#">Sofas</a></li>
-                                    <li class="list-unstyled"><a href="#">Wardrobe</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Our Outlet</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Landon</a></li>
-                                    <li class="list-unstyled"><a href="#">Dhaka</a></li>
-                                    <li class="list-unstyled"><a href="#">Islamabad</a></li>
-                                    <li class="list-unstyled"><a href="#">Kolkata</a></li>
-                                    <li class="list-unstyled"><a href="#">Sylhet</a></li>
-                                    <li class="list-unstyled"><a href="#">Chittagaon</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Useful Links</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
-                                    <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
-                                    <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
-                                    <li class="list-unstyled"><a href="#">Promotions</a></li>
-                                    <li class="list-unstyled"><a href="#">Contact Us</a></li>
-                                    <li class="list-unstyled"><a href="#">Latest News</a></li>
-                                    <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Help Center</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
-                                    <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
-                                    <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
-                                    <li class="list-unstyled"><a href="#">Promotions</a></li>
-                                    <li class="list-unstyled"><a href="#">Contact Us</a></li>
-                                    <li class="list-unstyled"><a href="#">Latest News</a></li>
-                                    <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom_footer">
-                    <div class="container-fluid container-xxl">
-                        <div class="bottom_footer_wrapper">
-                            <div class="row justify-content-center ">
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div
-                                        class="left d-flex flex-column align-items-start align-items-md-center  justify-content-center mb-4 mb-md-0">
-                                        <div>
-                                            <b class="d-block">Free Shipping</b>
-    
-                                            <img class="img-fluid" src="img/shipping.png.webp" alt="footer image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div
-                                        class="middle d-flex flex-column  align-items-start align-items-md-center justify-content-center mb-4 mb-md-0">
-                                        <div>
-                                            <b class="d-block">Payments Methods</b>
-                                            <img class="img-fluid" src="img/payments.png" alt="footer image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="right d-flex flex-column align-items-start align-items-md-center">
-                                        <div>
-                                            <div class="w-100">
-                                                <b>Our Social Links</b>
-                                            </div>
-                                            <div class="footer_social_icons d-flex align-items-center gap-3 w-100 ">
-                                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy_right_section">
-                    <div class="container-fluid container-xl">
-                        <div class="copy_right_wrapper d-flex align-items-center justify-content-center  py-3">
-                            <p class="mb-0">
-                                Copyright © 2024 All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
-        <!--======================
+        </section>
+    </footer>
+    <!--======================
                 END OF FOOTER SECTION
             =======================-->
-    
+
 
 
 

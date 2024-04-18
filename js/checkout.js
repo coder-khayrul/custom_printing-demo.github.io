@@ -1,4 +1,10 @@
+//checkbox handler
+const check_box = document.querySelector("#remember_checkbox");
+const hidden_area = document.querySelector(".outer_field .hidden_area");
 
+check_box.addEventListener("click", () => {
+    hidden_area.classList.toggle("show_area")
+})
 
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
