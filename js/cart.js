@@ -1,3 +1,46 @@
+//cart page timer
+
+const min_field = document.querySelector(".inline_timer .min")
+const sec_field = document.querySelector(".inline_timer .sec")
+
+
+// Set the date you're counting down to (replace with your desired date)
+const countdownDate = new Date("May 10, 2024 04:04:40").getTime();
+
+// Update the countdown every 1 second
+const countdownInterval = setInterval(function () {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the remaining time
+    const timeRemaining = countdownDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    // Update the HTML elements with the calculated values
+
+    min_field.textContent = formatTime(minutes);
+    sec_field.textContent = formatTime(seconds);
+
+    // If the countdown is over, display a message or perform any action
+    if (timeRemaining < 0) {
+        clearInterval(countdownInterval);
+        // You can add a message or perform an action when the countdown is over
+        console
+    }
+}, 1000);
+
+// Function to format time values with leading zeros
+function formatTime(value) {
+    return value < 10 ? "0" + value : value;
+}
+
+
+
+
+
 
 
 //bottom header toggle

@@ -1419,7 +1419,7 @@
                                         <a href="#">Pages
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
-                                          <ul class="dropdown_menu">
+                                        <ul class="dropdown_menu">
                                             <li class="list-unstyled">
                                                 <a href="shop.html">Shop Page</a>
                                             </li>
@@ -1447,7 +1447,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <!--edn of main menu-->
+                                <!--end of main menu-->
                             </div>
                         </div>
                         <div class="col-2">
@@ -2219,49 +2219,401 @@
         END OF HEADER
         =========================-->
     <main>
-     
-    </main> 
+        <!--BREADCRUMB SECTION-->
+        <div class="breadcrumb_area">
+            <div class="container-fluid container-xl ">
+                <div class="breadcrumb_wrapper">
+                    <a href="#">Home</a>
+                    <span class="middle_sign">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <span>My Cart</span>
+                </div>
+            </div>
+        </div>
+        <!--=======================
+        START OF CART SECTION
+    ========================-->
+        <section class="cart_section">
+            <div class="container-fluid container-xl">
+                <div class="cart_wrapper">
+                    <div class="cart_header">
+                        <div class="cart_progress_bar">
+                            <h4>Your Shopping Cart</h4>
+                            <div class="main_progress">
+                                <div class="fill_area">
+                                    <span class="free_shipping_sign">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <P>Only $545.00 away from <span>Free Shipping</span></P>
+                        </div>
+                        <div class="Offer_alert">
+                            <p class="text-center mb-0"><i class="fa-solid fa-circle-info me-2"></i> Please, hurry!
+                                Someone has placed an order on one of the items you have in the cart. We'll keep it for
+                                you for <span class="inline_timer"><b class="min">23</b>:<b class="sec">56</b></span> minutes.</p>
+                        </div>
+                    </div>
+                    <div class="cart_body">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 mb-5 mb-lg-0">
+                                <div class="left_side">
+                                    <div class="product_area">
+                                        <div class="product_container_header">
+                                            <div class="product_item">Product</div>
+                                            <div class="product_item">Price</div>
+                                            <div class="product_item hide">Quantity</div>
+                                            <div class="product_item hide">Total</div>
+                                        </div>
+                                        <div class="cart_product_container">
+                                            <div class="single_cp d-flex align-items-center gap-3">
+                                                <div class="cp_product_info d-flex">
+                                                    <div class="cp_img">
+                                                        <img src="img/tshirt-5.png" alt="card_img" class="img-fluid">
+                                                    </div>
+                                                    <div class="cp_info">
+                                                        <a href="#">Creative Tshirt Mockup Design</a>
+                                                        <div
+                                                            class="edit_option_area d-flex align-items-center justify-content-between ">
+                                                            <p><span>Black</span>/<span>XL</span> </p>
+                                                            <span class="edit_sign">
+                                                                <i class="fa-regular fa-pen-to-square"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="product_right_info d-flex justify-content-between gap-4">
+                                                    <div>$80</div>
+                                                    <div class="quantity d-flex align-content-center ">
+                                                        <button class="decrease">-</button>
+                                                        <input type="number" class="cart_value" min="1" value="01">
+                                                        <button class="increase">+</button>
+                                                    </div>
+                                                    <span class="total_price hide">$80</span>
+                                                    <span class="delete_product ">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gift_alert d-flex align-items-center gap-3">
+                                        <span><i class="fa-solid fa-gift"></i></span>
+                                        <p class="mb-0">Do You Want A Gift Wrap? <b>Only For $30.00</b></p>
+                                        <button>Add</button>
+                                    </div>
+                                    <div class="additional_conmment">
+                                        <label for="comment">Additional Comments</label>
+                                        <textarea id="comment" placeholder="Special Instruction For Seller"></textarea>
+                                    </div>
+                                    <div class="sequrity_alert d-flex align-items-center gap-3">
+                                        <span>
+                                            <i class="fa-solid fa-shield-heart"></i>
+                                        </span>
+                                        Secure Shopping Guarantee
+                                    </div>
+                                    <div class="safe_methods">
+                                        <img class="img-fluid" src="img/payments.png" alt="payments image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="right_side">
+                                    <form>
+                                        <div class="form_inner">
+                                            <h4>Order Summary</h4>
+                                            <div
+                                                class="calculate_area d-flex align-items-center justify-content-between">
+                                                <b>Subtotal</b>
+                                                <b>$150</b>
+                                            </div>
+                                            <b>Get Shipping Estimate:</b>
+                                            <select id="country_" required>
+                                                <option value="1" selected disabled>Select Country</option>
+                                                <option value="2">America</option>
+                                                <option value="2">New zealand</option>
+                                                <option value="2">Span</option>
+                                                <option value="2">Russuia</option>
+                                                <option value="2">Nepal</option>
+                                                <option value="2">Bhutan</option>
+                                                <option value="2">Malaysia</option>
+                                                <option value="2">Bangladesh</option>
+                                                <option value="2">Japan</option>
+                                                <option value="2">China</option>
+                                                <option value="2">India</option>
+                                                <option value="2">UAE</option>
+                                                <option value="2">Saudi Arabia</option>
+                                                <option value="2">Oman</option>
+                                                <option value="2">Canada</option>
+                                                <option value="2">Australia</option>
+                                                <option value="2">Srilanka</option>
+                                                <option value="2">South Africa</option>
+                                                <option value="2">Portugal</option>
+                                                <option value="2">Qatar</option>
+                                            </select>
+                                            <input type="number" id="cp_postal" placeholder="Postal Code" required>
+                                            <button type="submit">Calculate Shipping</button>
+                                            <div class="coupon_area d-flex flex-column">
+                                                <h4>Coupon Code</h4>
+                                                <input type="text" id="coupon" placeholder="Enter your coupon code">
+                                                <p class="mb-0">Coupon code will be applied on the checkout page</p>
+                                            </div>
+                                            <div class="total d-flex align-items-center justify-content-between ">
+                                                <span>Total</span>
+                                                <b>$200</b>
+                                            </div>
+                                        </div>
+                                        <div class="form_actions">
+                                            <p>Tax included and shipping calculated at checkout</p>
+                                            <div class="check_input">
+                                                <input type="checkbox" id="rp_checkbox">
+                                                <label for="rp_checkbox">I agree with <a href="#">Terms & Conditions</a></label>
+                                            </div>
+                                            <div class="action_buttons d-flex flex-column">
+                                                <button type="submit">Proceed To Checkout</button>
+                                                <a href="shop.html">Contineu Shopping</a>
+                                            </div>
+                                        </div>
+                                    </form>
 
-   <!--==========================
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=======================
+        END OF CART SECTION
+    ========================-->
+    </main>
+
+    <!--==========================
             START OF FOOTER SECTION
         ============================-->
-        <footer>
-            <div class="support_section">
-                <div class="container-fluid container-md">
-                    <div class="support_section_wrapper">
+    <footer>
+        <div class="support_section">
+            <div class="container-fluid container-md">
+                <div class="support_section_wrapper">
+                    <div class="row justify-content-center ">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div
+                                class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
+                                <div class="support_icon">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div
+                                class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
+                                <div class="support_icon">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="single_support_box d-flex align-items-center justify-content-center  gap-3">
+                                <div class="support_icon">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                </div>
+                                <div class="support_content d-flex flex-column gap-2">
+                                    <a href="#">How can I help you?</a>
+                                    <a href="#">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="extra_service">
+            <div class="container-fluid container-xxl">
+                <div class="extra_service_wrapper">
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Free Shipping</b>
+                            <span>Carrier Information</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Online Payment</b>
+                            <span>Payment Methods</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>Free Returns</b>
+                            <span>Track Or Cancle Order</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>100% Safe</b>
+                            <span>View Our Benefits</span>
+                        </div>
+                    </div>
+                    <div class="single_es d-flex align-items-center gap-3 justify-content-center">
+                        <div class="es_icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="es_content d-flex flex-column">
+                            <b>24/7 Support</b>
+                            <span>Unlimited Help Desk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="parallax_footer_area">
+            <div class="main_footer">
+                <div class="container-fluid container-xl">
+                    <div class="main_footer_wrapper">
+                        <div class="single_footer_area">
+                            <div class="logo">
+                                <a href="index.html" class="mb-0">El<span>Mart</span></a>
+                            </div>
+                            <div class="our_info d-flex flex-column ">
+                                <a href="tel:123456789" class="single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-solid fa-tty"></i>
+                                    </span>
+                                    <span>+1234 567890</span>
+                                </a>
+                                <a href="malito:abc1234@gmail.com"
+                                    class="single_info single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </span>
+                                    <span>abc1234@gmail.com</span>
+                                </a>
+                                <a href="tel:123456789" class="single_info single_info d-flex align-items-center gap-2">
+                                    <span class="info_icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </span>
+                                    <span> Maxime, Cupti-La, Debitis-3100, Excepturi</span>
+                                </a>
+                            </div>
+                            <b>Available on:</b>
+                            <div class="online_getway d-flex align-items-center gap-3">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/google-play.svg" alt="online">
+                                </a>
+                                <a href="#">
+                                    <img class="img-fluid" src="img/app-store.svg" alt="online">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Popular Categories</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Accessories</a></li>
+                                <li class="list-unstyled"><a href="#">Furniture</a></li>
+                                <li class="list-unstyled"><a href="#">Lighting</a></li>
+                                <li class="list-unstyled"><a href="#">Clock</a></li>
+                                <li class="list-unstyled"><a href="#">Chair</a></li>
+                                <li class="list-unstyled"><a href="#">Sofas</a></li>
+                                <li class="list-unstyled"><a href="#">Wardrobe</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Our Outlet</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Landon</a></li>
+                                <li class="list-unstyled"><a href="#">Dhaka</a></li>
+                                <li class="list-unstyled"><a href="#">Islamabad</a></li>
+                                <li class="list-unstyled"><a href="#">Kolkata</a></li>
+                                <li class="list-unstyled"><a href="#">Sylhet</a></li>
+                                <li class="list-unstyled"><a href="#">Chittagaon</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
+                                <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
+                                <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
+                                <li class="list-unstyled"><a href="#">Promotions</a></li>
+                                <li class="list-unstyled"><a href="#">Contact Us</a></li>
+                                <li class="list-unstyled"><a href="#">Latest News</a></li>
+                                <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="single_footer_area">
+                            <h4>Help Center</h4>
+                            <ul>
+                                <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
+                                <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
+                                <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
+                                <li class="list-unstyled"><a href="#">Promotions</a></li>
+                                <li class="list-unstyled"><a href="#">Contact Us</a></li>
+                                <li class="list-unstyled"><a href="#">Latest News</a></li>
+                                <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_footer">
+                <div class="container-fluid container-xxl">
+                    <div class="bottom_footer_wrapper">
                         <div class="row justify-content-center ">
                             <div class="col-12 col-sm-6 col-md-4">
                                 <div
-                                    class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
-                                    <div class="support_icon">
-                                        <i class="fa-solid fa-location-crosshairs"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                    class="left d-flex flex-column align-items-start align-items-md-center  justify-content-center mb-4 mb-md-0">
+                                    <div>
+                                        <b class="d-block">Free Shipping</b>
+
+                                        <img class="img-fluid" src="img/shipping.png.webp" alt="footer image">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-4">
                                 <div
-                                    class="single_support_box d-flex align-items-center justify-content-center  gap-3 mb-4 mb-md-0">
-                                    <div class="support_icon">
-                                        <i class="fa-regular fa-circle-question"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                    class="middle d-flex flex-column  align-items-start align-items-md-center justify-content-center mb-4 mb-md-0">
+                                    <div>
+                                        <b class="d-block">Payments Methods</b>
+                                        <img class="img-fluid" src="img/payments.png" alt="footer image">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-4">
-                                <div class="single_support_box d-flex align-items-center justify-content-center  gap-3">
-                                    <div class="support_icon">
-                                        <i class="fa-regular fa-comment-dots"></i>
-                                    </div>
-                                    <div class="support_content d-flex flex-column gap-2">
-                                        <a href="#">How can I help you?</a>
-                                        <a href="#">Contact us</a>
+                                <div class="right d-flex flex-column align-items-start align-items-md-center">
+                                    <div>
+                                        <div class="w-100">
+                                            <b>Our Social Links</b>
+                                        </div>
+                                        <div class="footer_social_icons d-flex align-items-center gap-3 w-100 ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2269,203 +2621,21 @@
                     </div>
                 </div>
             </div>
-            <div class="extra_service">
-                <div class="container-fluid container-xxl">
-                    <div class="extra_service_wrapper">
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-truck-fast"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Free Shipping</b>
-                                <span>Carrier Information</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-credit-card"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Online Payment</b>
-                                <span>Payment Methods</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-boxes-packing"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>Free Returns</b>
-                                <span>Track Or Cancle Order</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-user-shield"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>100% Safe</b>
-                                <span>View Our Benefits</span>
-                            </div>
-                        </div>
-                        <div class="single_es d-flex align-items-center gap-3 justify-content-center">
-                            <div class="es_icon">
-                                <i class="fa-solid fa-headset"></i>
-                            </div>
-                            <div class="es_content d-flex flex-column">
-                                <b>24/7 Support</b>
-                                <span>Unlimited Help Desk</span>
-                            </div>
-                        </div>
+            <div class="copy_right_section">
+                <div class="container-fluid container-xl">
+                    <div class="copy_right_wrapper d-flex align-items-center justify-content-center  py-3">
+                        <p class="mb-0">
+                            Copyright © 2024 All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>
-            <section class="parallax_footer_area">
-                <div class="main_footer">
-                    <div class="container-fluid container-xl">
-                        <div class="main_footer_wrapper">
-                            <div class="single_footer_area">
-                                <div class="logo">
-                                    <a href="index.html" class="mb-0">El<span>Mart</span></a>
-                                </div>
-                                <div class="our_info d-flex flex-column ">
-                                    <a href="tel:123456789" class="single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-solid fa-tty"></i>
-                                        </span>
-                                        <span>+1234 567890</span>
-                                    </a>
-                                    <a href="malito:abc1234@gmail.com"
-                                        class="single_info single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-regular fa-envelope"></i>
-                                        </span>
-                                        <span>abc1234@gmail.com</span>
-                                    </a>
-                                    <a href="tel:123456789" class="single_info single_info d-flex align-items-center gap-2">
-                                        <span class="info_icon">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                        </span>
-                                        <span> Maxime, Cupti-La, Debitis-3100, Excepturi</span>
-                                    </a>
-                                </div>
-                                <b>Available on:</b>
-                                <div class="online_getway d-flex align-items-center gap-3">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/google-play.svg" alt="online">
-                                    </a>
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/app-store.svg" alt="online">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Popular Categories</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Accessories</a></li>
-                                    <li class="list-unstyled"><a href="#">Furniture</a></li>
-                                    <li class="list-unstyled"><a href="#">Lighting</a></li>
-                                    <li class="list-unstyled"><a href="#">Clock</a></li>
-                                    <li class="list-unstyled"><a href="#">Chair</a></li>
-                                    <li class="list-unstyled"><a href="#">Sofas</a></li>
-                                    <li class="list-unstyled"><a href="#">Wardrobe</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Our Outlet</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Landon</a></li>
-                                    <li class="list-unstyled"><a href="#">Dhaka</a></li>
-                                    <li class="list-unstyled"><a href="#">Islamabad</a></li>
-                                    <li class="list-unstyled"><a href="#">Kolkata</a></li>
-                                    <li class="list-unstyled"><a href="#">Sylhet</a></li>
-                                    <li class="list-unstyled"><a href="#">Chittagaon</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Useful Links</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
-                                    <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
-                                    <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
-                                    <li class="list-unstyled"><a href="#">Promotions</a></li>
-                                    <li class="list-unstyled"><a href="#">Contact Us</a></li>
-                                    <li class="list-unstyled"><a href="#">Latest News</a></li>
-                                    <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
-                                </ul>
-                            </div>
-                            <div class="single_footer_area">
-                                <h4>Help Center</h4>
-                                <ul>
-                                    <li class="list-unstyled"><a href="#">Privacy Policy</a></li>
-                                    <li class="list-unstyled"><a href="#">Delivery & Returns</a></li>
-                                    <li class="list-unstyled"><a href="#">Trems and Conditions</a></li>
-                                    <li class="list-unstyled"><a href="#">Promotions</a></li>
-                                    <li class="list-unstyled"><a href="#">Contact Us</a></li>
-                                    <li class="list-unstyled"><a href="#">Latest News</a></li>
-                                    <li class="list-unstyled"><a href="#">Our Sitemap</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom_footer">
-                    <div class="container-fluid container-xxl">
-                        <div class="bottom_footer_wrapper">
-                            <div class="row justify-content-center ">
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div
-                                        class="left d-flex flex-column align-items-start align-items-md-center  justify-content-center mb-4 mb-md-0">
-                                        <div>
-                                            <b class="d-block">Free Shipping</b>
-    
-                                            <img class="img-fluid" src="img/shipping.png.webp" alt="footer image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div
-                                        class="middle d-flex flex-column  align-items-start align-items-md-center justify-content-center mb-4 mb-md-0">
-                                        <div>
-                                            <b class="d-block">Payments Methods</b>
-                                            <img class="img-fluid" src="img/payments.png" alt="footer image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="right d-flex flex-column align-items-start align-items-md-center">
-                                        <div>
-                                            <div class="w-100">
-                                                <b>Our Social Links</b>
-                                            </div>
-                                            <div class="footer_social_icons d-flex align-items-center gap-3 w-100 ">
-                                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy_right_section">
-                    <div class="container-fluid container-xl">
-                        <div class="copy_right_wrapper d-flex align-items-center justify-content-center  py-3">
-                            <p class="mb-0">
-                                Copyright © 2024 All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
-        <!--======================
+        </section>
+    </footer>
+    <!--======================
                 END OF FOOTER SECTION
             =======================-->
-    
+
 
 
 
