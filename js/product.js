@@ -337,6 +337,8 @@ $(".delete_card").on("click", () => {
 });
 
 
+
+
 // Parallax footer area
 const parallax_footer = document.querySelector(".parallax_footer_area");
 const upper_area = document.querySelector(".extra_service");
@@ -524,9 +526,9 @@ var swiperBig = new Swiper(".mySwiperBig", {
         swiper: swiperThmb,
     }
 }
-);
+); 
 
-var swiper4 = new Swiper(".mySwiperRp", {
+var swiperRp = new Swiper(".mySwiperRp", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
@@ -549,3 +551,97 @@ var swiper4 = new Swiper(".mySwiperRp", {
         }
     }
 });
+//***IMAGE UPODING HANDLER */
+const upload_file = document.querySelector("#user_upload_img");
+const file_object = document.querySelector(".mySwiperBig .swiper-slide-active .img_area");
+
+const uploaded_object = document.createElement("div");
+const uploaded_image = document.createElement("img");
+
+file_object.appendChild(uploaded_object);
+uploaded_object.appendChild(uploaded_image);
+
+uploaded_object.className = "user_object";
+uploaded_object.classList.add("ui-widget-content");
+uploaded_object.classList.add("draggable_img");
+
+let imageURL;
+
+upload_file.addEventListener("input", () => {
+
+    uploaded_object.style.visibility = "visible";
+    uploaded_object.style.opacity = "1";
+
+    if (upload_file.files.length) {
+        let selectedImage = upload_file.files[0];
+
+        imageURL = URL.createObjectURL(selectedImage);
+        uploaded_image.src = imageURL;
+    } else {
+        console.warn("No file selected");
+    }
+    
+    $(function() {
+        $(".draggable_img").draggable();
+    });
+});
+
+
+//**OBJECT TEXT HANDLER */
+const object_text = document.querySelector("#user_text");
+const text_area = document.createElement("div");
+file_object.appendChild(text_area);
+text_area.className = "user_upload_text";
+
+object_text.addEventListener("keyup", () => {
+    text_area.style.visibility = "visible";
+    text_area.style.opacity = "1";
+text_area.textContent = object_text.value;
+})
+
+
+//***PRODUCT CHECK BY USER HANDLER* */
+const fonts = document.querySelectorAll(".single_font");
+const userText = document.querySelector(".user_upload_text");
+
+fonts.forEach((font, index) => {
+    font.addEventListener("click", () => {
+        
+        fonts.forEach(other_font => {
+            other_font.classList.remove("active");
+        });
+        
+        font.classList.add("active");
+        
+        
+        if (index === 1) {
+            userText.style.fontFamily = '"Lilita One", sans-serif';
+
+        } else if (index === 2) {
+
+            userText.style.fontFamily = '"Jersey 15 Charted", sans-serif';
+
+        } else {
+            
+            userText.style.fontFamily = '"Dancing Script", cursiv';
+        }
+    });
+});
+
+
+
+const color = document.querySelectorAll(".color_div ul li");
+
+const color_array = Array.from(color);
+
+color_array.forEach(color => {
+    color.addEventListener("click", () => {
+    
+        color_array.forEach(other_color => {
+            other_color.classList.remove("active");
+        });
+       
+        color.classList.add("active");
+    });
+});
+
