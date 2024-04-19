@@ -3209,7 +3209,10 @@ section.about_section .about_section_wrapper .about_info .srv_boxs .single_srv_b
     border: 2px solid transparent;
     background: var(--secondary-color);
 }
-
+.team_slider .single_chefs .chefs_info .chefs_social a:hover > svg {
+    rotate: 360deg;
+    transition: .6s;
+}
 .team_slider .single_chefs .chefs_info {
     position: absolute;
     width: 100%;
