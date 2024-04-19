@@ -634,7 +634,7 @@ const color = document.querySelectorAll(".color_div ul li");
 
 const color_array = Array.from(color);
 
-color_array.forEach(color => {
+color_array.forEach((color,  index )=> {
     color.addEventListener("click", () => {
     
         color_array.forEach(other_color => {
@@ -642,6 +642,22 @@ color_array.forEach(color => {
         });
        
         color.classList.add("active");
+
+        if (index === 1) {
+            userText.style.color ="black";
+
+        } else if (index === 2) {
+
+            userText.style.color ="crimson";
+
+        }else if (index === 3) {
+
+            userText.style.color ="darkmagenta";
+
+        } else {
+            
+            userText.style.color ="#177AFE";
+        }
     });
 });
 
