@@ -3242,7 +3242,7 @@ section.account_section .account_wrapper .left_side .account_form >form button {
     font-size: 16px;
     border-radius: 5px;
     transition: .6s;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 section.account_section .account_wrapper .left_side .account_form >form button:hover {
@@ -3304,6 +3304,109 @@ section.account_section .account_wrapper .left_side .account_form >form input[ty
     cursor: pointer;
 }
 /***END OF MY ACCOUNT SECTION STYLE**/
+
+.login_other_way {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+.login_other_way .single_way>span {
+    z-index: 9;
+  }
+.login_other_way .single_way:hover {
+    color: white !important;
+  }
+  
+ .login_other_way .single_way {
+    width: 320px;
+    background: white;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    position: relative;
+    cursor: pointer;
+  }
+  
+ .login_other_way .single_way span {
+    z-index: 99;
+  }
+
+.login_other_way .single_way:first-child {
+    border: 1px solid #db4437;
+    color: #db4437;
+  }
+.login_other_way .single_way:last-child {
+    border: 1px solid #4267b2;
+    color: #4267b2;
+  }
+  .login_other_way .single_way:first-child .social-login {
+    background: #db4437;
+  }
+  
+ .login_other_way .single_way:last-child .social-login {
+    background: #4267b2;
+  }
+ .login_other_way .single_way .social-login {
+    width: 47px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    left: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+.login_other_way .single_way .social-login i,  .login_other_way .single_way .social-login svg {
+    position: absolute;
+    left: 15px;
+    transition: 0.3s;
+  }
+  
+.login_other_way .single_way:hover .social-login {
+    width: 100%;
+    border-radius: 50px;
+  }
+    
+
+.account_form  .divider {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin-block: 15px;
+}
+
+.account_form  .divider::after {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    height: 2px;
+    background: var(--sub-color2);
+}
+
+.account_form  .divider>span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background: var(--secondary-color);
+    z-index: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 
 
