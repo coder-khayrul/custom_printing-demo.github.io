@@ -658,14 +658,14 @@
                         <div class="single_input d-flex justify-content-center flex-column">
                             <label for="country_select">Country</label>
                             <select id="country_select" required>
-                                <option value="0" disabled selected>Select Country</option>
-                                <option value="0">United Kindom</option>
-                                <option value="0">United State</option>
-                                <option value="0">China</option>
-                                <option value="0">Bangladesh</option>
-                                <option value="0">Japan</option>
-                                <option value="0">Butan</option>
-                                <option value="0">Saudi Arabia</option>
+                                <option value="1" disabled selected>Select Country</option>
+                                <option value="2">United Kindom</option>
+                                <option value="3">United State</option>
+                                <option value="4">China</option>
+                                <option value="5">Bangladesh</option>
+                                <option value="6">Japan</option>
+                                <option value="7">Butan</option>
+                                <option value="8">Saudi Arabia</option>
                             </select>
                         </div>
                         <div class="single_input d-flex justify-content-center flex-column">
@@ -2462,15 +2462,16 @@
                                                 <li class="list-unstyled"></li>
                                             </ul>
                                         </div>
-                                        <div class="img_upload_area">
+                                        <form class="img_upload_area">
                                             <input type="file" accept=".jpg,.jpeg,.png" id="user_upload_img"
-                                                class="d-none ">
-                                            <label user_textfor="user_upload_img">
+                                                class="d-none " required>
+                                            <label for="user_upload_img">
                                                 <span class="d-flex align-items-center justify-content-center ">
                                                     Upload Your Image <i class="fa-regular fa-image ms-3"></i>
                                                 </span>
                                             </label>
-                                        </div>
+                                            <button type="submit" class="d-none"></button>
+                                        </form>
                                         <hr>
                                         <div class="buttons_container  d-flex flex-column">
                                             <div class="button_wrapper d-flex align-items-center">
@@ -2623,7 +2624,7 @@
                                         </div>
                                         <div class="rating_input">
                                             <label for="review_msg">Review</label>
-                                            <textarea type="text" id="review_msg" placeholder="Write Your Comment Here"
+                                            <textarea id="review_msg" placeholder="Write Your Comment Here"
                                                 required></textarea>
                                         </div>
                                         <div class="rating_file_input">

@@ -5,7 +5,6 @@
    const offer_banner = document.querySelector(".offer_banner")
    const news_section = document.querySelector(".header_news")
    
-   
    $(document).ready(() => {
        $(window).on("scroll", () => {
            if ($(window).scrollTop()) {
