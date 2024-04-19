@@ -3157,6 +3157,7 @@ section.checkbox_section .checkout_wrapper .checkout_right_side form .outer_fiel
     padding: 0px 15px;
     background: var(--sub-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 section.checkbox_section .checkout_wrapper .checkout_right_side form .outer_field ul {
