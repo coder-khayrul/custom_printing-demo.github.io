@@ -69,26 +69,28 @@ quick_view_btn.addEventListener("click", () => {
 //bottom product mini popup hanlder
 const bp_close_btn = document.querySelector(".bp_close");
 const bp_popup = document.querySelector(".bottom_mini_popup");
-const notification_msg = document.querySelector(".notification");
-const notification_msg_close = document.querySelector(".notification_close")
-
-setTimeout(() => {
-    bp_popup.classList.add("show")
-
-}, 20000);
-
 bp_close_btn.addEventListener("click", () => {
     bp_popup.classList.remove("show");
   
 })
 setTimeout(() => {
-    notification_msg.classList.add("show")
+    bp_popup.classList.add("show")
+
+}, 20000);
+
+const notification_msg = document.querySelector(".notification");
+const notification_msg_close = document.querySelector(".notification_close");
+
+setTimeout(() => {
+    notification_msg.classList.add("show");
+    setInterval(() => {
+        notification_msg.classList.toggle("show");
+    }, 5000);
 }, 25000);
 
 notification_msg_close.addEventListener("click", () => {
     notification_msg.classList.remove("show");
-})
-
+});
 // offer circle text handler 
 const cirlce_text = document.querySelector(".offer_text");
     cirlce_text.innerHTML = cirlce_text.textContent.split("").map((char, i) => 
