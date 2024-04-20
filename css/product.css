@@ -3194,7 +3194,32 @@ z-index: 1;
 
 
 /**product main section style start**/
+.breadcrumb_area {
+    background: var(--sub-color);
+    padding: 10px 0px;
+}
 
+.breadcrumb_area .breadcrumb_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--sub-text-color);
+}
+
+.breadcrumb_area .breadcrumb_wrapper a {
+    color: var(--sub-text-color);
+    transition: .6s;
+}
+
+.breadcrumb_area .breadcrumb_wrapper a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.breadcrumb_area .breadcrumb_wrapper span.middle_sign {
+    height: 18px;
+}
 section.product_tab_section {
     background: var(--secondary-color);
 }
