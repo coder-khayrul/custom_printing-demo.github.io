@@ -5724,6 +5724,9 @@ section.parallax_footer_area {
     .hero_imgs img {
         width: 80%;
     }
+    .top_pick_popup .top_pick_wrapper {
+        width: calc(100% - 30px);
+    }
 
 }
 
