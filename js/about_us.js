@@ -359,6 +359,21 @@ let calcScrollValue = () => {
 
 
 
+// Parallax footer area
+const parallax_footer = document.querySelector(".parallax_footer_area");
+const upper_area = document.querySelector(".extra_service");
+
+function updateMargin() {
+    let footer_height = parallax_footer.offsetHeight;
+    upper_area.style.marginBottom = `${footer_height}px`;
+}
+
+// Call updateMargin initially and on window resize
+updateMargin();
+window.addEventListener("resize", updateMargin);
+
+
+
 
 //swiper code
 
