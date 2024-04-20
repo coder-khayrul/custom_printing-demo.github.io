@@ -301,7 +301,8 @@ toggle_button.addEventListener("click", () => {
 
 
 //side cart hanlder
-$(".cart_icon").on("click", () => {
+$(".cart_icon").on("click", (e) => {
+    e.preventDefault()
     $(".side_cart_wrapper").slideDown();
     $(".side_cart").fadeToggle();
 });
