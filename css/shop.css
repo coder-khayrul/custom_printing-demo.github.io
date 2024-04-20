@@ -3231,7 +3231,10 @@ ul.breadcrumb_div li a:hover {
     color: var(--primary-color);
     transition: .6s;
 }
-
+ul.breadcrumb_div li:first-child a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
 ul.breadcrumb_div li:first-child a {
     color: var(--sub-text-color);
 }
