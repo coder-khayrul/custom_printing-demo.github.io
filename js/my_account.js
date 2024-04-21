@@ -1,6 +1,19 @@
 
+//***SCRIPT FOR DESHBOARD MENU ITEM HANDLER */
 
+const deshboard_items = document.querySelectorAll("#myTab2 li")
 
+const deshboard_items_array = Array.from(deshboard_items);
+
+deshboard_items_array.forEach(item => {
+    item.addEventListener("click", () => {
+        deshboard_items_array.forEach(othersItem => {
+            othersItem.classList.remove("active")
+        }) 
+        item.classList.add("active")
+    })
+   
+})
 
 
 

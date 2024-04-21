@@ -2384,29 +2384,29 @@ button.mobile_menu_btn svg {
 
 button.bottom_header_btn {
 
-height: 35px;
+    height: 35px;
 
-width: 35px;
+    width: 35px;
 
-border: 1px solid transparent;
+    border: 1px solid transparent;
 
-border-radius: 50%;
+    border-radius: 50%;
 
-background: var(--accent-color);
+    background: var(--accent-color);
 
-color: var(--text-color);
+    color: var(--text-color);
 
-position: absolute;
+    position: absolute;
 
-left: 50%;
+    left: 50%;
 
-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
 
-top: 70px;
+    top: 70px;
 
-overflow: hidden;
+    overflow: hidden;
 
-z-index: 1;
+    z-index: 1;
 }
 
 .category_container .category_list li {
@@ -3090,31 +3090,32 @@ z-index: 1;
     font-size: 14px !important;
     color: var(--sub-text-color);
 }
-.cart_icon svg{
+
+.cart_icon svg {
     box-shadow: 0 0 0 0 rgba(117, 117, 117, 0.055);
 }
 
 
-.cart_icon{
+.cart_icon {
     animation: anim 3s infinite;
     border-radius: 50%;
 }
 
 @keyframes anim {
     0% {
-      box-shadow: 0 0 0 0rem rgba(23,122,254, 0.2),
-                  0 0 0 1rem rgba(23,122,254, 0.16),
-                  0 0 0 1.5rem rgba(23,122,254, 0.12)
-                  
+        box-shadow: 0 0 0 0rem rgba(23, 122, 254, 0.2),
+            0 0 0 1rem rgba(23, 122, 254, 0.16),
+            0 0 0 1.5rem rgba(23, 122, 254, 0.12)
     }
+
     100% {
-      box-shadow: 0 0 0 1rem rgba(23,122,254, 0.08),
-                  0 0 0 1.5rem rgba(23,122,254, 0.06),
-                  0 0 0 2rem rgba(23,122,254, 0.03)
-              
+        box-shadow: 0 0 0 1rem rgba(23, 122, 254, 0.08),
+            0 0 0 1.5rem rgba(23, 122, 254, 0.06),
+            0 0 0 2rem rgba(23, 122, 254, 0.03)
     }
-  }
-  .side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .fill_area {
+}
+
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .fill_area {
     width: 80%;
     background: var(--primary-color);
     position: absolute;
@@ -3131,18 +3132,21 @@ z-index: 1;
     background: white;
     left: 33%;
 }
-.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_1{
+
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_1 {
     position: absolute;
     left: 31%;
     top: -25px;
     color: #F9B900;
 }
-.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_2{
+
+.side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar .range_2 {
     position: absolute;
     left: 64%;
     top: -25px;
     color: #F9B900;
 }
+
 .side_cart .side_cart_wrapper .cart_bottom .progress_area .progress_bar::before {
     content: " ";
     width: 5px;
@@ -3156,8 +3160,583 @@ z-index: 1;
 /*header style end*/
 
 
+/**==============START OF USER ACCOUNT DESHBOARD STYLE=============**/
+ul.breadcrumb_div {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 0;
+}
+
+ul.breadcrumb_div li a {
+    font-size: 14px;
+    transition: .6s;
+    color: var(--sub-text-color);
+    text-decoration: none;
+}
+
+ul.breadcrumb_div li:last-child span::before {
+    content: ">";
+    position: absolute;
+    font-size: 16px;
+    transform: translate(-17px, 0px);
+}
+
+ul.breadcrumb_div li a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+ul.breadcrumb_div li:first-child a {
+    color: var(--sub-text-color);
+}
+
+ul.breadcrumb_div li:first-child a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+section.page_intro {
+    background: var(--primary-light);
+    padding: 50px 0px;
+}
+
+section.page_intro .page_intro_wrapper h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+section.user_deshboard {
+    background: var(--secondary-color);
+    padding: 45px 0;
+}
+
+section.user_deshboard .user_deshboard_wrapper.d-flex {
+    gap: 30px;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul {
+    border-bottom: none;
+    margin: 0;
+    padding: 35px 10px;
+    padding-right: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--primary-color);
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul li>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul li>a>span:first-child {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside {
+    width: 220px;
+}
+
+section.user_deshboard .user_deshboard_wrapper .deshboard_area {
+    width: calc(100% - 280px);
+    border-radius: 15px;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul li>a.active {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:first-child {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: var(--text-color);
+    top: -20px;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul>li {
+    position: relative;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:first-child::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    background: var(--primary-color);
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2) {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: var(--text-color);
+    bottom: -20px;
+}
+
+section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2)::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    background: var(--primary-color);
+}
+
+.deshboard_area div#myTabContent2 .profile_tab {
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(100% - 320px) 300px;
+    gap: 20px;
+    grid-template-rows: auto auto;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .single_profile_box {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--primary-light);
+    background: var(--primary-light);
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card {
+    border: 1px solid var(--primary-light);
+    padding: 15px;
+    border-radius: 15px;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .single_profile_box>h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.deshboard_area .double_input input,
+.deshboard_area .single_input input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--sub-color);
+    padding: 0px 15px;
+    font-size: 14px;
+    color: var(--sub-text-color);
+    border-radius: 5px;
+    outline: none;
+    transition: .6s;
+}
+
+.deshboard_area .double_input {
+    gap: 15px;
+}
+
+.deshboard_area .single_input,
+.deshboard_area .double_input {
+    margin-bottom: 15px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab form>button {
+    padding: 12px 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin-top: 30px;
+    background: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: .6s;
+}
+
+.deshboard_area .double_input input:focus,
+.deshboard_area .single_input input:focus {
+    border-color: var(--primary-color);
+    transition: .6s;
+}
+
+.deshboard_area .double_input .input_group {
+    position: relative;
+    height: 45px;
+}
+
+.deshboard_area .double_input .input_group>input {
+    width: 100%;
+    padding-right: 55px;
+}
+
+.deshboard_area .double_input .input_group>button {
+    position: absolute;
+    right: 5px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: var(--primary-color);
+    transition: .6s;
+    font-weight: 500;
+}
+
+.deshboard_area form .gander_group>label {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: var(--sub-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deshboard_area form .gander_group>label>input {
+    display: none;
+}
+
+.deshboard_area form .gander_group {
+    display: flex;
+    gap: 20px;
+}
+
+.deshboard_area form .gander_group>label.active {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.deshboard_area div#myTabContent2 .profile_tab form>button:hover {
+    background: var(--primary-color);
+    transition: .6s;
+}
+
+.deshboard_area .double_input .input_group>button:hover {
+    color: var(--accent-color);
+    transition: .6s;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card {
+    background: var(--primary-light);
+    padding: 50px 10px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>span {
+    color: #555;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>button {
+    display: block;
+    margin: auto;
+    padding: 10px 25px;
+    border: none;
+    background: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .6s;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info {
+    margin-bottom: 50px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card ul.profile_address {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card ul.profile_address>li {
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card ul.profile_address>li>span:first-child {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card ul.profile_address>li>span:last-child {
+    width: calc(100% - 45px);
+}
+
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>button:hover {
+    background: var(--primary-color);
+    transition: .6s;
+}
+
+.address_tab .address_tab_header>h3 {
+    font-size: 22px;
+}
+
+.address_tab .address_tab_header>button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color);
+    transition: .6s;
+}
+
+.address_tab .address_tab_header>button:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.address_tab .address_tab_body .single_address {
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--primary-light);
+}
+
+.address_tab .address_tab_body .single_address .single_address_header h4 {
+    font-size: 18px;
+}
+
+.address_tab .address_tab_body .single_address .single_address_header .left_side {
+    width: calc(100% - 55px);
+}
+
+.address_tab .address_tab_body .single_address .single_address_header .right_side {
+    width: 50px;
+    height: 50px;
+}
+
+.address_tab .address_tab_body .single_address .single_address_header .left_side>b {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.address_tab .address_tab_body .single_address .single_address_header {
+    margin-bottom: 25px;
+}
+
+.address_tab .address_tab_body .single_address ul.single_address_body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address_tab .address_tab_body .single_address ul.single_address_body li>span:first-child {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    color: var(--sub-text-color);
+}
 
 
+.address_tab .address_tab_body .single_address ul.single_address_body li>a {
+    font-size: 15px;
+    color: var(--sub-text-color);
+}
+
+.address_tab .address_tab_body .single_address ul.single_address_body li {
+    font-size: 15px;
+    color: var(--sub-text-color);
+}
+
+.address_tab_header {
+    margin-bottom: 15px;
+}
+.address_options > span {
+    font-size: 16px;
+    cursor: pointer;
+    transition: .6s;
+    font-weight: 500;
+    color: var(--sub-text-color);
+}
+
+.address_options {
+    margin-top: 20px;
+}
+
+.address_options > span:hover {
+    transition: .6s;
+    color: var(--accent-color);
+}
+.single_order_product {
+    border-radius: 15px;
+    border: 1px solid var(--primary-light);
+    overflow: hidden;
+}
+
+.single_order_product .order_produt_header  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.single_order_product .order_produt_header > a {
+    color: var(--primary-color);
+}
+
+.single_order_product .order_produt_header a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.single_order_product .order_product_area .op_img {
+    width: 135px;
+    min-height: 175px;
+    border-right: 1px solid var(--primary-light);
+    padding: 5px;
+    display: flex;
+}
+
+.order_produt_header {
+    padding: 15px;
+    border-bottom: 1px solid var(--primary-light);
+    background: var(--primary-light);
+}
+
+.single_order_product .order_product_area .op_info > h3 {
+    line-height: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.single_order_product .order_product_area .op_info > h3 > a {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    transition: .6s;
+}
+
+.single_order_product .order_product_area .op_info > a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.single_order_product .order_product_area .op_info > .star {
+    font-size: 14px;
+    color: var(--primary-color);
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+.single_order_product .order_product_area .op_info > b {
+    font-size: 20px;
+}
+
+.single_order_product .order_product_area .op_info {
+    padding: 10px;
+}
+
+.single_order_product .order_product_area .op_info > h3 > a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+.order_product_bottom >a {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 25px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    display: inline-block;
+    transition: .6s;
+}
+
+.order_product_bottom {
+    margin-top: 20px;
+}
+
+.order_product_bottom >b {
+    font-size: 18px;
+    color: var(--accent-color);
+}
+.order_product_bottom >a:hover {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.order_tab_header >h4 {
+    font-size: 22px;
+}
+
+.order_tab_header {
+    margin-bottom: 15px;
+}
+
+.order_tab_header .sort_year {
+    width: 115px;
+}
+
+.order_tab_header .sort_year select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    font-size: 15px;
+    padding: 0px 10px;
+}
+/**==============END OF USER ACCOUNT DESHBOARD STYLE=============**/
 
 
 

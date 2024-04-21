@@ -2233,11 +2233,715 @@
 
 
     <main>
+        <!--BREADCRUMB SECTION-->
+        <section class="page_intro">
+            <div class="container-fluid container-xl">
+                <div class="page_intro_wrapper d-flex flex-column  align-items-center justify-content-center ">
+                    <h2 class="page_title">My Account </h2>
+                    <ul class="breadcrumb_div ps-0">
+                        <li class="list-unstyled">
+                            <a href="index.html"><i class="fa-solid fa-house me-1"></i> Home</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <span>My Account</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!--START OF ACCOUNT DESHBOARD -->
-
         <section class="user_deshboard">
             <div class="container-fluid container-xl">
-                <div class="user_deshboard_wrapper">
+                <div class="user_deshboard_wrapper d-flex ">
+                    <aside>
+                        <ul class="nav-tabs" id="myTab2" role="tablist">
+                            <li class="list-unstyled active">
+                                <b></b>
+                                <b></b>
+                                <a href="#" class="active" id="my_profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#my_profile-tab-pane" role="tab" aria-selected="true">
+                                    <span><i class="fa-regular fa-user"></i></span>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <b></b>
+                                <b></b>
+                                <a href="#" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane"
+                                    role="tab" aria-selected="true">
+                                    <span><i class="fa-solid fa-address-card"></i></span>
+                                    <span>Address</span>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <b></b>
+                                <b></b>
+                                <a href="#" id="my_order-tab" data-bs-toggle="tab" data-bs-target="#my_order-tab-pane"
+                                    role="tab" aria-selected="true">
+                                    <span><i class="fa-solid fa-shirt"></i></span>
+                                    <span>My Order</span>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <b></b>
+                                <b></b>
+                                <a href="#" id="wishlist-tab" data-bs-toggle="tab" data-bs-target="#wishlist-tab-pane"
+                                    role="tab" aria-selected="true">
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                    <span>My Wishlist</span>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <b></b>
+                                <b></b>
+                                <a href="#" id="payment_methods-tab" data-bs-toggle="tab"
+                                    data-bs-target="#payment_methods-tab-pane" role="tab" aria-selected="true">
+                                    <span><i class="fa-regular fa-credit-card"></i></span>
+                                    <span>Payment Methods</span>
+                                </a>
+                            </li>
+                            <li class="list-unstyled">
+                                <b></b>
+                                <b></b>
+                                <a href="#" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane"
+                                    role="tab" aria-selected="true">
+                                    <span><i class="fa-solid fa-gear"></i></span>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="deshboard_area">
+                        <div class="tab-content" id="myTabContent2">
+                            <div class="tab-pane fade show active" id="my_profile-tab-pane" role="tabpanel"
+                                tabindex="0">
+                                <div class="profile_tab">
+                                    <div class="single_profile_box">
+                                        <h4>Personal Information</h4>
+                                        <form>
+                                            <div class="double_input d-flex align-items-center">
+                                                <input type="text" name="firstName" id="firstName"
+                                                    placeholder="Ex: Jhone" required>
+                                                <input type="text" name="lastName" id="lastName" placeholder="Ex: Due"
+                                                    required>
+                                            </div>
+                                            <div class="double_input d-flex align-items-center">
+                                                <div class="input_group d-flex align-items-center">
+                                                    <input type="text" name="customer_email" id="customer_email"
+                                                        placeholder="abc1234@gmail.com" required>
+                                                    <button type="submit">Update</button>
+                                                </div>
+                                                <div class="input_group d-flex align-items-center">
+                                                    <input type="number" name="customer_phone" id="customer_phone"
+                                                        placeholder="+1234 5678 910" required>
+                                                    <button type="submit">Update</button>
+                                                </div>
+                                            </div>
+                                            <div class="gander_group">
+                                                <label for="male">
+                                                    <input type="radio" id="male" name="customer_gender">
+                                                    <span>
+                                                        <i class="fa-solid fa-mars"></i>
+                                                    </span>
+                                                    Male
+                                                </label>
+                                                <label for="female">
+                                                    <input type="radio" name="customer_gender" id="female">
+                                                    <span>
+                                                        <i class="fa-solid fa-venus"></i>
+                                                    </span>
+                                                    Female
+                                                </label>
+                                                <label for="custom">
+                                                    <input type="radio" name="customer_gender" id="custom">
+                                                    <span>
+                                                        <i class="fa-solid fa-transgender"></i>
+                                                    </span>
+                                                    Custom
+                                                </label>
+                                            </div>
+                                            <button type="submit">Save Change</button>
+                                        </form>
+                                    </div>
+                                    <div class="profile_card">
+                                        <div class="profile_card_wrapper d-flex align-items-center flex-column">
+                                            <div class="profile_img">
+                                                <img class="img-fluid" src="img/man-1.png" alt="profile image">
+                                            </div>
+                                            <div class="profile_card_info">
+                                                <h3>Khayrul Islam</h3>
+                                                <span>Client</span>
+                                                <button>Edit Profile</button>
+                                            </div>
+                                            <ul class="profile_address mb-0">
+                                                <li class="list-unstyled d-flex align-items-center gap-2">
+                                                    <span>
+                                                        <i class="fa-solid fa-location-crosshairs"></i>
+                                                    </span>
+                                                    <span>522F Tuker Bazar, Jabipur, Sylhet, Bangladesh</span>
+                                                </li>
+                                                <li class="list-unstyled d-flex align-items-center gap-2">
+                                                    <span>
+                                                        <i class="fa-regular fa-envelope"></i>
+                                                    </span>
+                                                    <span>abc1234@gmail.com</span>
+                                                </li>
+                                                <li class="list-unstyled d-flex align-items-center gap-2">
+                                                    <span>
+                                                        <i class="fa-solid fa-phone"></i>
+                                                    </span>
+                                                    <span>+1234 567 8910</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single_profile_box">
+                                        <h4>Change Password</h4>
+                                        <form>
+                                            <div class="single_input">
+                                                <input type="password" name="firstName" id="customer_password"
+                                                    placeholder="Currnet Password" required>
+                                            </div>
+                                            <div class="single_input">
+                                                <input type="password" name="new_password" id="new_password"
+                                                    placeholder="New Password" required>
+                                            </div>
+                                            <div class="single_input">
+                                                <input type="password" name="confirm_password" id="confirm_password"
+                                                    placeholder="Confirm New Password" required>
+                                            </div>
+                                            <button type="submit">Change Password</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="address_tab">
+                                    <div class="address_tab_header d-flex align-items-center justify-content-between">
+                                        <h3>Manage Shipping Address</h3>
+                                        <button>
+                                            <span>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </span>
+                                            Add New Address
+                                        </button>
+                                    </div>
+                                    <div class="address_tab_body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="single_address">
+                                                    <div class="single_address_header d-flex justify-content-between">
+                                                        <div class="left_side">
+                                                            <h4>Home Address</h4>
+                                                            <b>Khayrul Islam</b>
+                                                        </div>
+                                                        <a href="https://maps.app.goo.gl/VQaQMqVtMcf6vA8e8"
+                                                            target="_blank" class="right_side">
+                                                            <img class="img-fluid" src="img/map.png"
+                                                                alt="location image">
+                                                        </a>
+                                                    </div>
+                                                    <ul class="single_address_body mb-0">
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-location-crosshairs"></i>
+                                                            </span>
+                                                            <span>522F Tuker Bazar, Jabipur, Sylhet, Bangladesh</span>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-regular fa-envelope"></i>
+                                                            </span>
+                                                            <a href="mailto='abc@gmail.com'">abc1234@gmail.com</a>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-phone"></i>
+                                                            </span>
+                                                            <a href="tel='123453'">+1234 567 8910</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="address_options d-flex align-items-center gap-4">
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </span>
+                                                        <span class="single_address_option">Set As Default</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="single_address">
+                                                    <div class="single_address_header d-flex justify-content-between">
+                                                        <div class="left_side">
+                                                            <h4>My Office Address</h4>
+                                                            <b>Jhone Due</b>
+                                                        </div>
+                                                        <a href="https://maps.app.goo.gl/VQaQMqVtMcf6vA8e8"
+                                                            target="_blank" class="right_side">
+                                                            <img class="img-fluid" src="img/map.png"
+                                                                alt="location image">
+                                                        </a>
+                                                    </div>
+                                                    <ul class="single_address_body mb-0">
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-location-crosshairs"></i>
+                                                            </span>
+                                                            <span>D-Block, Mirpur, Dhaka, Bangladesh</span>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-regular fa-envelope"></i>
+                                                            </span>
+                                                            <a href="mailto='abc@gmail.com'">abc1234@gmail.com</a>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-phone"></i>
+                                                            </span>
+                                                            <a href="tel='123453'">+1234 567 8910</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="address_options d-flex align-items-center gap-4">
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </span>
+                                                        <span class="single_address_option">Set As Default</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="single_address">
+                                                    <div class="single_address_header d-flex justify-content-between">
+                                                        <div class="left_side">
+                                                            <h4>My Hotal Address</h4>
+                                                            <b>Jack Drubo</b>
+                                                        </div>
+                                                        <a href="https://maps.app.goo.gl/VQaQMqVtMcf6vA8e8"
+                                                            target="_blank" class="right_side">
+                                                            <img class="img-fluid" src="img/map.png"
+                                                                alt="location image">
+                                                        </a>
+                                                    </div>
+                                                    <ul class="single_address_body mb-0">
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-location-crosshairs"></i>
+                                                            </span>
+                                                            <span>201 Bellevue Square, Space 201, UK</span>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-regular fa-envelope"></i>
+                                                            </span>
+                                                            <a href="mailto='abc@gmail.com'">abc1234@gmail.com</a>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-phone"></i>
+                                                            </span>
+                                                            <a href="tel='123453'">+1234 567 8910</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="address_options d-flex align-items-center gap-4">
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </span>
+                                                        <span class="single_address_option">Set As Default</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="single_address">
+                                                    <div class="single_address_header d-flex justify-content-between">
+                                                        <div class="left_side">
+                                                            <h4>Others Address</h4>
+                                                            <b>Mark Harray</b>
+                                                        </div>
+                                                        <a href="https://maps.app.goo.gl/VQaQMqVtMcf6vA8e8"
+                                                            target="_blank" class="right_side">
+                                                            <img class="img-fluid" src="img/map.png"
+                                                                alt="location image">
+                                                        </a>
+                                                    </div>
+                                                    <ul class="single_address_body mb-0">
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-location-crosshairs"></i>
+                                                            </span>
+                                                            <span>15205 North Kierland Blvd, USA</span>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-regular fa-envelope"></i>
+                                                            </span>
+                                                            <a href="mailto='abc@gmail.com'">abc1234@gmail.com</a>
+                                                        </li>
+                                                        <li class="list-unstyled d-flex align-items-center gap-2">
+                                                            <span>
+                                                                <i class="fa-solid fa-phone"></i>
+                                                            </span>
+                                                            <a href="tel='123453'">+1234 567 8910</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="address_options d-flex align-items-center gap-4">
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="single_ap">
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </span>
+                                                        <span class="single_address_option">Set As Default</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="my_order-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="order_tab">
+                                    <div class="order_tab_header d-flex align-items-center justify-content-between">
+                                        <h4>Order History</h4>
+                                        <div class="sort_year">
+                                            <select id="sort_year">
+                                                <option value="2">2024</option>
+                                                <option value="2">2023</option>
+                                                <option value="2">2022</option>
+                                                <option value="2">2021</option>
+                                                <option value="2">2020</option>
+                                                <option value="2">2024</option>
+                                                <option value="2">2024</option>
+                                                <option value="2">2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="order_tab_body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-truck-fast"></i>
+                                                            </span>
+                                                            Shipped
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/hero_bg_3.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Custom Printed Metirials</a></h3>
+                                                            <a href="#">Accessories</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$120</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-4">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-heart-circle-check"></i>
+                                                            </span>
+                                                            Delivered
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/tshirt-7.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Creative T-Shirt Design</a></h3>
+                                                            <a href="#">Tshirt</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$80</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-4 ">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-truck-fast"></i>
+                                                            </span>
+                                                            Shipped
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/card-3.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Professional Poster Design</a></h3>
+                                                            <a href="#">Poster</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$40</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-4 ">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-heart-circle-check"></i>
+                                                            </span>
+                                                            Delivered
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/sports-4.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Brazilian jersey Design</a></h3>
+                                                            <a href="#">Sports</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$120</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-heart-circle-check"></i>
+                                                            </span>
+                                                            Delivered
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/card-1.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Custom Flyers Design</a></h3>
+                                                            <a href="#">Flyers</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$120</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="single_order_product ">
+                                                    <div
+                                                        class="order_produt_header d-flex align-items-center justify-content-between">
+                                                        <a href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-heart-circle-check"></i>
+                                                            </span>
+                                                            Delivered
+                                                        </a>
+                                                        <div
+                                                            class="righ_side_options d-flex align-items-center justify-content-end gap-3">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-regular fa-file-lines"></i>
+                                                                </span>
+                                                                Invoice
+                                                            </a>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                </span>
+                                                                Tracking
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_product_area d-flex">
+                                                        <div class="op_img">
+                                                            <img src="img/mug-1.png" alt="Product Image"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="op_info">
+                                                            <h3><a href="#">Printed Mug Design Mockup</a></h3>
+                                                            <a href="#">Mug Design</a>
+                                                            <div class="star d-flex align-items-center ">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <div
+                                                                class="order_product_bottom d-flex align-items-center justify-content-between ">
+                                                                <a href="#">Buy Again</a>
+                                                                <b>$60</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="wishlist-tab-pane" role="tabpanel" tabindex="0">
+                                wishlist Tab
+                            </div>
+                            <div class="tab-pane fade" id="payment_methods-tab-pane" role="tabpanel" tabindex="0">
+                                payment_methods Tab
+                            </div>
+                            <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" tabindex="0">
+                                settings Tab
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
