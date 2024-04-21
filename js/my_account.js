@@ -1,4 +1,33 @@
 
+//***SCRIPT FOR DESHBOARD MENU TOGGLE */
+
+const menu_toggle_btn = document.querySelector(".toggle_deshboard")
+const deshboard_main = document.querySelector(".deshboard_area")
+const toggle_menu = document.querySelector(".user_deshboard_wrapper aside");
+const menu_hide_item = document.querySelectorAll("aside>ul li>a>span:last-child")
+
+let isclicked =true;
+menu_toggle_btn.addEventListener("click", () => {
+    
+if(isclicked){
+      menu_hide_item.forEach(item => {
+        item.classList.add("deshboard_toggle_item")
+    })
+    toggle_menu.classList.add("toggle_width");
+   menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`
+   deshboard_main.style.width="calc(100% - 90px)"
+}else{
+    menu_hide_item.forEach(item => {
+        item.classList.remove("deshboard_toggle_item")
+    })
+    toggle_menu.classList.remove("toggle_width");
+    menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`
+    deshboard_main.style.width="calc(100% - 280px)"
+}
+isclicked  = !isclicked;
+}) 
+
+
 //***SCRIPT FOR DESHBOARD MENU ITEM HANDLER */
 
 const deshboard_items = document.querySelectorAll("#myTab2 li")
@@ -9,10 +38,10 @@ deshboard_items_array.forEach(item => {
     item.addEventListener("click", () => {
         deshboard_items_array.forEach(othersItem => {
             othersItem.classList.remove("active")
-        }) 
+        })
         item.classList.add("active")
     })
-   
+
 })
 
 
@@ -40,7 +69,7 @@ $(".mobile_menu_close").on("click", () => {
     $(".mobile_side_menu").removeClass("show_menu")
     $(".moblie_menu_wrapper").addClass("hide_wrapper")
     $(".moblie_menu_wrapper").removeClass("show_wrapper")
- 
+
 })
 $(".mobile_menu_btn").on("click", () => {
     $(".mobile_side_menu").addClass("show_menu")

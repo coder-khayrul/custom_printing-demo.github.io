@@ -3231,16 +3231,20 @@ section.user_deshboard .user_deshboard_wrapper aside>ul li>a {
     padding: 15px 10px;
     color: var(--text-color);
     font-weight: 500;
+    white-space: nowrap;
 }
 
 section.user_deshboard .user_deshboard_wrapper aside>ul li>a>span:first-child {
     width: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 9;
 }
 
 section.user_deshboard .user_deshboard_wrapper aside {
     width: 220px;
+    position: relative;
 }
 
 section.user_deshboard .user_deshboard_wrapper .deshboard_area {
@@ -3849,37 +3853,6 @@ input[type="number"]::-webkit-outer-spin-button {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.single_realted_product .rp_image .rp_options {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    transition: .6s;
-    visibility: hidden;
-    opacity: 0;
-    bottom: 15px;
-}
-
-.single_realted_product .rp_image .rp_options>button {
-    width: 40px;
-    height: 40px;
-    outline: none;
-    border: 1px solid transparent;
-    background: var(--primary-light);
-    color: var(--sub-text-color);
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    transition: .6s;
-}
-
-.single_realted_product:hover .rp_image .rp_options {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, 0);
-    transition: .6s;
-}
 
 .single_realted_product .rp_info {
     padding: 15px;
@@ -3898,7 +3871,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .single_realted_product .rp_info>h3 {
-    line-height: 5px;
+    line-height: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -3966,17 +3939,42 @@ input[type="number"]::-webkit-outer-spin-button {
     color: var(--accent-color);
 }
 
-.single_realted_product .rp_image .rp_options>button:hover {
-    background: var(--primary-color);
-    transition: .6s;
-    color: var(--text-color);
-}
-
 .single_realted_product:hover {
     transition: .6s;
     border-color: var(--primary-color);
 }
 
+span.toggle_deshboard {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--text-color);
+    z-index: 99;
+    cursor: pointer;
+    transition: .6s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid var(--accent-color);
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+span.toggle_deshboard:hover {
+    background: var(--secondary-color);
+    color: var(--sub-text-color);
+    transition: .6s;
+    border-color: var(--accent-color);
+}
+.deshboard_toggle_item{
+    visibility: hidden;
+    opacity: 0;
+}
+.toggle_width{
+ width: 60px !important;
+}
 /**==============END OF USER ACCOUNT DESHBOARD STYLE=============**/
 
 
