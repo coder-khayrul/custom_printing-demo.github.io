@@ -3782,14 +3782,15 @@ input[type="number"]::-webkit-outer-spin-button {
     background: var(--accent-color);
 }
 
- .single_realted_product {
+.single_realted_product {
     background: var(--primary-light);
     border-radius: 10px;
     transition: .6s;
     border: 1px solid transparent;
     position: relative;
 }
- .single_realted_product .rp_image {
+
+.single_realted_product .rp_image {
     position: relative;
     height: 230px;
     overflow: hidden;
@@ -3968,12 +3969,219 @@ span.toggle_deshboard:hover {
     transition: .6s;
     border-color: var(--accent-color);
 }
-.deshboard_toggle_item{
+
+.deshboard_toggle_item {
     visibility: hidden;
     opacity: 0;
 }
-.toggle_width{
- width: 60px !important;
+
+.toggle_width {
+    width: 60px !important;
+}
+
+.wishlist_tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.payment_tab .single_payment_section>h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card {
+    padding: 15px;
+    border-radius: 15px;
+    background: #F7B600;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_logo {
+    width: 76px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_number {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_info {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_info>b {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_info>span {
+    font-size: 16px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card.master_card {
+    background: #444;
+    color: var(--text-color);
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card.american_card {
+    background: #016CC9;
+    color: var(--text-color);
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_manage {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_manage .single_edit_option>span {
+    transition: .6s;
+    cursor: pointer;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_manage .single_edit_option>span:hover {
+    color: var(--accent-color);
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_manage span.card_default {
+    cursor: pointer;
+    transition: .6s;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card .card_manage span.card_default:hover {
+    color: var(--accent-color);
+    transition: .6s;
+}
+
+.payment_tab .single_payment_section .sp_wrapper .single_card.add_new_card {
+    background: var(--primary-light);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul {
+    border: none !important;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul li {
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--primary-light);
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid transparent;
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul li>b {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--sub-text-color);
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul li>span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul li.active>span {
+    border: 5px solid var(--primary-color);
+}
+
+.payment_tab .single_payment_section .add_payment_area>ul li.active {
+    border: 1px solid var(--primary-color);
+}
+
+form.cradit_card_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+}
+
+div#myTabContent3 {
+    padding: 30px 0px;
+}
+
+form.cradit_card_form .cc_single_input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form.cradit_card_form .cc_single_input input {
+    padding: 0px 15px;
+    font-size: 15px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--primary-light);
+    transition: .6s;
+}
+
+form.cradit_card_form .cc_single_input input:focus {
+    border-color: var(--primary-color);
+    transition: .6s;
+}
+
+form.cradit_card_form .cc_single_input label {
+    font-size: 15px;
+}
+
+form.cradit_card_form .cc_input_group .cc_single_input {
+    width: 50%;
+}
+
+form.cradit_card_form .cc_input_group {
+    display: flex;
+    gap: 20px;
+}
+
+form.cradit_card_form p,
+.upi_tab>p,
+.paypal_tab>p {
+    font-size: 15px;
+    color: #666;
+}
+
+form.cradit_card_form .cc_form_action>button,
+.upi_tab .cc_form_action>button,
+.paypal_tab .cc_form_action>button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background: var(--accent-color);
+    color: var(--text-color);
+    transition: .6s;
+}
+
+form.cradit_card_form .cc_form_action>button:hover,
+.upi_tab .cc_form_action>button:hover,
+.paypal_tab .cc_form_action>button:hover {
+    background: var(--primary-color);
+    transition: .6s;
+}
+.add_payment_div.show {
+    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .6s;
 }
 /**==============END OF USER ACCOUNT DESHBOARD STYLE=============**/
 

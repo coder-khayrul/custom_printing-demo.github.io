@@ -27,7 +27,25 @@ if(isclicked){
 isclicked  = !isclicked;
 }) 
 
+//**SCRIPT FOR DELETE PRODUCT FROM WISHLIST */
 
+const wishlist_product = document.querySelectorAll(".single_realted_product")
+
+wishlist_product.forEach(product => {
+   
+        let wishlist_product_delete = product.querySelector(".delete_product");
+        wishlist_product_delete.addEventListener("click", () => {
+            product.style.display = "none"
+        })
+})
+
+//***SCRIPT FOR ADD PAYMENT BUTTON HANDLING */
+const payment_add_button = document.querySelector(".add_new_card");
+const payment_add_area = document.querySelector(".add_payment_div")
+
+payment_add_button.addEventListener("click", () => {
+    payment_add_area.classList.toggle("show")
+})
 //***SCRIPT FOR DESHBOARD MENU ITEM HANDLER */
 
 const deshboard_items = document.querySelectorAll("#myTab2 li")
