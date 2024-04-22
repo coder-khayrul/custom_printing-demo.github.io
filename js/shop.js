@@ -137,9 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         aside_banner_close.addEventListener("click", () => {
             aside_banner_area.style.display = "none"
-            console.log("hello")
-            console.log(aside_banner_area)
-            console.log(aside_banner_close)
         })
     }
 })

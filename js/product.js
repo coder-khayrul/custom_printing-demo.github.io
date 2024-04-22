@@ -173,7 +173,7 @@ coupon_icon.addEventListener("click", () => {
 
         })
         .catch((err) => {
-            console.log(err)
+            console.warn(err)
         });
 });
 
