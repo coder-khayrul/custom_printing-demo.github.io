@@ -13,7 +13,192 @@
 </head>
 
 <body>
-
+    <!--EDIT ADDRESS POPUP-->
+    <div class="address_edit_popup">
+        <span class="address_edit_close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+        <div class="ae_popup_bg"></div>
+        <div class="address_edit_wrapper address_popup">
+            <h3>Edit Address</h3>
+            <form>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="ae_first_name">First Name</label>
+                        <input type="text" id="ae_first_name" value="Jhon" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="ae_last_name">Last Name</label>
+                        <input type="text" id="ae_last_name" value=" Due" required>
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="ae_email">Email</label>
+                        <input type="email" id="ae_email" value="abc1234@gmail.com" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="ae_phone">Phone Number</label>
+                        <input type="number" id="ae_phone" value="1234.910">
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="ae_street">Street</label>
+                        <input type="text" id="ae_street" value="201 Bellevue Squar" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="ae_city">City/Town</label>
+                        <input type="text" id="ae_city" value="Space 201, UK" required>
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="ae_Zip">Zip/Postal Code*</label>
+                        <input type="number" id="ae_Zip" value="12345" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="ae_country">Country</label>
+                        <input type="text" id="ae_country" value="United Kingdom" required>
+                    </div>
+                </div>
+                <div class="ae_form_action">
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--EDIT ADDRESS POPUP-->
+    <div class="address_add_popup">
+        <span class="address_add_close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+        <div class="ae_popup_bg"></div>
+        <div class="address_add_wrapper address_popup">
+            <h3>Add New Address</h3>
+            <form>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="add_first_name">First Name</label>
+                        <input type="text" id="add_first_name" placeholder="Ex: Jhon" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="add_last_name">Last Name</label>
+                        <input type="text" id="add_last_name" placeholder="Ex: Due" required>
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="add_email">Email</label>
+                        <input type="email" id="add_email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="add_phone">Phone Number</label>
+                        <input type="number" id="add_phone" placeholder="Ex: +1234 567 8910">
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="add_street">Street</label>
+                        <input type="text" id="add_street" placeholder="Ex: 201 Bellevue Squar" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="add_city">City/Town</label>
+                        <input type="text" id="add_city" placeholder="Ex: Space 201, UK" required>
+                    </div>
+                </div>
+                <div class="ae_input_group d-flex">
+                    <div class="single_ae_input">
+                        <label for="add_Zip">Zip/Postal Code*</label>
+                        <input type="number" id="add_Zip" placeholder="Ex: 1234" required>
+                    </div>
+                    <div class="single_ae_input">
+                        <label for="add_country">Country</label>
+                        <input type="text" id="add_country" placeholder="Ex: United Kindom" required>
+                    </div>
+                </div>
+                <div class="ae_form_action">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--DELETE POPUP -->
+    <div class="delete_alert address_delete_popup">
+        <div class="delete_bg"></div>
+        <div class="delete_wrapper d-flex align-items-center justify-content-center flex-column">
+            <span class="delete_popup_close ">
+                <i class="fa-solid fa-x"></i>
+            </span>
+            <h2>Are Your Sure?</h2>
+            <p>Are you sure you want to delete this address?</p>
+            <div class="action_btns d-flex align-items-center justify-content-center gap-4">
+                <button class="aff_btn">Yes</button>
+                <button class="neg_btn">No</button>
+            </div>
+        </div>
+    </div>
+    <!--SUCCESSFULL ALERT POPUP-->
+    <div class="success_msg">
+        <div class="success_msg_bg"></div>
+        <div class="success_popup_wrapper d-flex flex-column align-items-center justify-content-center">
+            <span class="success_icon">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <h3>Successfully Deleted!</h3>
+            <p>This item successfully deleted by you.</p>
+            <button class="dis_btn">Ok, Thanks</button>
+        </div>
+    </div>
+    <!--Default Msg-->
+    <div class="default_msg">
+        <div class="default_msg_bg"></div>
+        <div class="default_msg_wrapper d-flex flex-column align-items-center justify-content-center ">
+            <h3>Are You Sure?</h3>
+            <p class="text-center">Are you sure to set this address as your default address? </p>
+            <div class="default_action_btns d-flex align-items-center gap-4">
+                <button class="agree_btn">Yes</button>
+                <button class="disag_btn">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--EDIT CARD POPUP-->
+    <div class="cradit_card_popup">
+        <span class="cc_popup_close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+        <div class="cradit_card_bg"></div>
+        <div class="cradit_card_wrapper">
+            <h3>Edit Card Details</h3>
+            <form>
+                <div class="edit_cc_input">
+                    <label for="card_number">Card Number</label>
+                    <input type="text" id="card_number" value="1234 567 8910">
+                </div>
+                <div class="edit_cc_input">
+                    <label for="edit_expair_date">Expair Date</label>
+                    <input type="date" id="edit_expair_date" value="2025-02-08">
+                </div>
+                <div class="edit_cc_input">
+                    <label for="edit_card_holder">Card Holder</label>
+                    <input type="text" id="edit_card_holder" value="Jhon Due">
+                </div>
+                <div class="edit_cc_input">
+                    <label for="edit_card_type">Cradit Card Type</label>
+                    <select id="edit_card_type">
+                        <option value="" selected>Visa</option>
+                        <option value="">Master Card</option>
+                        <option value="">Mastro</option>
+                        <option value="">American Express</option>
+                    </select>
+                </div>
+                <div class="cc_form_actions">
+                    <button type="submit">Save Change</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- mobile side menu-->
     <div class="mobile_side_menu">
         <div class="moblie_menu_bg"></div>
@@ -2405,7 +2590,8 @@
                                                 <img class="img-fluid" src="img/man-1.png" alt="profile image">
                                                 <label for="profile_upload" class="edit_profile">
                                                     <i class="fa-solid fa-pen-to-square"></i>
-                                                    <input class="d-none " type="file" id="profile_upload" accept="image/png, image/gif, image/jpeg, image/webp">
+                                                    <input class="d-none " type="file" id="profile_upload"
+                                                        accept="image/png, image/gif, image/jpeg, image/webp">
                                                 </label>
                                             </div>
                                             <div class="profile_card_info">
@@ -2502,13 +2688,13 @@
                                                         </li>
                                                     </ul>
                                                     <div class="address_options d-flex align-items-center gap-4">
-                                                        <span class="single_ap">
+                                                        <span class="single_ap edit_address">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </span>
-                                                        <span class="single_ap">
+                                                        <span class="single_ap delete_btn">
                                                             <i class="fa-regular fa-trash-can"></i>
                                                         </span>
-                                                        <span class="single_address_option">Set As Default</span>
+                                                        <span class="default_address_btn">Set As Default</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2546,13 +2732,13 @@
                                                         </li>
                                                     </ul>
                                                     <div class="address_options d-flex align-items-center gap-4">
-                                                        <span class="single_ap">
+                                                        <span class="single_ap edit_address">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </span>
-                                                        <span class="single_ap">
+                                                        <span class="single_ap delete_btn">
                                                             <i class="fa-regular fa-trash-can"></i>
                                                         </span>
-                                                        <span class="single_address_option">Set As Default</span>
+                                                        <span class="default_address_btn">Set As Default</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2590,13 +2776,13 @@
                                                         </li>
                                                     </ul>
                                                     <div class="address_options d-flex align-items-center gap-4">
-                                                        <span class="single_ap">
+                                                        <span class="single_ap edit_address">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </span>
-                                                        <span class="single_ap">
+                                                        <span class="single_ap delete_btn">
                                                             <i class="fa-regular fa-trash-can"></i>
                                                         </span>
-                                                        <span class="single_address_option">Set As Default</span>
+                                                        <span class="default_address_btn">Set As Default</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2634,13 +2820,13 @@
                                                         </li>
                                                     </ul>
                                                     <div class="address_options d-flex align-items-center gap-4">
-                                                        <span class="single_ap">
+                                                        <span class="single_ap edit_address">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </span>
-                                                        <span class="single_ap">
+                                                        <span class="single_ap delete_btn">
                                                             <i class="fa-regular fa-trash-can"></i>
                                                         </span>
-                                                        <span class="single_address_option">Set As Default</span>
+                                                        <span class="default_address_btn">Set As Default</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2710,7 +2896,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$120</b>
                                                             </div>
                                                         </div>
@@ -2760,7 +2946,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$80</b>
                                                             </div>
                                                         </div>
@@ -2810,7 +2996,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$40</b>
                                                             </div>
                                                         </div>
@@ -2860,7 +3046,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$120</b>
                                                             </div>
                                                         </div>
@@ -2910,7 +3096,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$120</b>
                                                             </div>
                                                         </div>
@@ -2960,7 +3146,7 @@
                                                             </div>
                                                             <div
                                                                 class="order_product_bottom d-flex align-items-center justify-content-between ">
-                                                                <a href="#">Buy Again</a>
+                                                                <a href="shop.html">Buy Again</a>
                                                                 <b>$60</b>
                                                             </div>
                                                         </div>
@@ -3379,7 +3565,8 @@
                                                     class="toggle_setting d-flex align-items-center justify-content-between ">
                                                     <div class="left_side">
                                                         <h5>Do You Want Others To Find Your Profile?</h5>
-                                                        <p class="mb-0">Makes your profile public, everyone can see your profile if enabled.
+                                                        <p class="mb-0">Makes your profile public, everyone can see your
+                                                            profile if enabled.
                                                         </p>
                                                     </div>
                                                     <div class="right_side">
@@ -3390,19 +3577,20 @@
                                                     </div>
                                                 </div>
                                                 <div
-                                                class="toggle_setting d-flex align-items-center justify-content-between ">
-                                                <div class="left_side">
-                                                    <h5>People With Link Can See You</h5>
-                                                    <p class="mb-0">Only people with your profile link can see you if enabled.
-                                                    </p>
+                                                    class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                    <div class="left_side">
+                                                        <h5>People With Link Can See You</h5>
+                                                        <p class="mb-0">Only people with your profile link can see you
+                                                            if enabled.
+                                                        </p>
+                                                    </div>
+                                                    <div class="right_side">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                                <div class="right_side">
-                                                    <label class="switch">
-                                                        <input type="checkbox">
-                                                        <span class="slider round"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                         <div class="single_setting_box">
@@ -3412,7 +3600,8 @@
                                                     class="toggle_setting d-flex align-items-center justify-content-between ">
                                                     <div class="left_side">
                                                         <h5>Do You Want Others To Find Your Profile?</h5>
-                                                        <p class="mb-0">Makes your profile public, everyone can see your profile if enabled.
+                                                        <p class="mb-0">Makes your profile public, everyone can see your
+                                                            profile if enabled.
                                                         </p>
                                                     </div>
                                                     <div class="right_side">
@@ -3423,19 +3612,20 @@
                                                     </div>
                                                 </div>
                                                 <div
-                                                class="toggle_setting d-flex align-items-center justify-content-between ">
-                                                <div class="left_side">
-                                                    <h5>People With Link Can See You</h5>
-                                                    <p class="mb-0">Only people with your profile link can see you if enabled.
-                                                    </p>
+                                                    class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                    <div class="left_side">
+                                                        <h5>People With Link Can See You</h5>
+                                                        <p class="mb-0">Only people with your profile link can see you
+                                                            if enabled.
+                                                        </p>
+                                                    </div>
+                                                    <div class="right_side">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                                <div class="right_side">
-                                                    <label class="switch">
-                                                        <input type="checkbox">
-                                                        <span class="slider round"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>

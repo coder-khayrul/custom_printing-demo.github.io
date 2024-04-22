@@ -110,9 +110,135 @@ profile_update_btn.addEventListener("input", () => {
     } else {
         console.warn("No file selected");
     }
-    
+
 });
 
+//***SCRIPT FOR HANLDLING ADDRESS EDIT POPUP */
+const address_popup = document.querySelector(".address_edit_popup")
+const address_popup_wrapper = document.querySelector(".address_edit_wrapper")
+const address_popup_close = document.querySelector(".address_edit_close")
+const address_poup_open = document.querySelectorAll(".edit_address")
+
+
+address_poup_open.forEach(item => {
+    item.addEventListener("click", () => {
+        address_popup_wrapper.style.animation = "slide_right 1s ease-in forwards"
+        address_popup.style.animation = "slide_right2 1s ease-in forwards"
+    })
+})
+
+address_popup_close.addEventListener("click", () => {
+    address_popup_wrapper.style.animation = "slide_right3 1s ease-in  forwards"
+    address_popup.style.animation = "slide_out 1s ease-in  forwards"
+
+})
+
+
+
+const address_add_popup = document.querySelector(".address_add_popup")
+const address_add_popup_wrapper = document.querySelector(".address_add_wrapper")
+const address_add_popup_close = document.querySelector(".address_add_close")
+const address_add_popup_open = document.querySelector(".address_tab_header button")
+
+
+address_add_popup_open.addEventListener("click", () => {
+
+    address_add_popup_wrapper.style.animation = "slide_right 1s ease-in forwards"
+    address_add_popup.style.animation = "slide_right2 1s ease-in forwards"
+})
+
+address_add_popup_close.addEventListener("click", () => {
+    address_add_popup_wrapper.style.animation = "slide_right3 1s ease-in  forwards"
+    address_add_popup.style.animation = "slide_out 1s ease-in  forwards"
+
+})
+const delete_alert = document.querySelector(".address_delete_popup");
+const delete_alert_close = document.querySelector(".delete_popup_close");
+const negg_btn = document.querySelector(".neg_btn");
+const delete_btns = document.querySelectorAll(".delete_btn");
+
+
+delete_btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        delete_alert.style.visibility = "visible";
+        delete_alert.style.opacity = "1";
+        document.querySelector(".success_popup_wrapper h3").textContent = "Successfully Deleted!"
+        document.querySelector(".success_popup_wrapper p").textContent = "This item successfully deleted by you"
+    });
+});
+
+delete_alert_close.addEventListener("click", () => {
+    delete_alert.style.visibility = "hidden";
+    delete_alert.style.opacity = "0";
+});
+
+negg_btn.addEventListener("click", () => {
+    delete_alert.style.visibility = "hidden";
+    delete_alert.style.opacity = "0";
+});
+
+
+$(".aff_btn").on("click", function () {
+    $(".success_msg").css({ visibility: "visible", opacity: 1 });
+    $(".address_delete_popup").css({ visibility: "hidden", opacity: 0 });
+});
+
+$(".dis_btn").on("click", function () {
+    $(".success_msg").css({ visibility: "hidden", opacity: 0 });
+});
+
+
+$(".default_address_btn").on("click", function () {
+    $(".default_msg").css({ visibility: "visible", opacity: 1 });
+    $(".default_msg_wrapper p").text("Are you sure to set this address as your default address?")
+});
+$(".agree_btn").on("click", function () {
+    $(".success_msg").css({ visibility: "visible", opacity: 1 });
+    $(".default_msg").css({ visibility: "hidden", opacity: 0 });
+    $(".success_popup_wrapper > h3").text("Successfully Added!")
+    $(".success_popup_wrapper > p").text("This address added as your default address.")
+
+
+});
+
+$(".disag_btn").on("click", function () {
+    $(".default_msg").css({ visibility: "hidden", opacity: 0 });
+});
+
+
+$(".card_edit").each(function () {
+    $(this).on("click", () => {
+        $(".cradit_card_popup").css({ visibility: "visible", opacity: 1 });
+    });
+});
+
+$(".cc_popup_close").on("click", () => {
+    $(".cradit_card_popup").css({ visibility: "hidden", opacity: 0 });
+});
+
+$(".card_remove").each(function () {
+    $(this).on("click", () => {
+        $(".address_delete_popup").css({ visibility: "visible", opacity: 1 });
+
+        $(".success_popup_wrapper h3").text("Successfully Deleted!")
+        $(".success_popup_wrapper  p").text("This item successfully deleted by you")
+    })
+})
+
+$(".card_default").each(function () {
+    $(this).on("click", () => {
+        $(".default_msg").css({ visibility: "visible", opacity: 1 });
+        $(".default_msg_wrapper p").text("Are you sure to set this card as your default card?");
+        $(".agree_btn").addClass("card_d");
+
+        $(".card_d").on("click", () => {
+            $(".success_popup_wrapper h3").text("Successfully Added!");
+            $(".success_popup_wrapper p").text("This card successfully added as a default card");
+        })
+
+    }
+    )
+});
 
 
 //bottom header toggle

@@ -2095,7 +2095,7 @@ ul.main_menu>li:hover ul.dropdown_menu {
     color: var(--primary-color);
 }
 
-ul.main_menu>li >.mega_menu {
+ul.main_menu>li>.mega_menu {
     position: absolute;
     padding: 35px 25px;
     background: #fff;
@@ -2113,7 +2113,7 @@ ul.main_menu>li >.mega_menu {
     transform-origin: top;
 }
 
-ul.main_menu>li >.mega_menu.other_mega_menu {
+ul.main_menu>li>.mega_menu.other_mega_menu {
     display: block;
 }
 
@@ -2149,7 +2149,7 @@ ul.main_menu>li>a+.mega_menu .single_mega_menu_item>a b {
     margin: 10px 0;
 }
 
-ul.main_menu>li:hover >.mega_menu {
+ul.main_menu>li:hover>.mega_menu {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
@@ -3457,6 +3457,7 @@ section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2)
     object-fit: cover;
     border-radius: 50%;
 }
+
 .deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img .edit_profile {
     display: grid;
     place-items: center;
@@ -3479,6 +3480,7 @@ section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2)
     color: var(--text-color);
     transition: .6s;
 }
+
 .deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>h3 {
     font-size: 25px;
     margin-bottom: 10px;
@@ -4329,10 +4331,317 @@ input:checked+.slider:before {
 
 /**==============END OF USER ACCOUNT DESHBOARD STYLE=============**/
 
+/***START OF ADDRESS EDIT POPUP STYLE**/
+.address_edit_popup,
+.address_add_popup,
+.delete_alert,
+.cradit_card_popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+}
 
+.address_edit_popup .ae_popup_bg,
+.address_add_popup .ae_popup_bg,
+.delete_alert .delete_bg,
+.cradit_card_bg {
+    width: 100%;
+    height: 100%;
+    background: #00000070;
+    position: absolute;
+}
 
+.address_popup,
+.delete_alert .delete_wrapper,
+.cradit_card_wrapper {
+    width: 720px;
+    position: relative;
+    background: var(--secondary-color);
+    z-index: 9;
+    padding: 20px 20px;
+    border-radius: 15px;
+    overflow: auto;
+    height: 460px;
+}
 
+.address_popup::-webkit-scrollbar,
+.cradit_card_wrapper::-webkit-scrollbar {
+    width: 5px;
+}
 
+.address_popup::-webkit-scrollbar-track,
+.cradit_card_wrapper::-webkit-scrollbar-track {
+    width: 5px;
+    border-radius: 50px;
+}
+
+.address_popup::-webkit-scrollbar-thumb,
+.cradit_card_wrapper::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+
+.address_popup>h3,
+.address_add_wrapper>h3 ,.cradit_card_wrapper h3{
+    font-size: 25px;
+    color: var(--sub-text-color);
+    margin-bottom: 20px;
+}
+
+.address_popup form,.cradit_card_wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address_popup form .ae_input_group {
+    gap: 15px;
+    width: 100%;
+}
+
+.address_popup form .ae_input_group .single_ae_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.cradit_card_wrapper form .edit_cc_input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.address_popup form .ae_input_group .single_ae_input>label {
+    font-size: 16px;
+    color: #666;
+}
+
+.address_popup form .ae_input_group .single_ae_input>input ,.cradit_card_wrapper form .edit_cc_input input,.cradit_card_wrapper form .edit_cc_input select{
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px;
+    font-size: 15px;
+    color: var(--sub-text-color);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--primary-light);
+    transition: .6s;
+}
+
+.address_popup form .ae_input_group .single_ae_input>input:focus ,.cradit_card_wrapper form .edit_cc_input input:focus ,.cradit_card_wrapper form .edit_cc_input select:focus{
+    border-color: var(--primary-color);
+    transition: .6s;
+}
+
+.address_popup form .ae_form_action button ,.cc_form_actions button{
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    background: var(--accent-color);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+.address_popup form .ae_form_action ,.cc_form_actions{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.address_popup form .ae_form_action button:hover, .cc_form_actions button:hover {
+    background: var(--primary-color);
+    transition: .6s;
+}
+
+.address_edit_popup .address_edit_close,
+.address_add_close,.cc_popup_close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--text-color);
+    font-size: 15px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    z-index: 99;
+    transition: .6s;
+}
+
+.address_edit_popup .address_edit_close:hover svg,
+.address_add_close:hover svg ,.cc_popup_close:hover svg{
+    rotate: 180deg;
+    transition: .6s;
+}
+
+/***END OF ADDRESS EDIT POPUP STYLE**/
+/**START OF DELETE ALERT STYLE**/
+
+.delete_alert .delete_wrapper {
+    width: 600px;
+    height: auto;
+}
+
+.delete_alert .delete_wrapper {
+    width: 600px;
+    height: auto;
+}
+
+.delete_alert .delete_wrapper .delete_popup_close {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--text-color);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.delete_alert .delete_wrapper .delete_popup_close:hover svg {
+    rotate: 180deg;
+    transition: .6s;
+}
+
+.delete_alert .delete_wrapper>h2 {
+    font-size: 25px;
+    color: var(--sub-text-color);
+    margin-bottom: 20px;
+}
+
+.delete_alert .delete_wrapper>p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.delete_alert .delete_wrapper .action_btns button,
+.default_msg_wrapper .default_action_btns button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background: var(--secondary-color);
+    font-weight: 500;
+    transition: .6s;
+}
+
+.delete_alert .delete_wrapper .action_btns button:last-child,
+.default_msg_wrapper .default_action_btns button:last-child {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.delete_alert .delete_wrapper .action_btns button:hover,
+.default_msg_wrapper .default_action_btns button:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+    transition: .6s;
+}
+
+/**END OF DELETE ALERT STYLE**/
+
+/**START OF SUCCESS POPUP**/
+.success_msg .success_popup_wrapper,
+.default_msg_wrapper {
+    width: 330px;
+    background: var(--secondary-color);
+    z-index: 9;
+    border-radius: 15px;
+    padding: 30px 20px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.success_msg,
+.default_msg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.success_msg .success_msg_bg,
+.default_msg_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000070;
+}
+
+.success_msg .success_popup_wrapper span.success_icon {
+    position: absolute;
+    top: -28px;
+    font-size: 27px;
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    background: var(--accent-color);
+    border-radius: 50%;
+    color: var(--text-color);
+}
+
+.success_msg .success_popup_wrapper>h3,
+.default_msg_wrapper>h3 {
+    font-size: 25px;
+    color: var(--sub-text-color);
+    margin-bottom: 15px;
+}
+
+.success_msg .success_popup_wrapper>p,
+.default_msg_wrapper>p {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success_msg .success_popup_wrapper>button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .6s;
+}
+
+.success_msg .success_popup_wrapper>button:hover {
+    background: var(--primary-light);
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+/**END OF SUCCESS POPUP**/
 
 
 
@@ -4628,6 +4937,18 @@ section.parallax_footer_area {
 
     .highlight_box_container {
         grid-template-columns: 1fr;
+    }
+
+    .address_popup form .ae_input_group {
+        flex-direction: column;
+    }
+
+    .address_popup form .ae_input_group .single_ae_input {
+        width: 100%;
+    }
+
+    .address_popup,.cradit_card_wrapper {
+        width: calc(100% - 30px);
     }
 }
 
