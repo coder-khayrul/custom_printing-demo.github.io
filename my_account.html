@@ -206,6 +206,7 @@
                                 <a href="cart.html">My Cart</a>
                                 <a href="checkout.html">Checkout</a>
                                 <a href="about_us.html">About us</a>
+                                <a href="my_account.html">My Account</a>
                                 <a href="#">FAQs Page</a>
                                 <a href="#">Page 404</a>
                             </div>
@@ -621,7 +622,7 @@
                     <form id="cupon_form">
                         <input type="text" id="cupon_id" placeholder="Coupon code" required>
                         <button type="submit" class="mt-2">Save</button>
-                        <button class="cupon_delete">Cancle</button>
+                        <button class="cupon_delete">Cancel</button>
                     </form>
                 </div>
             </div>
@@ -665,7 +666,7 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-center gap-2 flex-column">
                             <button type="submit">Calculate Shipping Rates</button>
-                            <button class="rate_cancle">Cancle</button>
+                            <button class="rate_cancle">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -675,8 +676,8 @@
                 <div class="gift_wrap">
                     <span><i class="fa-solid fa-gift"></i></span>
                     <p>Do you want a gift wrap? Only $80</p>
-                    <button class="gift_btn">Add A Gift Wra</button>
-                    <button class=" delete_gift">Cancle</button>
+                    <button class="gift_btn">Add A Gift Wrap</button>
+                    <button class=" delete_gift">Cancel</button>
                 </div>
             </div>
             <div class="mini_popup">
@@ -692,7 +693,7 @@
                         <textarea id="note_input" required></textarea>
                         <div class="form_btns">
                             <button type="submit">Save</button>
-                            <button class="delete_card">Cancle</button>
+                            <button class="delete_card">Cancel</button>
                         </div>
                     </div>
                 </div>
@@ -1449,6 +1450,9 @@
                                             </li>
                                             <li class="list-unstyled">
                                                 <a href="about_us.html">About Us</a>
+                                            </li>
+                                            <li class="list-unstyled">
+                                                <a href="my_account.html">My Account</a>
                                             </li>
                                             <li class="list-unstyled">
                                                 <a href="#">FAQs Page</a>
@@ -2325,7 +2329,7 @@
                                         </div>
                                         <div class="highlight_info">
                                             <h2>Total Order</h2>
-                                            <b>343</b>
+                                            <b>300</b>
                                         </div>
                                     </div>
                                     <div class="highlight_box d-flex align-items-center ">
@@ -2334,7 +2338,7 @@
                                         </div>
                                         <div class="highlight_info">
                                             <h2>Total Panding Order</h2>
-                                            <b>343</b>
+                                            <b>43</b>
                                         </div>
                                     </div>
                                     <div class="highlight_box  d-flex align-items-center">
@@ -2370,7 +2374,7 @@
                                                 </div>
                                             </div>
                                             <div class="gander_group">
-                                                <label for="male">
+                                                <label for="male" class="active">
                                                     <input type="radio" id="male" name="customer_gender">
                                                     <span>
                                                         <i class="fa-solid fa-mars"></i>
@@ -2548,7 +2552,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-6  mb-4 mb-md-0">
                                                 <div class="single_address">
                                                     <div class="single_address_header d-flex justify-content-between">
                                                         <div class="left_side">
@@ -2592,7 +2596,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-6 mb-4 mb-md-0">
                                                 <div class="single_address">
                                                     <div class="single_address_header d-flex justify-content-between">
                                                         <div class="left_side">
@@ -2859,7 +2863,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-6 mb-4 mb-md-0">
                                                 <div class="single_order_product ">
                                                     <div
                                                         class="order_produt_header d-flex align-items-center justify-content-between">
@@ -3126,194 +3130,209 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="payment_methods-tab-pane" role="tabpanel" tabindex="0">
-                            <div class="payment_tab">
-                                <div class="single_payment_section mb-4">
-                                    <h3>Your Payment Information
-                                    </h3>
-                                    <div class="sp_wrapper">
-                                        <div
-                                            class="single_card d-flex align-items-center justify-content-center flex-column visa_card">
-                                            <div class="card_logo">
-                                                <img src="img/visa-Logo.webp" alt="cradit card image" class="img-fluid">
-                                            </div>
-                                            <div class="card_number">
-                                                xxx xxx xxx 2302
-                                            </div>
-                                            <div class="card_info d-flex align-items-center justify-content-between">
-                                                <b>Khayrul Islam</b>
-                                                <span>04/20</span>
-                                            </div>
-                                            <div class="card_manage d-flex align-items-center justify-content-between">
-                                                <div class="single_edit_option d-flex align-items-center gap-3">
-                                                    <span class="card_edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </span>
-                                                    <span class="card_remove">
-                                                        <i class="fa-solid fa-trash-can"></i>
+                            <div class="tab-pane fade" id="payment_methods-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="payment_tab">
+                                    <div class="single_payment_section mb-4">
+                                        <h3>Your Payment Information
+                                        </h3>
+                                        <div class="sp_wrapper">
+                                            <div
+                                                class="single_card d-flex align-items-center justify-content-center flex-column visa_card">
+                                                <div class="card_logo">
+                                                    <img src="img/visa-Logo.webp" alt="cradit card image"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="card_number">
+                                                    xxx xxx xxx 2302
+                                                </div>
+                                                <div
+                                                    class="card_info d-flex align-items-center justify-content-between">
+                                                    <b>Khayrul Islam</b>
+                                                    <span>04/20</span>
+                                                </div>
+                                                <div
+                                                    class="card_manage d-flex align-items-center justify-content-between">
+                                                    <div class="single_edit_option d-flex align-items-center gap-3">
+                                                        <span class="card_edit">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="card_remove">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                    <span class="card_default">
+                                                        Set Default
                                                     </span>
                                                 </div>
-                                                <span class="card_default">
-                                                    Set Default
-                                                </span>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="single_card d-flex align-items-center justify-content-center flex-column visa_card">
-                                            <div class="card_logo">
-                                                <img src="img/visa-Logo.webp" alt="cradit card image" class="img-fluid">
-                                            </div>
-                                            <div class="card_number">
-                                                xxx xxx xxx 2302
-                                            </div>
-                                            <div class="card_info d-flex align-items-center justify-content-between">
-                                                <b>Khayrul Islam</b>
-                                                <span>04/20</span>
-                                            </div>
-                                            <div class="card_manage d-flex align-items-center justify-content-between">
-                                                <div class="single_edit_option d-flex align-items-center gap-3">
-                                                    <span class="card_edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </span>
-                                                    <span class="card_remove">
-                                                        <i class="fa-solid fa-trash-can"></i>
+                                            <div
+                                                class="single_card d-flex align-items-center justify-content-center flex-column visa_card">
+                                                <div class="card_logo">
+                                                    <img src="img/visa-Logo.webp" alt="cradit card image"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="card_number">
+                                                    xxx xxx xxx 2302
+                                                </div>
+                                                <div
+                                                    class="card_info d-flex align-items-center justify-content-between">
+                                                    <b>Khayrul Islam</b>
+                                                    <span>04/20</span>
+                                                </div>
+                                                <div
+                                                    class="card_manage d-flex align-items-center justify-content-between">
+                                                    <div class="single_edit_option d-flex align-items-center gap-3">
+                                                        <span class="card_edit">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="card_remove">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                    <span class="card_default">
+                                                        Set Default
                                                     </span>
                                                 </div>
-                                                <span class="card_default">
-                                                    Set Default
-                                                </span>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="single_card d-flex align-items-center justify-content-center flex-column master_card">
-                                            <div class="card_logo">
-                                                <img src="img/mastercard-logo.webp" alt="cradit card image"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="card_number">
-                                                xxx xxx xxx 2302
-                                            </div>
-                                            <div class="card_info d-flex align-items-center justify-content-between">
-                                                <b>Khayrul Islam</b>
-                                                <span>04/20</span>
-                                            </div>
-                                            <div class="card_manage d-flex align-items-center justify-content-between">
-                                                <div class="single_edit_option d-flex align-items-center gap-3">
-                                                    <span class="card_edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </span>
-                                                    <span class="card_remove">
-                                                        <i class="fa-solid fa-trash-can"></i>
+                                            <div
+                                                class="single_card d-flex align-items-center justify-content-center flex-column master_card">
+                                                <div class="card_logo">
+                                                    <img src="img/mastercard-logo.webp" alt="cradit card image"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="card_number">
+                                                    xxx xxx xxx 2302
+                                                </div>
+                                                <div
+                                                    class="card_info d-flex align-items-center justify-content-between">
+                                                    <b>Khayrul Islam</b>
+                                                    <span>04/20</span>
+                                                </div>
+                                                <div
+                                                    class="card_manage d-flex align-items-center justify-content-between">
+                                                    <div class="single_edit_option d-flex align-items-center gap-3">
+                                                        <span class="card_edit">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="card_remove">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                    <span class="card_default">
+                                                        Set Default
                                                     </span>
                                                 </div>
-                                                <span class="card_default">
-                                                    Set Default
-                                                </span>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="single_card d-flex align-items-center justify-content-center flex-column american_card">
-                                            <div class="card_logo">
-                                                <img src="img/american-express-logo.webp" alt="cradit card image"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="card_number">
-                                                xxx xxx xxx 2302
-                                            </div>
-                                            <div class="card_info d-flex align-items-center justify-content-between">
-                                                <b>Khayrul Islam</b>
-                                                <span>04/20</span>
-                                            </div>
-                                            <div class="card_manage d-flex align-items-center justify-content-between">
-                                                <div class="single_edit_option d-flex align-items-center gap-3">
-                                                    <span class="card_edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </span>
-                                                    <span class="card_remove">
-                                                        <i class="fa-solid fa-trash-can"></i>
+                                            <div
+                                                class="single_card d-flex align-items-center justify-content-center flex-column american_card">
+                                                <div class="card_logo">
+                                                    <img src="img/american-express-logo.webp" alt="cradit card image"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="card_number">
+                                                    xxx xxx xxx 2302
+                                                </div>
+                                                <div
+                                                    class="card_info d-flex align-items-center justify-content-between">
+                                                    <b>Khayrul Islam</b>
+                                                    <span>04/20</span>
+                                                </div>
+                                                <div
+                                                    class="card_manage d-flex align-items-center justify-content-between">
+                                                    <div class="single_edit_option d-flex align-items-center gap-3">
+                                                        <span class="card_edit">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </span>
+                                                        <span class="card_remove">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </span>
+                                                    </div>
+                                                    <span class="card_default">
+                                                        Set Default
                                                     </span>
                                                 </div>
-                                                <span class="card_default">
-                                                    Set Default
-                                                </span>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="single_card d-flex align-items-center justify-content-center flex-column add_new_card">
-                                            <span> <i class="fa-solid fa-circle-plus me-2"></i>Add New</span>
+                                            <div
+                                                class="single_card d-flex align-items-center justify-content-center flex-column add_new_card">
+                                                <span> <i class="fa-solid fa-circle-plus me-2"></i>Add New</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="single_payment_section add_payment_div show">
-                                    <h3>Add Payment Details</h3>
-                                    <div class="add_payment_area">
-                                        <ul class="nav-tabs" id="myTab3" role="tablist">
-                                            <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3 active"
-                                                id="cradit_card-tab" data-bs-toggle="tab"
-                                                data-bs-target="#cradit_card-tab-pane" role="tab" aria-selected="true">
-                                                <span class="custom_radio"></span>
-                                                <b>Cradit Card</b>
-                                            </li>
-                                            <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3"
-                                                id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-tab-pane"
-                                                role="tab" aria-selected="true">
-                                                <span class="custom_radio"></span>
-                                                <b>Paypal</b>
-                                            </li>
-                                            <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3"
-                                                id="upi-tab" data-bs-toggle="tab" data-bs-target="#upi-tab-pane"
-                                                role="tab" aria-selected="true">
-                                                <span class="custom_radio"></span>
-                                                <b>UPI</b>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent3">
-                                            <div class="tab-pane fade show active" id="cradit_card-tab-pane" role="tabpanel"
-                                                tabindex="0">
-                                                <form class="cradit_card_form">
-                                                    <div class="cc_single_input">
-                                                        <label for="cc_holder">Card Holder Name</label>
-                                                        <input type="text" id="cc_holder" placeholder="Jhone Due">
-                                                    </div>
-                                                    <div class="cc_single_input">
-                                                        <label for="cc_holder">Card Holder Name</label>
-                                                        <input type="number" id="cc_number"
-                                                            placeholder="1234 567 8910 1112">
-                                                    </div>
-                                                    <div class="cc_input_group">
+                                    <div class="single_payment_section add_payment_div show">
+                                        <h3>Add Payment Details</h3>
+                                        <div class="add_payment_area">
+                                            <ul class="nav-tabs" id="myTab3" role="tablist">
+                                                <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3 active"
+                                                    id="cradit_card-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#cradit_card-tab-pane" role="tab"
+                                                    aria-selected="true">
+                                                    <span class="custom_radio"></span>
+                                                    <b>Cradit Card</b>
+                                                </li>
+                                                <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3"
+                                                    id="paypal-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#paypal-tab-pane" role="tab" aria-selected="true">
+                                                    <span class="custom_radio"></span>
+                                                    <b>Paypal</b>
+                                                </li>
+                                                <li class="list-unstyled d-flex flex-column justify-content-center align-items-center gap-3"
+                                                    id="upi-tab" data-bs-toggle="tab" data-bs-target="#upi-tab-pane"
+                                                    role="tab" aria-selected="true">
+                                                    <span class="custom_radio"></span>
+                                                    <b>UPI</b>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent3">
+                                                <div class="tab-pane fade show active" id="cradit_card-tab-pane"
+                                                    role="tabpanel" tabindex="0">
+                                                    <form class="cradit_card_form">
                                                         <div class="cc_single_input">
-                                                            <label for="expair_date">Expire Date</label>
-                                                            <input type="date" id="expair_date">
+                                                            <label for="cc_holder">Card Holder Name</label>
+                                                            <input type="text" id="cc_holder" placeholder="Jhone Due">
                                                         </div>
                                                         <div class="cc_single_input">
-                                                            <label for="cvc">Expire Date</label>
-                                                            <input type="number" id="cvc" placeholder="111">
+                                                            <label for="cc_holder">Card Holder Name</label>
+                                                            <input type="number" id="cc_number"
+                                                                placeholder="1234 567 8910 1112">
                                                         </div>
-                                                    </div>
-                                                    <p>By creating an account, you agree to Our Terms of Use and Privacy
-                                                        Policy.</p>
-                                                    <div class="cc_form_action">
-                                                        <button type="submit">Save Card</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="tab-pane fade" id="paypal-tab-pane" role="tabpanel"
-                                                tabindex="0">
-                                                <div class="paypal_tab">
-                                                    <p>By creating an account, you agree to Our Terms of Use and Privacy
-                                                        Policy.</p>
-                                                    <div class="cc_form_action">
-                                                        <button type="submit">Continue Paypal</button>
+                                                        <div class="cc_input_group">
+                                                            <div class="cc_single_input">
+                                                                <label for="expair_date">Expire Date</label>
+                                                                <input type="date" id="expair_date">
+                                                            </div>
+                                                            <div class="cc_single_input">
+                                                                <label for="cvc">Expire Date</label>
+                                                                <input type="number" id="cvc" placeholder="111">
+                                                            </div>
+                                                        </div>
+                                                        <p>By creating an account, you agree to Our Terms of Use and
+                                                            Privacy
+                                                            Policy.</p>
+                                                        <div class="cc_form_action">
+                                                            <button type="submit">Save Card</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="paypal-tab-pane" role="tabpanel"
+                                                    tabindex="0">
+                                                    <div class="paypal_tab">
+                                                        <p>By creating an account, you agree to Our Terms of Use and
+                                                            Privacy
+                                                            Policy.</p>
+                                                        <div class="cc_form_action">
+                                                            <button type="submit">Continue Paypal</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="upi-tab-pane" role="tabpanel" tabindex="0">
-                                                <div class="upi_tab">
-                                                    <p>By creating an account, you agree to Our Terms of Use and Privacy
-                                                        Policy.</p>
-                                                    <div class="cc_form_action">
-                                                        <button type="submit">Continue UPI</button>
+                                                <div class="tab-pane fade" id="upi-tab-pane" role="tabpanel"
+                                                    tabindex="0">
+                                                    <div class="upi_tab">
+                                                        <p>By creating an account, you agree to Our Terms of Use and
+                                                            Privacy
+                                                            Policy.</p>
+                                                        <div class="cc_form_action">
+                                                            <button type="submit">Continue UPI</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3321,13 +3340,106 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" tabindex="0">
-
+                            <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="settings_tab">
+                                    <h3>Sequrity & Settings</h3>
+                                    <div class="settings_wrapper">
+                                        <div class="single_setting_box">
+                                            <h4>Login Security</h4>
+                                            <p class="mb-0">Email: user.example@gmail.com</p>
+                                            <b>Change Email & Password</b>
+                                        </div>
+                                        <div class="single_setting_box">
+                                            <h4>Security</h4>
+                                            <div class="toggle_settings_container d-flex flex-column">
+                                                <div
+                                                    class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                    <div class="left_side">
+                                                        <h5>Two-Factor Authentication</h5>
+                                                        <p class="mb-0">Enable 2FA to strengthen your account security.
+                                                        </p>
+                                                    </div>
+                                                    <div class="right_side">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_setting_box">
+                                            <h4>Privacy</h4>
+                                            <div class="toggle_settings_container d-flex flex-column">
+                                                <div
+                                                    class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                    <div class="left_side">
+                                                        <h5>Do You Want Others To Find Your Profile?</h5>
+                                                        <p class="mb-0">Makes your profile public, everyone can see your profile if enabled.
+                                                        </p>
+                                                    </div>
+                                                    <div class="right_side">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                <div class="left_side">
+                                                    <h5>People With Link Can See You</h5>
+                                                    <p class="mb-0">Only people with your profile link can see you if enabled.
+                                                    </p>
+                                                </div>
+                                                <div class="right_side">
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_setting_box">
+                                            <h4>Account Settings</h4>
+                                            <div class="toggle_settings_container d-flex flex-column">
+                                                <div
+                                                    class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                    <div class="left_side">
+                                                        <h5>Do You Want Others To Find Your Profile?</h5>
+                                                        <p class="mb-0">Makes your profile public, everyone can see your profile if enabled.
+                                                        </p>
+                                                    </div>
+                                                    <div class="right_side">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                class="toggle_setting d-flex align-items-center justify-content-between ">
+                                                <div class="left_side">
+                                                    <h5>People With Link Can See You</h5>
+                                                    <p class="mb-0">Only people with your profile link can see you if enabled.
+                                                    </p>
+                                                </div>
+                                                <div class="right_side">
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
         <!--END OF ACCOUNT DESHBOARD -->
@@ -3414,7 +3526,7 @@
                         </div>
                         <div class="es_content d-flex flex-column">
                             <b>Free Returns</b>
-                            <span>Track Or Cancle Order</span>
+                            <span>Track Or Cancel Order</span>
                         </div>
                     </div>
                     <div class="single_es d-flex align-items-center gap-3 justify-content-center">

@@ -18,6 +18,7 @@
     --text-color: #fff;
     --sub-text-color: #333;
     --sub-color: #f4f5f7;
+    --sub-color2: #e6e6e6;
     --accent-color: #F54A5B;
 }
 
@@ -31,7 +32,7 @@ body {
     padding: 0;
     font-family: "Ubuntu", sans-serif;
 }
- 
+
 a {
     text-decoration: none;
 }
@@ -1902,11 +1903,12 @@ ul.main_menu>li>a+ul.dropdown_menu {
     width: 160px;
     background: var(--secondary-color);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    bottom: 0;
-    transform: translate(0px, 110%);
+    transform: scaleY(0);
     visibility: hidden;
     opacity: 0;
     z-index: 999;
+    transition: .6s;
+    transform-origin: top;
 }
 
 ul.main_menu>li>a+ul.dropdown_menu>li>a {
@@ -1928,7 +1930,7 @@ ul.main_menu>li>a+ul.dropdown_menu>li>a:hover {
 ul.main_menu>li:hover ul.dropdown_menu {
     visibility: visible;
     opacity: 1;
-    transform: translate(0, 100%);
+    transform: scale(1);
     transition: .6s;
 }
 
@@ -1937,7 +1939,7 @@ ul.main_menu>li:hover ul.dropdown_menu {
     top: 50%;
     right: 50px;
     transform: translate(0, -50%);
-    z-index: 9999;
+    z-index: 999;
 }
 
 .toggle_menu .toggle_menu_wrapper {
@@ -2084,6 +2086,7 @@ ul.main_menu>li:hover ul.dropdown_menu {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 15px 0;
     display: none;
+    background: var(--secondary-color);
 }
 
 .category_container .category_list>li>a {
@@ -2102,7 +2105,7 @@ ul.main_menu>li:hover ul.dropdown_menu {
     color: var(--primary-color);
 }
 
-ul.main_menu>li>a+.mega_menu {
+ul.main_menu>li >.mega_menu {
     position: absolute;
     padding: 35px 25px;
     background: #fff;
@@ -2112,14 +2115,15 @@ ul.main_menu>li>a+.mega_menu {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 1100px;
     gap: 20px 15px;
-    transform: translate(0px, 50px);
+    transform: scaleY(0);
     visibility: hidden;
     opacity: 0;
     left: 0;
-    transition: .6s;
+    transition: .4s;
+    transform-origin: top;
 }
 
-ul.main_menu>li>a+.mega_menu.other_mega_menu {
+ul.main_menu>li >.mega_menu.other_mega_menu {
     display: block;
 }
 
@@ -2155,11 +2159,12 @@ ul.main_menu>li>a+.mega_menu .single_mega_menu_item>a b {
     margin: 10px 0;
 }
 
-ul.main_menu>li:hover>a+.mega_menu {
+ul.main_menu>li:hover >.mega_menu {
     visibility: visible;
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: scaleY(1);
     z-index: 9;
+    transition: 0.4s;
 }
 
 
@@ -2210,29 +2215,6 @@ ul.main_menu>li:hover>a+.mega_menu {
     color: var(--primary-color);
     transition: .6s;
     transform: translate(10px, 0px);
-}
-ul.newList>li.added a {
-    position: relative;
-}
-ul.mobile_newList>li.added a::after {
-    transform: translate(90%, 0px);
-}
-ul.newList>li.added a::after {
-    content: "ADDED";
-    width: 48px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    font-size: 10px;
-    font-weight: 500;
-    position: absolute;
-    right: 0;
-    transform: translate(115%, 0px);
-    top: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .mega_menu .single_mega_menu .mega_menu_product {
@@ -2416,29 +2398,29 @@ button.mobile_menu_btn svg {
 
 button.bottom_header_btn {
 
-height: 35px;
+    height: 35px;
 
-width: 35px;
+    width: 35px;
 
-border: 1px solid transparent;
+    border: 1px solid transparent;
 
-border-radius: 50%;
+    border-radius: 50%;
 
-background: var(--accent-color);
+    background: var(--accent-color);
 
-color: var(--text-color);
+    color: var(--text-color);
 
-position: absolute;
+    position: absolute;
 
-left: 50%;
+    left: 50%;
 
-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
 
-top: 70px;
+    top: 70px;
 
-overflow: hidden;
+    overflow: hidden;
 
-z-index: 1;
+    z-index: 1;
 }
 
 .category_container .category_list li {
@@ -2459,6 +2441,7 @@ z-index: 1;
     visibility: hidden;
     opacity: 0;
     transition: .6s;
+    background: var(--secondary-color);
 }
 
 .single_cs_dropdown>ul {
@@ -3189,8 +3172,8 @@ z-index: 1;
     z-index: 1;
 }
 
-
 /*header style end*/
+
 
 
 /**product main section style start**/

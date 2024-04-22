@@ -6,37 +6,37 @@ const deshboard_main = document.querySelector(".deshboard_area")
 const toggle_menu = document.querySelector(".user_deshboard_wrapper aside");
 const menu_hide_item = document.querySelectorAll("aside>ul li>a>span:last-child")
 
-let isclicked =true;
+let isclicked = true;
 menu_toggle_btn.addEventListener("click", () => {
-    
-if(isclicked){
-      menu_hide_item.forEach(item => {
-        item.classList.add("deshboard_toggle_item")
-    })
-    toggle_menu.classList.add("toggle_width");
-   menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`
-   deshboard_main.style.width="calc(100% - 90px)"
-}else{
-    menu_hide_item.forEach(item => {
-        item.classList.remove("deshboard_toggle_item")
-    })
-    toggle_menu.classList.remove("toggle_width");
-    menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`
-    deshboard_main.style.width="calc(100% - 280px)"
-}
-isclicked  = !isclicked;
-}) 
+
+    if (isclicked) {
+        menu_hide_item.forEach(item => {
+            item.classList.add("deshboard_toggle_item")
+        })
+        toggle_menu.classList.add("toggle_width");
+        menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`
+        deshboard_main.style.width = "calc(100% - 90px)"
+    } else {
+        menu_hide_item.forEach(item => {
+            item.classList.remove("deshboard_toggle_item")
+        })
+        toggle_menu.classList.remove("toggle_width");
+        menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`
+        deshboard_main.style.width = "calc(100% - 280px)"
+    }
+    isclicked = !isclicked;
+})
 
 //**SCRIPT FOR DELETE PRODUCT FROM WISHLIST */
 
 const wishlist_product = document.querySelectorAll(".single_realted_product")
 
 wishlist_product.forEach(product => {
-   
-        let wishlist_product_delete = product.querySelector(".delete_product");
-        wishlist_product_delete.addEventListener("click", () => {
-            product.style.display = "none"
-        })
+
+    let wishlist_product_delete = product.querySelector(".delete_product");
+    wishlist_product_delete.addEventListener("click", () => {
+        product.style.display = "none"
+    })
 })
 
 //***SCRIPT FOR ADD PAYMENT BUTTON HANDLING */
@@ -62,7 +62,36 @@ deshboard_items_array.forEach(item => {
 
 })
 
+window.addEventListener("resize", () => {
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        menu_hide_item.forEach(item => {
+            item.classList.add("deshboard_toggle_item")
+        })
+        toggle_menu.classList.add("toggle_width");
+        menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`
+        deshboard_main.style.width = "calc(100% - 90px)"
+    } else {
+        menu_hide_item.forEach(item => {
+            item.classList.remove("deshboard_toggle_item")
+        })
+        toggle_menu.classList.remove("toggle_width");
+        menu_toggle_btn.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`
+        deshboard_main.style.width = "calc(100% - 280px)"
+    }
+})
 
+const gender_options = document.querySelectorAll(".gander_group label");
+
+const gender_options_array = Array.from(gender_options);
+
+gender_options_array.forEach(opt => {
+    opt.addEventListener("click", () => {
+        gender_options_array.forEach(others_opt => {
+            others_opt.classList.remove("active");
+        })
+        opt.classList.add("active")
+    })
+})
 
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
