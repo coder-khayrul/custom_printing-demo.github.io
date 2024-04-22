@@ -93,6 +93,28 @@ gender_options_array.forEach(opt => {
     })
 })
 
+//***SCRIPT FOR PROFILE IMAGE UPDATE */
+const profile_area = document.querySelector(".profile_img img")
+const profile_update_btn = document.querySelector("#profile_upload")
+
+let imageURL;
+
+profile_update_btn.addEventListener("input", () => {
+
+
+    if (profile_update_btn.files.length) {
+        let selectedImage = profile_update_btn.files[0];
+
+        imageURL = URL.createObjectURL(selectedImage);
+        profile_area.src = imageURL;
+    } else {
+        console.warn("No file selected");
+    }
+    
+});
+
+
+
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
     $(".bottom_header").slideToggle();

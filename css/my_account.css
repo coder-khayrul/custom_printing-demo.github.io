@@ -3437,10 +3437,11 @@ section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2)
 .deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img {
     width: 130px;
     height: 130px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 50%;
     background: var(--primary-color);
     margin-bottom: 20px;
+    position: relative;
 }
 
 .deshboard_area div#myTabContent2 .profile_tab .profile_card {
@@ -3453,8 +3454,30 @@ section.user_deshboard .user_deshboard_wrapper aside>ul>li.active>b:nth-child(2)
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+}
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img .edit_profile {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: var(--sub-text-color);
+    right: 0;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, 75%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .6s;
 }
 
+.deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_img .edit_profile:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+    transition: .6s;
+}
 .deshboard_area div#myTabContent2 .profile_tab .profile_card .profile_card_info>h3 {
     font-size: 25px;
     margin-bottom: 10px;
