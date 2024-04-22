@@ -3217,6 +3217,7 @@ section.user_deshboard {
 
 section.user_deshboard .user_deshboard_wrapper.d-flex {
     gap: 30px;
+    background: var(--secondary-color);
 }
 
 section.user_deshboard .user_deshboard_wrapper aside>ul {
