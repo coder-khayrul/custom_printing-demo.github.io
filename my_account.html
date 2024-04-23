@@ -162,7 +162,38 @@
             </div>
         </div>
     </div>
-    
+    <!--EMAIL & PASSWORD CHANGE POPUP-->
+    <div class="ep_popup">
+        <div class="ep_popup_bg"></div>
+        <div class="ep_popup_wrapper">
+            <span class="ep_popup_close">
+                <i class="fa-solid fa-x"></i>
+            </span>
+            <h3>Change Email & Password</h3>
+            <form class="ep_form">
+                <div class="single_ep_input">
+                    <label for="current_email">Current Email</label>
+                    <input type="email" name="current_email" id="current_email" placeholder="abc123@gmail.com">
+                </div>
+                <div class="single_ep_input">
+                    <label for="new_email">New Email</label>
+                    <input type="email" name="new_email" id="new_email" placeholder="abc123@gmail.com">
+                </div>
+                <div class="single_ep_input">
+                    <label for="current_password">Current Password</label>
+                    <input type="password" name="current_password" id="current_password" placeholder="**********">
+                </div>
+                <div class="single_ep_input">
+                    <label for="new_password">New Password</label>
+                    <input type="password" name="new_password" id="new_password" placeholder="**********">
+                </div>
+                <div class="ep_form_actions d-flex align-items-center justify-content-between ">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <!--EDIT CARD POPUP-->
     <div class="cradit_card_popup">
         <span class="cc_popup_close">
@@ -3537,7 +3568,7 @@
                                         <div class="single_setting_box">
                                             <h4>Login Security</h4>
                                             <p class="mb-0">Email: user.example@gmail.com</p>
-                                            <b>Change Email & Password</b>
+                                            <b class="manage_option">Change Email & Password</b>
                                         </div>
                                         <div class="single_setting_box">
                                             <h4>Security</h4>

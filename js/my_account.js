@@ -241,6 +241,13 @@ $(".card_default").each(function () {
 });
 
 
+$(".manage_option").on("click", () => {
+    $(".ep_popup").css({ visibility: "visible", opacity: 1 });
+})
+$(".ep_popup_close").on("click", () => {
+    $(".ep_popup").css({ visibility: "hidden", opacity: 0 });
+})
+
 //bottom header toggle
 $(".bottom_header_btn").on("click", () => {
     $(".bottom_header").slideToggle();
