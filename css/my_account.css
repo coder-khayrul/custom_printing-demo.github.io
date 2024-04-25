@@ -2112,6 +2112,31 @@ ul.main_menu>li>.mega_menu {
     transition: .4s;
     transform-origin: top;
 }
+ul.newList>li.added a {
+    position: relative;
+}
+
+ul.mobile_newList>li.added a::after {
+    transform: translate(90%, 0px);
+}
+
+ul.newList>li.added a::after {
+    content: "ADDED";
+    width: 48px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    transform: translate(115%, 0px);
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
 ul.main_menu>li>.mega_menu.other_mega_menu {
     display: block;
